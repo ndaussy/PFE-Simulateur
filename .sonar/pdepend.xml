@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metrics generated="2013-11-20T16:03:11" pdepend="1.1.0" ahh="1.3333333333333" andc="0" calls="134" ccn="61" ccn2="68" cloc="132" clsa="0" clsc="10" eloc="511" fanout="4" leafs="8" lloc="295" loc="988" maxDIT="2" ncloc="856" noc="10" nof="4" noi="0" nom="31" nop="1" roots="2">
+  <files>
+    <file name="C:\wamp\www\QL\application\controllers\simulation.php" cloc="0" eloc="23" lloc="15" loc="47" ncloc="47"/>
+    <file name="C:\wamp\www\QL\application\controllers\telecharger.php" cloc="19" eloc="94" lloc="62" loc="203" ncloc="184"/>
+    <file name="C:\wamp\www\QL\application\controllers\unit_test.php" cloc="55" eloc="48" lloc="39" loc="145" ncloc="90"/>
+    <file name="C:\wamp\www\QL\application\controllers\user.php" cloc="0" eloc="104" lloc="64" loc="183" ncloc="183"/>
+    <file name="C:\wamp\www\QL\application\controllers\welcome.php" cloc="17" eloc="19" lloc="10" loc="49" ncloc="32"/>
+    <file name="C:\wamp\www\QL\application\libraries\layout.php" cloc="41" eloc="69" lloc="39" loc="134" ncloc="93"/>
+    <file name="C:\wamp\www\QL\application\models\csv_model.php" cloc="0" eloc="4" lloc="0" loc="9" ncloc="9"/>
+    <file name="C:\wamp\www\QL\application\models\simulation_model.php" cloc="0" eloc="57" lloc="23" loc="85" ncloc="85"/>
+    <file name="C:\wamp\www\QL\application\models\txt_model.php" cloc="0" eloc="4" lloc="0" loc="9" ncloc="9"/>
+    <file name="C:\wamp\www\QL\application\models\user_model.php" cloc="0" eloc="60" lloc="29" loc="94" ncloc="94"/>
+    <file name="C:\wamp\www\QL\application\helpers\assets_helper.php" cloc="0" eloc="29" lloc="14" loc="30" ncloc="30"/>
+  </files>
+  <package name="+global" cr="0.15" noc="10" nof="4" noi="0" nom="31" rcr="0.15">
+    <class name="Simulation" ca="0" cbo="1" ce="1" cis="1" cloc="0" cr="0.15" csz="1" dit="2" eloc="19" impl="0" lloc="12" loc="45" ncloc="45" noam="1" nocc="0" nom="1" noom="0" npm="1" rcr="0.1755" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\wamp\www\QL\application\controllers\simulation.php"/>
+      <method name="index" ccn="2" ccn2="2" cloc="0" eloc="19" lloc="12" loc="35" ncloc="35" npath="2"/>
+    </class>
+    <class name="Telecharger" ca="0" cbo="1" ce="1" cis="3" cloc="17" cr="0.15" csz="3" dit="2" eloc="88" impl="0" lloc="57" loc="198" ncloc="181" noam="3" nocc="0" nom="3" noom="0" npm="3" rcr="0.1755" vars="0" varsi="0" varsnp="0" wmc="9" wmci="9" wmcnp="9">
+      <file name="C:\wamp\www\QL\application\controllers\telecharger.php"/>
+      <method name="index" ccn="2" ccn2="2" cloc="0" eloc="18" lloc="11" loc="39" ncloc="39" npath="2"/>
+      <method name="do_upload" ccn="5" ccn2="6" cloc="1" eloc="68" lloc="46" loc="131" ncloc="130" npath="6"/>
+      <method name="_utility" ccn="1" ccn2="1" cloc="1" eloc="2" lloc="0" loc="4" ncloc="3" npath="1"/>
+    </class>
+    <class name="unit_test" ca="0" cbo="1" ce="1" cis="4" cloc="55" cr="0.15" csz="4" dit="2" eloc="41" impl="0" lloc="33" loc="143" ncloc="88" noam="4" nocc="0" nom="4" noom="0" npm="4" rcr="0.1755" vars="0" varsi="0" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="C:\wamp\www\QL\application\controllers\unit_test.php"/>
+      <method name="ControleurTelechargementTest" ccn="1" ccn2="1" cloc="17" eloc="2" lloc="0" loc="20" ncloc="3" npath="1"/>
+      <method name="ControleurUserTest" ccn="1" ccn2="1" cloc="26" eloc="2" lloc="0" loc="29" ncloc="3" npath="1"/>
+      <method name="ModelUserTest" ccn="1" ccn2="1" cloc="0" eloc="20" lloc="18" loc="38" ncloc="38" npath="1"/>
+      <method name="ModelSimulationTest" ccn="1" ccn2="1" cloc="0" eloc="17" lloc="15" loc="36" ncloc="36" npath="1"/>
+    </class>
+    <class name="User" ca="0" cbo="1" ce="1" cis="8" cloc="0" cr="0.15" csz="8" dit="2" eloc="93" impl="0" lloc="54" loc="181" ncloc="181" noam="6" nocc="0" nom="6" noom="0" npm="6" rcr="0.1755" vars="2" varsi="2" varsnp="2" wmc="12" wmci="12" wmcnp="12">
+      <file name="C:\wamp\www\QL\application\controllers\user.php"/>
+      <method name="index" ccn="1" ccn2="1" cloc="0" eloc="8" lloc="6" loc="21" ncloc="21" npath="1"/>
+      <method name="delogin" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="9" ncloc="9" npath="1"/>
+      <method name="login" ccn="3" ccn2="3" cloc="0" eloc="27" lloc="15" loc="45" ncloc="45" npath="3"/>
+      <method name="deleteAccount" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="3" loc="12" ncloc="12" npath="2"/>
+      <method name="createAccount" ccn="3" ccn2="3" cloc="0" eloc="30" lloc="18" loc="46" ncloc="46" npath="3"/>
+      <method name="gestionUser" ccn="2" ccn2="2" cloc="0" eloc="17" lloc="10" loc="32" ncloc="32" npath="2"/>
+    </class>
+    <class name="Welcome" ca="0" cbo="0" ce="0" cis="1" cloc="15" cr="0.15" csz="1" dit="2" eloc="15" impl="0" lloc="7" loc="44" ncloc="29" noam="1" nocc="0" nom="1" noom="0" npm="1" rcr="0.1755" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\wamp\www\QL\application\controllers\welcome.php"/>
+      <method name="index" ccn="2" ccn2="2" cloc="0" eloc="15" lloc="7" loc="26" ncloc="26" npath="2"/>
+    </class>
+    <class name="Layout" ca="4" cbo="0" ce="0" cis="8" cloc="39" cr="0.15" csz="10" dit="0" eloc="55" impl="0" lloc="27" loc="129" ncloc="90" noam="0" nocc="0" nom="8" noom="0" npm="8" rcr="0.15" vars="2" varsi="2" varsnp="0" wmc="18" wmci="18" wmcnp="18">
+      <file name="C:\wamp\www\QL\application\libraries\layout.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="5" eloc="12" lloc="6" loc="25" ncloc="20" npath="1"/>
+      <method name="reloadView" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="view" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="6" ncloc="6" npath="1"/>
+      <method name="views" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="5" ncloc="5" npath="1"/>
+      <method name="set_titre" ccn="2" ccn2="3" cloc="0" eloc="8" lloc="4" loc="9" ncloc="9" npath="3"/>
+      <method name="set_charset" ccn="2" ccn2="3" cloc="0" eloc="8" lloc="4" loc="9" ncloc="9" npath="3"/>
+      <method name="ajouter_css" ccn="2" ccn2="4" cloc="1" eloc="8" lloc="4" loc="12" ncloc="11" npath="4"/>
+      <method name="ajouter_js" ccn="2" ccn2="4" cloc="0" eloc="8" lloc="4" loc="9" ncloc="9" npath="4"/>
+    </class>
+    <class name="Csv_model" ca="0" cbo="0" ce="0" cis="0" cloc="0" cr="0.15" csz="0" dit="2" eloc="0" impl="0" lloc="0" loc="7" ncloc="7" noam="0" nocc="0" nom="0" noom="0" npm="0" rcr="0.181875" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\wamp\www\QL\application\models\csv_model.php"/>
+    </class>
+    <class name="Simulation_model" ca="0" cbo="0" ce="0" cis="4" cloc="0" cr="0.15" csz="4" dit="2" eloc="49" impl="0" lloc="19" loc="80" ncloc="80" noam="4" nocc="0" nom="4" noom="0" npm="4" rcr="0.181875" vars="0" varsi="0" varsnp="0" wmc="9" wmci="9" wmcnp="9">
+      <file name="C:\wamp\www\QL\application\models\simulation_model.php"/>
+      <method name="addSimulation" ccn="2" ccn2="2" cloc="0" eloc="11" lloc="4" loc="17" ncloc="17" npath="2"/>
+      <method name="deleteSimulation" ccn="2" ccn2="2" cloc="0" eloc="11" lloc="4" loc="16" ncloc="16" npath="2"/>
+      <method name="findSimulation" ccn="3" ccn2="3" cloc="0" eloc="16" lloc="7" loc="21" ncloc="21" npath="3"/>
+      <method name="isInSimulation" ccn="2" ccn2="2" cloc="0" eloc="11" lloc="4" loc="17" ncloc="17" npath="2"/>
+    </class>
+    <class name="Txt_model" ca="0" cbo="0" ce="0" cis="0" cloc="0" cr="0.15" csz="0" dit="2" eloc="0" impl="0" lloc="0" loc="7" ncloc="7" noam="0" nocc="0" nom="0" noom="0" npm="0" rcr="0.181875" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\wamp\www\QL\application\models\txt_model.php"/>
+    </class>
+    <class name="User_model" ca="0" cbo="0" ce="0" cis="4" cloc="0" cr="0.15" csz="4" dit="2" eloc="52" impl="0" lloc="25" loc="92" ncloc="92" noam="4" nocc="0" nom="4" noom="0" npm="4" rcr="0.181875" vars="0" varsi="0" varsnp="0" wmc="8" wmci="8" wmcnp="8">
+      <file name="C:\wamp\www\QL\application\models\user_model.php"/>
+      <method name="isLoggedIn" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="9" ncloc="9" npath="2"/>
+      <method name="deleteAccount" ccn="2" ccn2="2" cloc="0" eloc="12" lloc="5" loc="21" ncloc="21" npath="2"/>
+      <method name="createAccount" ccn="2" ccn2="2" cloc="0" eloc="18" lloc="8" loc="32" ncloc="32" npath="2"/>
+      <method name="validCredentials" ccn="2" ccn2="2" cloc="0" eloc="16" lloc="9" loc="20" ncloc="20" npath="2"/>
+    </class>
+    <function name="css_url" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1">
+      <file name="C:\wamp\www\QL\application\helpers\assets_helper.php"/>
+    </function>
+    <function name="js_url" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1">
+      <file name="C:\wamp\www\QL\application\helpers\assets_helper.php"/>
+    </function>
+    <function name="img_url" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1">
+      <file name="C:\wamp\www\QL\application\helpers\assets_helper.php"/>
+    </function>
+    <function name="img" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="4" ncloc="4" npath="1">
+      <file name="C:\wamp\www\QL\application\helpers\assets_helper.php"/>
+    </function>
+  </package>
+</metrics>
