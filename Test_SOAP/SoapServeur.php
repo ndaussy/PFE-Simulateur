@@ -22,7 +22,7 @@ class DateServer{
     function nmea_rmc()
     {
 
-           return "$"."GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,003.1,W*6A";
+           return "<nmea_rmc>$"."GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,003.1,W*6A </nmea_rmc>";
 
     }
 }
@@ -33,7 +33,7 @@ ini_set('soap.wsdl_cache_enabled', 0);
 
 //L'instanciation du SoapServer se déroule de la même manière que pour le client : voir la doc pour plus d'informations sur les
 //Différentes options disponibles
-$serversoap=new SoapServer("http://127.0.0.1/PFE-Simulateur/Test_SOAP/exemple.wsdl");
+$serversoap=new SoapServer("http://127.0.0.1/PFE-Simulateur/Test_SOAP/GeolocalizationReferenceBasic.wsdl");
 
 //Ici nous déclarons la classe qui sera servie par le Serveur SOAP, c'est cette déclaration qui fera le coeur de notre Servie WEB.
 //Je déclare que je sers une classe contenant des méthodes accessibles, on peut aussi déclarer plus simplement des fonctions
