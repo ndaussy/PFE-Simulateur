@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="736f8e7d-9338-46b1-9285-0c4dbb994677" name="Default" comment="Ajout du service Test&#10;Ajout Modification">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test_SOAP/GeolocalizationReferenceBasic.wsdl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test_SOAP/SoapClientPort.php" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\Test_SOAP\exemple.wsdl" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    <list default="true" id="736f8e7d-9338-46b1-9285-0c4dbb994677" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test_SOAP/SoapClient.php" afterPath="$PROJECT_DIR$/Test_SOAP/SoapClient.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test_SOAP/SoapServeur.php" afterPath="$PROJECT_DIR$/Test_SOAP/SoapServeur.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -43,7 +39,7 @@
       <file leaf-file-name="send_data_dungle.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/send_data_dungle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="25" selection-start="230" selection-end="230" vertical-scroll-proportion="-3.2692308" vertical-offset="102" max-vertical-offset="952">
+            <state line="11" column="25" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="952">
               <folding />
             </state>
           </provider>
@@ -52,16 +48,16 @@
       <file leaf-file-name="soap_gps.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/soap_gps.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="5" selection-start="314" selection-end="314" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="510">
+            <state line="11" column="5" selection-start="314" selection-end="314" vertical-scroll-proportion="-2.0384614" vertical-offset="134" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SoapClient.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SoapClient.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapClient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="96" selection-start="465" selection-end="465" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="408">
+            <state line="6" column="64" selection-start="230" selection-end="230" vertical-scroll-proportion="0.2712766" vertical-offset="0" max-vertical-offset="425">
               <folding />
             </state>
           </provider>
@@ -70,7 +66,7 @@
       <file leaf-file-name="SoapServeur.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapServeur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="558" selection-end="558" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="833">
+            <state line="19" column="19" selection-start="340" selection-end="433" vertical-scroll-proportion="-9.230769" vertical-offset="15" max-vertical-offset="595">
               <folding />
             </state>
           </provider>
@@ -79,16 +75,7 @@
       <file leaf-file-name="GeolocalizationReferenceBasic.wsdl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test_SOAP/GeolocalizationReferenceBasic.wsdl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="8" selection-start="617" selection-end="617" vertical-scroll-proportion="-3.9230769" vertical-offset="51" max-vertical-offset="1666">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="6" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.6443149" vertical-offset="306" max-vertical-offset="731">
+            <state line="80" column="14" selection-start="3265" selection-end="3265" vertical-scroll-proportion="0.0" vertical-offset="1073" max-vertical-offset="1666">
               <folding />
             </state>
           </provider>
@@ -97,7 +84,7 @@
       <file leaf-file-name="SoapClientPort.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapClientPort.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="14" selection-start="314" selection-end="314" vertical-scroll-proportion="-2.6153846" vertical-offset="153" max-vertical-offset="833">
+            <state line="13" column="14" selection-start="314" selection-end="314" vertical-scroll-proportion="-0.0" vertical-offset="221" max-vertical-offset="833">
               <folding />
             </state>
           </provider>
@@ -131,10 +118,10 @@
         <option value="$PROJECT_DIR$/../exemple.wsdl" />
         <option value="$PROJECT_DIR$/Test_SOAP/SoapClientPort.php" />
         <option value="$PROJECT_DIR$/Test_SOAP/exemple.wsdl" />
-        <option value="$PROJECT_DIR$/Test_SOAP/SoapClient.php" />
-        <option value="$PROJECT_DIR$/Test_SOAP/SoapServeur.php" />
         <option value="$PROJECT_DIR$/Test_SOAP/GeolocalizationReferenceBasic.wsdl" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Test_SOAP/SoapServeur.php" />
+        <option value="$PROJECT_DIR$/Test_SOAP/SoapClient.php" />
       </list>
     </option>
   </component>
@@ -268,7 +255,11 @@
       <created>1389313109940</created>
       <updated>1389313109940</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Modification du service Test :&#10;">
+      <created>1389318815191</created>
+      <updated>1389318815191</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -277,24 +268,24 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1645768" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17941177" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17941177" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1645768" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -312,12 +303,69 @@
     <MESSAGE value="Depot&#10;" />
     <MESSAGE value="Initial version&#10;" />
     <MESSAGE value="Ajout du service Test&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout du service Test&#10;" />
+    <MESSAGE value="Modification du service Test :&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification du service Test :&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="34" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2244">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/send_data_dungle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="25" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/soap_gps.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="5" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="96" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapServeur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_SOAP/GeolocalizationReferenceBasic.wsdl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="8" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="6" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapClientPort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="14" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="34" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2244">
@@ -341,16 +389,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/executable_ql.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.716814" vertical-offset="1599" max-vertical-offset="1938">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/soap_gps.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="314" selection-end="314" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.716814" vertical-offset="1599" max-vertical-offset="1938" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
@@ -362,42 +401,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/send_data_dungle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="230" selection-end="230" vertical-scroll-proportion="-3.2692308" vertical-offset="102" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="96" selection-start="465" selection-end="465" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapClientPort.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="314" selection-end="314" vertical-scroll-proportion="-2.6153846" vertical-offset="153" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapServeur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="558" selection-end="558" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_SOAP/GeolocalizationReferenceBasic.wsdl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="617" selection-end="617" vertical-scroll-proportion="-3.9230769" vertical-offset="51" max-vertical-offset="1666">
+        <state line="11" column="25" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="952">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="6" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.6443149" vertical-offset="306" max-vertical-offset="731">
+        <state line="31" column="6" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.81632656" vertical-offset="247" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/soap_gps.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="5" selection-start="314" selection-end="314" vertical-scroll-proportion="-2.0384614" vertical-offset="134" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_SOAP/GeolocalizationReferenceBasic.wsdl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="14" selection-start="3265" selection-end="3265" vertical-scroll-proportion="0.0" vertical-offset="1073" max-vertical-offset="1666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapClientPort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="14" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapServeur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="19" selection-start="340" selection-end="433" vertical-scroll-proportion="-9.230769" vertical-offset="15" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="64" selection-start="230" selection-end="230" vertical-scroll-proportion="0.2712766" vertical-offset="0" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
