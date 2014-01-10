@@ -23,6 +23,10 @@ Configuration :
     --Compte existant :
       UserName : ndaussy@hotmail.com
       Password : 243289
+  
+  
+  --Configuration Wamp :
+    Activer dans les extensions php, php_SOAP, pour que le service & sont consommateur puisse fonctionné. Le consomateur est accessible via l'adresse "http://127.0.0.1/PFE-Simulateur/Test_SOAP/SoapClient.php".
       
       
 Information : 
