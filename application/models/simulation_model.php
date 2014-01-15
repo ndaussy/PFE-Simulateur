@@ -1,24 +1,40 @@
 <?php
 class Simulation_model extends CI_Model {
-     
-   
+
+    private $txt;
+
+    /*
+    * name_simulation
+    * username
+    * Path_csv
+    * Path_txt
+    */
     function addSimulation($ArraySimu)
-	   {
+   {
+    $txt = new txt_model();
 
-        if(!$this->isInSimulation($ArraySimu['name_simulation']))
-        {
-         
-         $this->db->insert('usersimulation',$ArraySimu);
+    if(!$this->isInSimulation($ArraySimu['name_simulation']))
+    {
+     $Userarray=array('name_simulation'=>$ArraySimu['name_simulation'],'username'=>$ArraySimu['username']);
 
-        return true;
+     //ajout à la table usersimulation
+     $this->db->insert('usersimulation',$Userarray);
 
-        }
-        else
-        {
-          return false; 
-        }
+     //Sauvegarde du txt
+     $this->txt->save_Txt($ArraySimu['Path_txt'],$ArraySimu['name_simulation']);
 
-	   }
+     //Sauvegarde du Csv
+     // $this->txt->save_Txt($ArraySimu['Path_txt'],$ArraySimu['name_simulation']);
+
+    return true;
+
+    }
+    else
+    {
+      return false;
+    }
+
+   }
     
     //
     function deleteSimulation($ArraySimu)

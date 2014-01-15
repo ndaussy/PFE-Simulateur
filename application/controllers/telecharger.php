@@ -79,7 +79,7 @@ class Telecharger extends CI_Controller {
 
 			$this->load->library('upload', $config);
 			
-			$this->load->library('./../models/simulation_model');
+			$this->load->model('simulation_model');
 
 			
 
@@ -115,17 +115,16 @@ class Telecharger extends CI_Controller {
 
 							$data['upload_data' ]['CSV'] =$this->upload->data();
 
-							$this->upload->do_upload('TXT');
+
 
 							$data['upload_data']['TXT']=$this->upload->data();
 							
 
-							$this->simulation_model->addSimulation(array('name_simulation'=>$this->input->post('name_simulation'),'username'=>$this->session->userdata('username')));
+							$this->simulation_model->addSimulation(array('name_simulation'=>$this->input->post('name_simulation'),
+                                                                        'username'=>$this->session->userdata('username'),
+                                                                        'Path_csv'=>$data['upload_data' ]['CSV']['full_path'],
+                                                                        'Path_txt'=>$data['upload_data' ]['TXT']['full_path']));
 
-							$this->load->models('csv_model');
-
-							
-							$this->csv_model->save_csv($data['upload_data' ]['CSV']['full_path']);
 
 							$layout->views('telecharger_do_upload', $data);
 							 
@@ -199,10 +198,9 @@ class Telecharger extends CI_Controller {
 		
 	}
 
-	function _utility()
-	{
-	  // some code
-	}
+
+
+
 }
 
 /* End of file welcome.php */
