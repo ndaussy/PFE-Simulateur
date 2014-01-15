@@ -7,7 +7,7 @@ class Send_data_dungle extends CI_Model {
    {
    	$returnVal=0;
 
-   	system($this->config->item('config_path_prog')."sendDataDungle.exe",$returnVal);
+   	system($this->config->item('config_path_prog')."sendDataDungle.exe FXE 01 04 03 ",$returnVal);
 
    	switch ($returnVal) {
    		case 0 :

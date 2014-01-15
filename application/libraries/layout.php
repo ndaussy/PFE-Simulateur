@@ -29,8 +29,13 @@ class Layout
 								base_url()."assets/css/bootstrap.min.css",
 								base_url()."assets/css/bootstrap-responsive.min.css");
     
-    $this->var['js'] = array(base_url()."assets/javascript/jquery-1.10.2.min.js",
+    $this->var['js'] = array(
+                         base_url()."assets/javascript/jquery-1.10.2.min.js",
     						base_url()."assets/javascript/bootstrap.min.js",
+                            base_url()."assets/javascript/highcharts.js",
+                            base_url()."assets/javascript/highcharts-more.js",
+                            base_url()."assets/javascript/exporting.js"
+
 					    	);
 
 
