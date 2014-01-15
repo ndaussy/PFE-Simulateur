@@ -2,6 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="736f8e7d-9338-46b1-9285-0c4dbb994677" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/prog_C/source_Java-Emulation_Service_GPS/bin/Register.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/prog_C/Register_IpOnBoard.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/prog_C/source_Java-Emulation_Service_GPS/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/prog_C/source_Java-Emulation_Service_GPS/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/prog_C/source_Java-Emulation_Service_GPS/src/Register.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/annotations.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/annotations.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/canvas-tools.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/canvas-tools.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/themes/dark-blue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/themes/dark-green.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/data.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/drilldown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/drilldown.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/exporting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/exporting.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/funnel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/funnel.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/themes/gray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/themes/grid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/heatmap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/heatmap.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/highcharts-all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/highcharts-more.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/highcharts-more.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/highcharts.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/map.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/adapters/mootools-adapter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/adapters/mootools-adapter.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/no-data-to-display.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/modules/no-data-to-display.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/adapters/prototype-adapter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/adapters/prototype-adapter.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/themes/skies.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/adapters/standalone-framework.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/javascript/adapters/standalone-framework.src.js" />
+      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\application\prog_C\source_c\SendDataDungle.c" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test_SOAP/SoapClient.php" afterPath="$PROJECT_DIR$/Test_SOAP/SoapClient.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/map.php" afterPath="$PROJECT_DIR$/application/views/map.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/send_data_dungle.php" afterPath="$PROJECT_DIR$/application/models/send_data_dungle.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PFE-Simulateur.iws" />
@@ -28,7 +70,7 @@
       <file leaf-file-name="simulation.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="34" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2244">
+            <state line="61" column="34" selection-start="1066" selection-end="1066" vertical-scroll-proportion="-24.192308" vertical-offset="408" max-vertical-offset="2244">
               <folding />
             </state>
           </provider>
@@ -37,9 +79,21 @@
       <file leaf-file-name="send_data_dungle.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/send_data_dungle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="35" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="952">
+            <state line="11" column="7" selection-start="228" selection-end="228" vertical-scroll-proportion="-3.9230769" vertical-offset="85" max-vertical-offset="1105">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Register.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/prog_C/source_Java-Emulation_Service_GPS/src/Register.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="1" selection-start="0" selection-end="1764" vertical-scroll-proportion="-8.8" vertical-offset="800" max-vertical-offset="1156">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
@@ -66,17 +120,19 @@
       <file leaf-file-name="map.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/map.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="62" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.30851063" vertical-offset="1108" max-vertical-offset="3264">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="0" selection-start="3027" selection-end="3027" vertical-scroll-proportion="0.0" vertical-offset="1598" max-vertical-offset="6273">
-              <folding />
+            <state line="26" column="38" selection-start="819" selection-end="819" vertical-scroll-proportion="0.45212767" vertical-offset="0" max-vertical-offset="376">
+              <folding>
+                <element signature="tag#script#0" expanded="false" />
+                <element signature="e#241#694#0" expanded="false" />
+                <element signature="tag#div#0" expanded="false" />
+                <element signature="tag#div#2;tag#div#0" expanded="false" />
+                <element signature="tag#div#3;tag#div#0" expanded="false" />
+                <element signature="tag#div#4;tag#div#0" expanded="false" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+                <element signature="tag#script#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#5;tag#div#0" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,10 +177,10 @@
         <option value="$PROJECT_DIR$/Test_SOAP/GeolocalizationReferenceBasic.wsdl" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Test_SOAP/SoapServeur.php" />
-        <option value="$PROJECT_DIR$/application/models/send_data_dungle.php" />
-        <option value="$PROJECT_DIR$/Test_SOAP/SoapClient.php" />
         <option value="$PROJECT_DIR$/application/libraries/layout.php" />
         <option value="$PROJECT_DIR$/application/themes/default.php" />
+        <option value="$PROJECT_DIR$/Test_SOAP/SoapClient.php" />
+        <option value="$PROJECT_DIR$/application/models/send_data_dungle.php" />
         <option value="$PROJECT_DIR$/application/views/map.php" />
       </list>
     </option>
@@ -204,20 +260,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PFE-Simulateur" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PFE-Simulateur" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -236,7 +278,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -254,7 +296,99 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="script_traitement_files" />
+              <option name="myItemId" value="prog_C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFE-Simulateur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFE-Simulateur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prog_C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source_Java-Emulation_Service_GPS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFE-Simulateur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFE-Simulateur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prog_C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source_Java-Emulation_Service_GPS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFE-Simulateur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFE-Simulateur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prog_C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source_Java-Emulation_Service_GPS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFE-Simulateur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFE-Simulateur" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,7 +470,11 @@
       <created>1389745895636</created>
       <updated>1389745895636</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add">
+      <created>1389746298926</created>
+      <updated>1389746298926</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -382,19 +520,13 @@
     <MESSAGE value="Ajout du service Test&#10;" />
     <MESSAGE value="Modification du service Test :&#10;" />
     <MESSAGE value="Ajout d'élémentes HighChart." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'élémentes HighChart." />
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/models/send_data_dungle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="35" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/soap_gps.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="5" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="510" />
@@ -412,7 +544,18 @@
     <entry file="file://$PROJECT_DIR$/application/views/map.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="116" selection-start="1718" selection-end="1718" vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="1207">
-          <folding />
+          <folding>
+            <element signature="tag#script#0" expanded="false" />
+            <element signature="e#241#694#0" expanded="false" />
+            <element signature="tag#div#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#0" expanded="false" />
+            <element signature="tag#div#3;tag#div#0" expanded="false" />
+            <element signature="tag#div#4;tag#div#0" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="tag#script#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#5;tag#div#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -624,11 +767,6 @@
         <state line="13" column="14" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="833" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="66" selection-start="202" selection-end="202" vertical-scroll-proportion="-2.6923077" vertical-offset="32" max-vertical-offset="493" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test_SOAP/GeolocalizationReferenceBasic.wsdl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="0" selection-start="3553" selection-end="3553" vertical-scroll-proportion="3.0788043" vertical-offset="431" max-vertical-offset="1666">
@@ -643,7 +781,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="34" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2244">
+        <state line="61" column="34" selection-start="1066" selection-end="1066" vertical-scroll-proportion="-24.192308" vertical-offset="408" max-vertical-offset="2244">
           <folding />
         </state>
       </provider>
@@ -669,20 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="3027" selection-end="3027" vertical-scroll-proportion="0.0" vertical-offset="1598" max-vertical-offset="6273">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/send_data_dungle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="35" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/themes/default.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="8" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="782">
@@ -690,10 +814,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/send_data_dungle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="7" selection-start="228" selection-end="228" vertical-scroll-proportion="-3.9230769" vertical-offset="85" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/prog_C/source_Java-Emulation_Service_GPS/src/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="1" selection-start="0" selection-end="1764" vertical-scroll-proportion="-8.8" vertical-offset="800" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="0" selection-start="3027" selection-end="3027" vertical-scroll-proportion="0.0" vertical-offset="1598" max-vertical-offset="6273">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="30" selection-start="383" selection-end="400" vertical-scroll-proportion="0.4069149" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/map.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="62" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.30851063" vertical-offset="1108" max-vertical-offset="3264">
-          <folding />
+        <state line="26" column="38" selection-start="819" selection-end="819" vertical-scroll-proportion="0.45212767" vertical-offset="0" max-vertical-offset="376">
+          <folding>
+            <element signature="tag#script#0" expanded="false" />
+            <element signature="e#241#694#0" expanded="false" />
+            <element signature="tag#div#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#0" expanded="false" />
+            <element signature="tag#div#3;tag#div#0" expanded="false" />
+            <element signature="tag#div#4;tag#div#0" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="tag#script#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#5;tag#div#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

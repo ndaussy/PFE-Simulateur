@@ -7,9 +7,18 @@ class Send_data_dungle extends CI_Model {
    {
    	$returnVal=0;
 
-   	system($this->config->item('config_path_prog')."sendDataDungle.exe FXE 01 04 03 ",$returnVal);
+   	//system($this->config->item('config_path_prog')."sendDataDungle.exe FXE 01 04 03 ",$returnVal);
 
-   	switch ($returnVal) {
+    try
+    {
+    system($this->config->item('config_path_prog')."java -jar Register_IpOnBoard.jar GeolocalizationReferenceBasicTest 5353 ",$returnVal);
+    }
+    catch(Exception $ex)
+       {
+
+           echo $ex->$returnVal;
+       }
+    switch ($returnVal) {
    		case 0 :
             echo 'Execution du programme ok';
             break;

@@ -53,6 +53,63 @@
 
             <div class="row-fluid">
 
+               <div class="span12">
+                <div id="container_2"  <div id="container" style="min-width: 200px; height: 200px; margin: 0 auto"></div>></div>
+               </div>
+
+
+
+                <script>
+                    $(function () {
+                    $('#container_2').highcharts({
+
+                        title: {
+                        text: 'Ligne Numeros 2'
+                        },
+
+                        subtitle: {
+                        text: ''
+                        },
+
+                        xAxis: {
+                        categories: ['A1', 'A1', 'A1', 'A1', 'A1', 'A1',
+                        'A1', 'A1', 'A1', 'A1', 'A1', 'A1']
+                        },
+
+                        yAxis: {
+                            title: {
+                            text: ''
+                            },
+
+                            plotLines: [{
+                            value: 2,
+                            width: 2,
+                            color: '#808080'
+                            }]
+                        },
+
+                        tooltip: {
+                        valueSuffix: '°C'
+                        },
+
+                        legend: {
+                        layout: 'vertical',
+                        align: 'right',
+                        verticalAlign: 'middle',
+                        borderWidth: 0
+                        },
+
+                        series: [{
+                        name: 'Ligne 1',
+                        data: [2,2,2,2,2,2,2,2,2,2,2,2]
+                        }
+                        ]
+                        });
+                    });
+                </script>
+
+            <div class="row-fluid">
+
                 <div class="span4">
                 <div id="container" style="min-width: 210px; max-width: 300px; height: 250px; margin: 0 auto"></div>
                 </div>
@@ -174,11 +231,8 @@
                     });
                 </script>
 
-
-
-
-
-            </div>
+                </div>
+           </div>
 	    </div>
 
 	 
