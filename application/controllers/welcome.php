@@ -48,7 +48,7 @@ public function index()
 
         $this->load->model('txt_model');
 
-        $this->txt_model->delete_data_txt("testdinsertion");
+
 
 		if($this->txt_model->save_Txt('C:\wamp\www\T2_tcar_6106_2009609_0443_0_141512_161546_0_0.txt',"testdinsertion"))
         {

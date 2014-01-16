@@ -8,11 +8,13 @@ class Txt_model extends CI_Model {
         //var_dump($arraysimu);
 
         $q=$this->db->query('SELECT * FROM txt WHERE
-                                     name_simulation= "'.$arraysimu['name_simulation'].'"
-                                     AND CAST(`time` AS DECIMAL) = '.$arraysimu['time'].'
+                                     name_simulation = "'.$arraysimu['name_simulation'].'"
+                                     AND time = '.$arraysimu['time'].'
                                      AND id = "'.$arraysimu['id'].'"
                                      AND frame = "'.$arraysimu['frame'].'";'
                             , FALSE);
+
+      
 
         //$q = $this->db->get_where('txt',$arraysimu, NULL, FALSE);
         var_dump($q);
