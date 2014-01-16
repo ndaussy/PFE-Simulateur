@@ -14,10 +14,10 @@ class Txt_model extends CI_Model {
                                      AND frame = "'.$arraysimu['frame'].'";'
                             , FALSE);
 
-      
+
 
         //$q = $this->db->get_where('txt',$arraysimu, NULL, FALSE);
-        var_dump($q);
+        //var_dump($q);
 
         if($q->num_rows()!=0)
         {
@@ -34,8 +34,7 @@ class Txt_model extends CI_Model {
    
 	public function save_Txt($filename,$name_simulation)
 	{
-		//$filename = 'C:\wamp\wwwT2_tcar_6106_2009609_0443_0_141512_161546_0_0csv';//Pour test
-		//$name_simulation = "test d'insertion";
+
         $etat_simu=true;
 
         $row = 0;
@@ -159,8 +158,12 @@ class Txt_model extends CI_Model {
 
 
 
-    public function select_data_txt()
-    {//fonction à définir pour la récupération
+    public function select_data_txt_by_time($arraysimu)
+    {
+
+        $q=$this->db->get_where('txt',$arraysimu);
+
+        return $q->result_array();
     }
 
 }

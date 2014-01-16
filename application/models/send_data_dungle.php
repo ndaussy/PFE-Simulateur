@@ -5,13 +5,33 @@ class Send_data_dungle extends CI_Model {
 
    public function SendDataDungle()
    {
-   	$returnVal=0;
+    $this->load->model('txt_model');
 
-   	//system($this->config->item('config_path_prog')."sendDataDungle.exe FXE 01 04 03 ",$returnVal);
+     $returnVal=0;
+
+
+
+    $arraysimu = array('name_simulation'=>'testdinsertion','time'=>"0.0200");
+
+    $array_sql=$this->txt_model->select_data_txt_by_time($arraysimu);
+
+    var_dump($array_sql);
+
+    for($nb_line=0;$nb_line<$array_sql;$nb_line++)
+    {
+    $frame = str_split ($array_sql[$nb_line]['frame'], 2);
+
+    $array_sql[$nb_line]['frame']=$frame[0]." ".$frame[1]." ".$frame[2]." ".$frame[3]." ".$frame[4]." ".$frame[5]." ".$frame[6]." ".$frame[7];
+
+
+
+   	system($this->config->item('config_path_prog')."sendDataDungle.exe ".$array_sql[$nb_line]['frame']."".$array_sql[$nb_line]['time']."".$array_sql[$nb_line]['id']." ",$returnVal);
+    }
 
     try
     {
-    system($this->config->item('config_path_prog')."java -jar Register_IpOnBoard.jar GeolocalizationReferenceBasicTest 5353 ",$returnVal);
+
+    //system($this->config->item('config_path_prog')."java -jar Register_IpOnBoard.jar GeolocalizationReferenceBasicTest 5353 ",$returnVal);
     }
     catch(Exception $ex)
        {
