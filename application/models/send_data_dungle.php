@@ -15,17 +15,20 @@ class Send_data_dungle extends CI_Model {
 
     $array_sql=$this->txt_model->select_data_txt_by_time($arraysimu);
 
-    var_dump($array_sql);
+    //var_dump($array_sql);
 
-    for($nb_line=0;$nb_line<$array_sql;$nb_line++)
+    for($nb_line=0;$nb_line<count($array_sql);$nb_line++)
     {
-    $frame = str_split ($array_sql[$nb_line]['frame'], 2);
-
-    $array_sql[$nb_line]['frame']=$frame[0]." ".$frame[1]." ".$frame[2]." ".$frame[3]." ".$frame[4]." ".$frame[5]." ".$frame[6]." ".$frame[7];
 
 
+    $frame = str_split ($array_sql[$nb_line]['frame'], 3);
 
-   	system($this->config->item('config_path_prog')."sendDataDungle.exe ".$array_sql[$nb_line]['frame']."".$array_sql[$nb_line]['time']."".$array_sql[$nb_line]['id']." ",$returnVal);
+        $array_sql[$nb_line]['frame']=$frame[0]." ".$frame[1]." ".$frame[2]." ".$frame[3]." ".$frame[4]." ".$frame[5]." ".$frame[6]." ".$frame[7];
+
+      // echo $this->config->item('config_path_prog')."sendDataDungle.exe ".$array_sql[$nb_line]['frame']." ".$array_sql[$nb_line]['time']." ".$array_sql[$nb_line]['id']."\n";
+        //var_dump($array_sql[$nb_line]);
+      system($this->config->item('config_path_prog')."sendDataDungle.exe ".$array_sql[$nb_line]['frame']." ".$array_sql[$nb_line]['time']." ".$array_sql[$nb_line]['id']." ",$returnVal);
+
     }
 
     try
