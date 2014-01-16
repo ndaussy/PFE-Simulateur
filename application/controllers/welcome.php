@@ -17,33 +17,36 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
-		
-		//$this->load->library('../models/Client_Socket_model.php');
-		
-		$this->layout->set_titre("Page d'acceuil");
+public function index()
+    {
 
-		$this->layout->views('../themes/menu');
+        //$this->load->library('../models/Client_Socket_model.php');
 
-		if($this->user_model->isLoggedIn())
-		{
-			$data=array('sucess'=>'Identification Reussite','username'=>$this->session->userdata('username'));
-			$this->layout->views('../themes/loginSucess',$data);
+        $this->layout->set_titre("Page d'acceuil");
 
-		}
-		else
-		{
-			$this->layout->views('../themes/connexion');
+        $this->layout->views('../themes/menu');
 
-		}
-					
-		
-		$this->layout->views('welcome_message')
-				     ->view('../themes/footer');
+        if($this->user_model->isLoggedIn())
+        {
+            $data=array('sucess'=>'Identification Reussite','username'=>$this->session->userdata('username'));
+            $this->layout->views('../themes/loginSucess',$data);
 
-		///test envoi machin
-		$this->load->model('txt_model');
+        }
+        else
+        {
+            $this->layout->views('../themes/connexion');
+
+        }
+
+
+        $this->layout->views('welcome_message')
+            ->view('../themes/footer');
+
+
+
+
+
+        $this->load->model('txt_model');
 
         $this->txt_model->delete_data_txt("testdinsertion");
 
@@ -55,7 +58,8 @@ class Welcome extends CI_Controller {
         {
            echo 'insertion erreur !';
         }
-		
+
+
 	}
 }
 

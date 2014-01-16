@@ -13,26 +13,26 @@ class Simulation_model extends CI_Model {
    {
     $txt = new txt_model();
 
-    if(!$this->isInSimulation($ArraySimu['name_simulation']))
-    {
-     $Userarray=array('name_simulation'=>$ArraySimu['name_simulation'],'username'=>$ArraySimu['username']);
+        if(!$this->isInSimulation($ArraySimu['name_simulation']))
+        {
+         $Userarray=array('name_simulation'=>$ArraySimu['name_simulation'],'username'=>$ArraySimu['username']);
 
-     //ajout à la table usersimulation
-     $this->db->insert('usersimulation',$Userarray);
+         //ajout à la table usersimulation
+         $this->db->insert('usersimulation',$Userarray);
 
-     //Sauvegarde du txt
-     $this->txt->save_Txt($ArraySimu['Path_txt'],$ArraySimu['name_simulation']);
+         //Sauvegarde du txt
+         $this->txt->save_Txt($ArraySimu['Path_txt'],$ArraySimu['name_simulation']);
 
-     //Sauvegarde du Csv
-     // $this->txt->save_Txt($ArraySimu['Path_txt'],$ArraySimu['name_simulation']);
+         //Sauvegarde du Csv
+         // $this->txt->save_Txt($ArraySimu['Path_txt'],$ArraySimu['name_simulation']);
 
-    return true;
+        return true;
 
-    }
-    else
-    {
-      return false;
-    }
+        }
+        else
+        {
+          return false;
+        }
 
    }
     

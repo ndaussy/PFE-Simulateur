@@ -2,7 +2,33 @@
 
 //Classe gérant
 class Txt_model extends CI_Model {
-     
+
+    public function is_in_txt_table($arraysimu)
+    {
+        //var_dump($arraysimu);
+
+        $q=$this->db->query('SELECT * FROM txt WHERE
+                                     name_simulation= "'.$arraysimu['name_simulation'].'"
+                                     AND CAST(`time` AS DECIMAL) = '.$arraysimu['time'].'
+                                     AND id = "'.$arraysimu['id'].'"
+                                     AND frame = "'.$arraysimu['frame'].'";'
+                            , FALSE);
+
+        //$q = $this->db->get_where('txt',$arraysimu, NULL, FALSE);
+        var_dump($q);
+
+        if($q->num_rows()!=0)
+        {
+            return true;
+
+        }
+        else
+        {
+
+            return false;
+        }
+
+    }
    
 	public function save_Txt($filename,$name_simulation)
 	{
@@ -22,34 +48,44 @@ class Txt_model extends CI_Model {
                     //$array[2]--id
                     //$array[0]--time
                     //$array[4]++ -- frame
-                    $array=explode(" ",$line);
+                    $array_from_explode=explode(" ",$line);
 
                     //array utilisé pour l'insertion
                     $array_sql = array('name_simulation'=>$name_simulation,'time'=>"",'id'=>"",'frame'=>"");
 
                     //split la chaine pour verifier que le premier éléments est différents d'un chiffre
-                    $chars = str_split($array[2]);
+                    $chars = str_split($array_from_explode[2]);
 
-                    if(!is_int($chars[0])&&!is_int($line))//test si le premier éléments est différents d'un chiffre.
+                    if($this->is_integer_char($chars[0])==false)//test si le premier éléments est différents d'un chiffre.
                     {
                         //Ajout du temps.
-                        $array_sql['time']=$array[0];//time
+                        $array_sql['time']=$array_from_explode[0];//time
 
                         //Ajout de l'id -- 4 Premier éléments
                         for($a=0 ; $a < 4 ; $a++)
                         {
-
                         $array_sql['id']=$array_sql['id'].$chars[$a];
                         }
 
                         ///ajout de l'éléments frame
-                        for($a = 4 ; $a < count($array) ; $a++ )
+                        for($a = 4 ; $a < (count($array_from_explode)) ; $a++ )//-2 pour supprimer les élements\n
                         {
-                        $array_sql['frame']=$array_sql['frame'].$array[$a];
+                        $array_sql['frame']=$array_sql['frame'].$array_from_explode[$a];
                         }
+                        $array_sql['frame']=trim($array_sql['frame']);
+                        var_dump($array_sql['frame']);
+
                         //echo "frame =".$array_sql['frame']."\n";
 
-                        $this->insert_data_txt($array_sql);
+                        if($this->is_in_txt_table($array_sql)==false)
+                        {
+                            echo "Tentative d'insertion";
+                            $this->insert_data_txt($array_sql);
+                        }
+                        else
+                        {
+                            echo "déjà présent en base";
+                        }
 
                     }
 
@@ -79,6 +115,16 @@ class Txt_model extends CI_Model {
 
 	}
 
+    private function is_integer_char($v)
+    {
+        $i = intval($v);
+        if ("$i" == "$v") {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+    }
+
     //Format du model : time => temps relatif
     //                    id  => id de la trame
     //                  frame => trame
@@ -107,6 +153,9 @@ class Txt_model extends CI_Model {
             echo $sql;
         }
     }
+
+
+
 
     public function select_data_txt()
     {//fonction à définir pour la récupération

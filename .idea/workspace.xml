@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="736f8e7d-9338-46b1-9285-0c4dbb994677" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/csv_model.php" afterPath="$PROJECT_DIR$/application/models/csv_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/bootstrap.css" afterPath="$PROJECT_DIR$/assets/css/bootstrap.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/simulation_model.php" afterPath="$PROJECT_DIR$/application/models/simulation_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/telecharger.php" afterPath="$PROJECT_DIR$/application/controllers/telecharger.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/script_traitement_files/txt.php" afterPath="$PROJECT_DIR$/application/script_traitement_files/txt.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/txt_model.php" afterPath="$PROJECT_DIR$/application/models/txt_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/welcome.php" afterPath="$PROJECT_DIR$/application/controllers/welcome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PFE-Simulateur.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,12 +31,21 @@
       <file leaf-file-name="Register.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/prog_C/source_Java-Emulation_Service_GPS/src/Register.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="1" selection-start="0" selection-end="1764" vertical-scroll-proportion="-9.64" vertical-offset="779" max-vertical-offset="1156">
+            <state line="60" column="1" selection-start="0" selection-end="1764" vertical-scroll-proportion="-34.12" vertical-offset="167" max-vertical-offset="1156">
               <folding />
             </state>
           </provider>
           <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="send_data_dungle.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/send_data_dungle.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="0" selection-start="414" selection-end="414" vertical-scroll-proportion="-9.807693" vertical-offset="34" max-vertical-offset="1105">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -55,7 +61,7 @@
       <file leaf-file-name="txt_model.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/txt_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="24" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.58776593" vertical-offset="1343" max-vertical-offset="2057">
+            <state line="13" column="74" selection-start="522" selection-end="522" vertical-scroll-proportion="0.58776593" vertical-offset="0" max-vertical-offset="2890">
               <folding />
             </state>
           </provider>
@@ -64,12 +70,10 @@
       <file leaf-file-name="simulation_model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="41" selection-start="833" selection-end="833" vertical-scroll-proportion="-5.1538463" vertical-offset="104" max-vertical-offset="527">
+            <state line="11" column="38" selection-start="187" selection-end="187" vertical-scroll-proportion="0.65384614" vertical-offset="204" max-vertical-offset="1292">
               <folding>
                 <element signature="n#addSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
-                <element signature="n#deleteSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
                 <element signature="n#findSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
-                <element signature="n#isInSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -78,7 +82,7 @@
       <file leaf-file-name="welcome.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="8" selection-start="1225" selection-end="1225" vertical-scroll-proportion="-5.9615383" vertical-offset="644" max-vertical-offset="1156">
+            <state line="60" column="0" selection-start="1592" selection-end="1592" vertical-scroll-proportion="-16.423077" vertical-offset="593" max-vertical-offset="1224">
               <folding />
             </state>
           </provider>
@@ -122,8 +126,8 @@
         <option value="$PROJECT_DIR$/application/views/map.php" />
         <option value="$PROJECT_DIR$/application/script_traitement_files/txt.php" />
         <option value="$PROJECT_DIR$/application/models/csv_model.php" />
-        <option value="$PROJECT_DIR$/application/models/simulation_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/telecharger.php" />
+        <option value="$PROJECT_DIR$/application/models/simulation_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/welcome.php" />
         <option value="$PROJECT_DIR$/application/models/txt_model.php" />
       </list>
@@ -131,8 +135,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHp" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="209" />
+    <option name="y" value="117" />
     <option name="width" value="1376" />
     <option name="height" value="744" />
   </component>
@@ -356,7 +360,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="209" y="117" width="1376" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -404,7 +408,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -627,13 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/send_data_dungle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7" selection-start="228" selection-end="228" vertical-scroll-proportion="-0.0" vertical-offset="187" max-vertical-offset="1105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/script_traitement_files/txt.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="2" selection-start="449" selection-end="449" vertical-scroll-proportion="1.3111702" vertical-offset="0" max-vertical-offset="595">
@@ -664,16 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/prog_C/source_Java-Emulation_Service_GPS/src/Register.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="1" selection-start="0" selection-end="1764" vertical-scroll-proportion="-9.64" vertical-offset="779" max-vertical-offset="1156">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/themes/default.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="8" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="782">
@@ -690,23 +677,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
+    <entry file="file://$PROJECT_DIR$/application/models/send_data_dungle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="41" selection-start="833" selection-end="833" vertical-scroll-proportion="-5.1538463" vertical-offset="104" max-vertical-offset="527">
-          <folding>
-            <element signature="n#addSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
-            <element signature="n#deleteSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
-            <element signature="n#findSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
-            <element signature="n#isInSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
-          </folding>
+        <state line="17" column="0" selection-start="414" selection-end="414" vertical-scroll-proportion="-9.807693" vertical-offset="34" max-vertical-offset="1105">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
+    <entry file="file://$PROJECT_DIR$/application/prog_C/source_Java-Emulation_Service_GPS/src/Register.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="8" selection-start="1225" selection-end="1225" vertical-scroll-proportion="-5.9615383" vertical-offset="644" max-vertical-offset="1156">
+        <state line="60" column="1" selection-start="0" selection-end="1764" vertical-scroll-proportion="-34.12" vertical-offset="167" max-vertical-offset="1156">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/map.php">
@@ -716,9 +701,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="38" selection-start="187" selection-end="187" vertical-scroll-proportion="0.65384614" vertical-offset="204" max-vertical-offset="1292">
+          <folding>
+            <element signature="n#addSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
+            <element signature="n#findSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="1592" selection-end="1592" vertical-scroll-proportion="-16.423077" vertical-offset="593" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/txt_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="24" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.58776593" vertical-offset="1343" max-vertical-offset="2057">
+        <state line="13" column="74" selection-start="522" selection-end="522" vertical-scroll-proportion="0.58776593" vertical-offset="0" max-vertical-offset="2890">
           <folding />
         </state>
       </provider>
