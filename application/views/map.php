@@ -5,22 +5,32 @@
 	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQs5tR44NEMgFLzDihOwTycxEn-uFBibY&sensor=false">
 	    </script>
 	    <script type="text/javascript">
-	      function initialisation(){
-				var centreCarte = new google.maps.LatLng(50.3724823, 3.0756093);
-				var optionsCarte = {
-					zoom: 18,
-					center: centreCarte,
-					mapTypeId: google.maps.MapTypeId.HYBRID
-				}
-				var maCarte = new google.maps.Map(document.getElementById("map-canvas"), optionsCarte);
-				var optionsMarqueur = {
-					position: centreCarte,
-					map: maCarte,
-					title: "Position Bus"
-				}
-				var marqueur = new google.maps.Marker(optionsMarqueur);
-			 }
-			 google.maps.event.addDomListener(window, 'load', initialisation);
+            function initialisation(){
+                var centreCarte = new google.maps.LatLng(41.875696,-87.624207);
+
+                var optionsCarte = {
+                    zoom: 18,
+                    center: centreCarte,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                }
+
+
+
+                var maCarte = new google.maps.Map(document.getElementById("map-canvas"), optionsCarte);
+
+                var optionsMarqueur = {
+                    position: centreCarte,
+                    map: maCarte,
+                    title: "Position Bus"
+                }
+                var marqueur = new google.maps.Marker(optionsMarqueur);
+
+                var ctaLayer = new google.maps.KmlLayer({
+                    url: 'http://gmaps-samples.googlecode.com/svn/trunk/ggeoxml/cta.kml'
+                });
+                ctaLayer.setMap(maCarte);
+            }
+            google.maps.event.addDomListener(window, 'load', initialisation);
 	    </script>
 
 		
