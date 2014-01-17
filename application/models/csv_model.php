@@ -2,40 +2,243 @@
 //Not Implemented
 class Csv_model extends CI_Model {
      
-   public function save_csv($filename)
+   public function save_csv($file_name,$name_simulation)
 	{
-		
-		system("/var/www/QL-PFE/application/script_traitement_files/php csv.php ".$filename,$returnVal);
 
-		echo $returnVal;
+        // for set memory limit & execution time
+       ini_set('memory_limit', '512M');
+       ini_set('max_execution_time', '180');
 
-		$row = 1; 
+        try
+        {
+            if (($handle = fopen($file_name, "r")) !== FALSE) {
+                # Set the parent multidimensional array key to 0.
 
-		// open the file with read permission 
-		if (($handle = fopen($filename, "r")) !== FALSE) 
-		{ 
-			while (($data = fgetcsv($handle, 0, ",")) !== FALSE) 
-			{
+                $line=0;
+                $arrayfinal=array();
+                $arraywithname=array();
 
-
-                echo "<p> $num fields in line $row: <br /></p>\n"; $row++;
-
-                for ($c=0; $c < $num; $c++)
+                while (($data = fgetcsv($handle, 0, ";")) !== FALSE)
                 {
-                    echo $data[$c] . "<br />\n";
+
+                    if($line==0)//creation de la premiere ligne & du tableau
+                    {
+                        foreach ($data as $key => $value)
+                        {
+
+                            $arraywithname[$value]=0;
+                            //echo "Clé : $key; Valeur : $value<br />\n";
+                        }
+
+                        $line++;
+                    }
+                    else
+                    {
+                        $cpt=0;
+                        foreach ($arraywithname as $key => $value)//cipue des donnée
+                        {
+                            $arraywithname[$key]=$data[$cpt];
+                            $cpt++;
+                        }
+
+                        $arrayforinsertion=$arraywithname;
+
+                        $date="";
+                        $cpt=0;
+                        //creation du format "Date"
+                        foreach($arraywithname as $key => $value)
+                        {
+                            if($cpt<6)
+                            {
+                                $date=$date.$arrayforinsertion[$key]." ";
+
+                                unset($arrayforinsertion[$key]);
+
+                                $cpt++;
+                            }
+                            else
+                            {
+                                break;
+                            }
+
+                        }
+                        $array_from_explode=explode(" ",$date);
+                        //echo date_format($date, 'Y-m-d H:i:s');
+
+                        $date = date_create($array_from_explode[0]."-".$array_from_explode[1]."-".$array_from_explode[2]." ".
+                            $array_from_explode[3].":".$array_from_explode[4].":".$array_from_explode[5]);//$date;
+                        $arrayforinsertion["Date"] = $date->format('Y-m-d H:i:s');
+
+                        $arrayforinsertion["name_simulation"]=$name_simulation;
+
+                        //on blinde pour voir si il existe déjà une insertion
+
+                        if($this->is_in_csv_table($arrayforinsertion)==false)
+                        {
+                            $this->insert_data_csv($arrayforinsertion);
+
+                        }
+
+                    }
+
+                    //on blinde pour voir si il existe déjà une insertion
+                   /* if($this->select_data_all($arrayforinsertion))
+                    {
+                        //derniere etapes insertion dans la bdd
+                        $this->insert_data_csv($arrayfinal);
+                    }
+                    */
+                }
+                # Close the File.
+                fclose($handle);
+
+            }
+            return true;
+        }
+        catch ( Exception $e )
+        {
+        echo 'Caught exception: ', $e->getMessage (), "\n";
+            return false;
+        }
+
+
+
+
+    }
+
+    public function is_in_csv_table($data)
+    {
+        try
+        {
+
+
+            $q=$this->db->query(" SELECT * FROM (`csv`) WHERE `Scumul` = ".$data['Scumul']."
+                                AND `name_simulation` = \"".$data['name_simulation']."\" ;");
+
+
+
+           if($q->num_rows()!=0)
+           {
+
+               return true;
+
+           }
+           else
+           {
+               return false;
+           }
+
+           /*AND`Actual Engine - Percent Torque` = ".$data['Actual Engine - Percent Torque']."
+        AND `Engine Speed` = ".$data['Engine Speed']."
+        AND `Parking Brake Switch` = ".$data['Parking Brake Switch']."
+        AND `Wheel-Based vehicule Speed` = ".$data['Wheel-Based vehicule Speed']."
+        AND `Brake Switch` = ".$data['Brake Switch']."
+        AND `Accelerator pedal position 1` = ".$data['Accelerator pedal position 1']."
+        AND `Transmission Selected gear` = ".$data['Transmission Selected gear']."
+        AND `Transmission Current Gear`= ".$data['Transmission Current Gear']."
+        AND `Engine Coolant Temperature` = ".$data['Engine Coolant Temperature']."
+        AND `Engine Fuel Temperature` = ".$data['Engine Fuel Temperature']."
+        AND `Seconds` = ".$data['Seconds']."
+        AND `Minutes` = ".$data['Minutes']."
+        AND `Hours` = ".$data['Hours']."
+        AND `Month` = ".$data['Month']."
+        AND `Day` = ".$data['Day']."
+        AND `Year` = ".$data['Year']."
+        AND `Local minute offset` = ".$data['Local minute offset']."
+        AND `Local hour offset` = ".$data['Local hour offset']."
+        AND `High Resolution Total Vehicle Distance` = ".$data['High Resolution Total Vehicle Distance']."
+        AND `Total Vehicle distance` = ".$data['Total Vehicle distance']."
+        AND `Position of doors` = ".$data['Position of doors']."
+        AND `Engine fuel rate` = ".$data['Engine fuel rate']."
+        AND `Engine Instantaneous fuel economy` = ".$data['Engine Instantaneous fuel economy']."
+        AND `Fuel Level` = ".$data['Fuel Level']."
+        AND `Engine Total Fuel Used` = ".$data['Engine Total Fuel Used']."
+        AND `Compass Bearing` = ".$data['Compass Bearing']."
+        AND `Navigation-Based Vehicule Speed` = ".$data['Navigation-Based Vehicule Speed']."
+        AND `Altitude` = ".$data['Altitude']."
+        AND `Latitude` = ".$data['Latitude']."
+        AND `Longitude` = ".$data['Longitude']."
+        AND `Date` = \"".$data['Date']."\"
+           */
+
+        }catch (Exception $ex)
+        {
+            echo $ex->getMessage();
+            return false;
+        }
+    }
+
+    public function insert_data_csv($data)
+    {
+        try
+        {
+
+            //return $this->db->insert('csv',$data);
+
+            $q="INSERT INTO csv (";
+
+            $cpt=count($data);
+            $cpt_2=0;
+
+            foreach($data as $key => $value)
+            {
+                $cpt_2++;
+                if($cpt_2!=$cpt)
+                {
+                    $q = $q."`".$key."`, ";
+                }
+                else
+                {
+                    $q = $q."`".$key."` ) Values (";
                 }
 
+            }
+            $cpt_2=0;
+            foreach($data as $key => $value)
+            {
+                $cpt_2++;
+                if($cpt_2!=$cpt)
+                {
+                    $q = $q."\"".$value."\", ";
+                }
+                else
+                {
+                    $q = $q."\"".$value."\" )";
+                }
 
-			}
-		
-		  fclose($handle);
-		}
+            }
 
-		
+            $q=$this->db->query($q);
 
-	}
-    
 
+        }Catch(Exception $sql)
+        {
+            echo $sql->getMessage();
+        }
+    }
+
+    public function delete_data_csv($name_simulation)
+    {
+        try
+        {
+            return $this->db->delete('csv', array('name_simulation' => $name_simulation));
+
+        }Catch(SQLiteException $sql)
+        {
+            echo $sql;
+        }
+    }
+
+
+
+
+    public function select_data_csv_by_time($arraysimu)
+    {
+
+        $q=$this->db->get_where('csv',$arraysimu);
+
+        return $q->result_array();
+    }
 	
 }
 ?>

@@ -46,11 +46,11 @@ public function index()
 
 
 
-      /*  $this->load->model('txt_model');
+        $this->load->model('csv_model');
 
-        $this->txt_model->delete_data_txt('testdinsertion');
+        //$this->csv_model->delete_data_csv('testdinsertion');
 
-		if($this->txt_model->save_Txt('C:\wamp\www\T2_tcar_6106_2009609_0443_0_141512_161546_0_0.txt',"testdinsertion"))
+		if($this->csv_model->save_csv('C:\wamp\www\testInsertion.csv',"testdinsertion"))
         {
             echo 'insertion reussite';
         }
@@ -59,19 +59,8 @@ public function index()
            echo 'insertion erreur !';
         }
 
-*/
-        $this->load->model('send_data_dungle');
 
 
-
-        if($this->send_data_dungle->SendDataDungle())
-        {
-            echo 'insertion reussite';
-        }
-        else
-        {
-            echo 'insertion erreur !';
-        }
 
 	}
 }

@@ -27,7 +27,7 @@ class Send_data_dungle extends CI_Model {
 
       // echo $this->config->item('config_path_prog')."sendDataDungle.exe ".$array_sql[$nb_line]['frame']." ".$array_sql[$nb_line]['time']." ".$array_sql[$nb_line]['id']."\n";
         //var_dump($array_sql[$nb_line]);
-      system($this->config->item('config_path_prog')."sendDataDungle.exe ".$array_sql[$nb_line]['frame']." ".$array_sql[$nb_line]['time']." ".$array_sql[$nb_line]['id']." ",$returnVal);
+      //system($this->config->item('config_path_prog')."sendDataDungle.exe ".$array_sql[$nb_line]['frame']." ".$array_sql[$nb_line]['time']." ".$array_sql[$nb_line]['id']." ",$returnVal);
 
     }
 

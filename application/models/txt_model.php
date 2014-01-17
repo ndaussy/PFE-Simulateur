@@ -5,7 +5,9 @@ class Txt_model extends CI_Model {
 
     public function is_in_txt_table($arraysimu)
     {
-        //var_dump($arraysimu);
+        // for set memory limit & execution time
+        ini_set('memory_limit', '512M');
+        ini_set('max_execution_time', '780');
 
         $q=$this->db->query('SELECT * FROM txt WHERE
                                      name_simulation = "'.$arraysimu['name_simulation'].'"
@@ -32,7 +34,7 @@ class Txt_model extends CI_Model {
 
     }
    
-	public function save_Txt($filename,$name_simulation)
+	public function save_csv($filename,$name_simulation)
 	{
 
         $etat_simu=true;
@@ -139,7 +141,7 @@ class Txt_model extends CI_Model {
 
         }Catch(Exception $sql)
         {
-            echo $sql;
+            echo $sql->getMessage();
         }
     }
 
