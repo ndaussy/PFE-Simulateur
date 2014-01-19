@@ -46,11 +46,11 @@ public function index()
 
 
 
-        $this->load->model('csv_model');
+        $this->load->model('kml_model');
 
         //$this->csv_model->delete_data_csv('testdinsertion');
 
-		if($this->csv_model->save_csv('C:\wamp\www\testInsertion.csv',"testdinsertion"))
+		if($this->kml_model->save_kml('C:\wamp\www\TCAR.kml',"testdinsertion"))
         {
             echo 'insertion reussite';
         }

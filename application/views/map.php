@@ -37,20 +37,26 @@
 	    <div class="span10" id="style">
 	    	 <legend>Map</legend>
 
-	    	 <div class="span2">
+             <div class="row-fluid">
+                 Choix de la simulation :
+             </div>
 
-					    	<input  type="image" src=<?php echo  base_url()."/assets/img/flecheG.jpg";?>   name="previous">
-					</div>
+             <div class="row-fluid">
+                 <div class="span2">
 
-			<div class="span6">
-			</div>
+                                <input  type="image" src=<?php echo  base_url()."/assets/img/flecheG.jpg";?>   name="previous">
+                        </div>
+
+                <div class="span6">
+                </div>
 
 
-	    	<div class="span2">
+                <div class="span2">
 
-			    	<input  type="image" src=<?php echo  base_url()."/assets/img/flecheD.jpg";?>   name="previous">
+                        <input  type="image" src=<?php echo  base_url()."/assets/img/flecheD.jpg";?>   name="previous">
 
-			</div>
+                </div>
+            </div>
 
 	    	 <div class="row-fluid">
 
