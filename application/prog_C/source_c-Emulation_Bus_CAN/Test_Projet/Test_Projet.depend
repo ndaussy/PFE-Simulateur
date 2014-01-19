@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1389879726 source:c:\users\thomas\desktop\codeblocks\test_projet\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"vs_can_api.h"
+
+1389186793 c:\users\thomas\desktop\codeblocks\test_projet\vs_can_api.h
+	<windows.h>
+	<semaphore.h>
+
