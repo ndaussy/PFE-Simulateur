@@ -46,7 +46,7 @@ class Csv_model extends CI_Model {
                         $date="";
                         $cpt=0;
                         //creation du format "Date"
-                        foreach($arraywithname as $key => $value)
+                        /*foreach($arraywithname as $key => $value)
                         {
                             if($cpt<6)
                             {
@@ -62,11 +62,17 @@ class Csv_model extends CI_Model {
                             }
 
                         }
-                        $array_from_explode=explode(" ",$date);
-                        //echo date_format($date, 'Y-m-d H:i:s');
+                        */
+                        //Annee	Mois	Jour	Heure	Minute	Seconde
+                        $date=date_create($arrayforinsertion['Annee']."-".$arrayforinsertion['Mois']."-".$arrayforinsertion['Jour']." ".$arrayforinsertion['Heure'].":".$arrayforinsertion['Minute'].":".$arrayforinsertion['Seconde']);
 
-                        $date = date_create($array_from_explode[0]."-".$array_from_explode[1]."-".$array_from_explode[2]." ".
-                            $array_from_explode[3].":".$array_from_explode[4].":".$array_from_explode[5]);//$date;
+                        unset($arrayforinsertion['Annee']);
+                        unset($arrayforinsertion['Mois']);
+                        unset($arrayforinsertion['Jour']);
+                        unset($arrayforinsertion['Heure']);
+                        unset($arrayforinsertion['Minute']);
+                        unset($arrayforinsertion['Seconde']);
+
                         $arrayforinsertion["Date"] = $date->format('Y-m-d H:i:s');
 
                         $arrayforinsertion["name_simulation"]=$name_simulation;
@@ -238,7 +244,7 @@ class Csv_model extends CI_Model {
 
     public function is_in_csv($arraySimulationName)
     {
-        $q=$this->db->get_where('txt',$arraySimulationName);
+        $q=$this->db->get_where('csv',$arraySimulationName);
 
         if($q->num_rows()!=0)
         {

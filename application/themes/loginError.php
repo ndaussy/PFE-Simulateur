@@ -17,7 +17,7 @@
 			<label>email</label>
 			<input type="text" name="username" value="" size="50" required/>
 
-			<hlabel>Password</label>
+			<label>Password</label>
 			<input type="text" name="password" value="" size="50" required/>
 
 			<input type="submit" value="S'identifier" class="btn-success"/>

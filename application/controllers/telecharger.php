@@ -90,6 +90,7 @@ class Telecharger extends CI_Controller {
 					
 					
 					$this->load->library('form_validation');
+
 					$this->form_validation->set_rules('name_simulation','Name','required');
 					
 					if(!$this->simulation_model->isInSimulation($this->input->post('name_simulation')))

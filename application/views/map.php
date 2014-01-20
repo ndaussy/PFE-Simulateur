@@ -6,7 +6,7 @@
 	    </script>
 	    <script type="text/javascript">
             function initialisation(){
-                var centreCarte = new google.maps.LatLng(41.875696,-87.624207);
+                var centreCarte = new google.maps.LatLng(49.4388469985253,1.12366212825436);
 
                 var optionsCarte = {
                     zoom: 18,
@@ -18,16 +18,17 @@
 
                 var maCarte = new google.maps.Map(document.getElementById("map-canvas"), optionsCarte);
 
-                var optionsMarqueur = {
+                /*var optionsMarqueur = {
                     position: centreCarte,
                     map: maCarte,
                     title: "Position Bus"
                 }
                 var marqueur = new google.maps.Marker(optionsMarqueur);
+                 */
 
                 var ctaLayer = new google.maps.KmlLayer({
                     //url: 'http:://127.0.0.1/PFE-Simulateur/google_exemple_chicago.kml'
-                    url: 'http://gmaps-samples.googlecode.com/svn/trunk/ggeoxml/cta.kml'
+                    url: 'https://kml-pfe-hebergement.googlecode.com/svn/trunk/TCAR.kml'
                     //url: 'git://github.com/ndaussy/PFE-Simulateur/blob/master/kml/google_exemple_chicago.kml'
                 });
                 ctaLayer.setMap(maCarte);

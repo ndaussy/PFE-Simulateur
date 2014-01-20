@@ -46,21 +46,36 @@ public function index()
 
 
 
-        $this->load->model('kml_model');
+        /*   $this->load->model('kml_model');
 
-        //$this->csv_model->delete_data_csv('testdinsertion');
+         $this->kml_model->delete_data_kml(array('name_simulation'=>'testdinsertion'));
 
-		if($this->kml_model->save_kml('C:\wamp\www\PFE-Simulateur\kml\TCAR.kml',"testdinsertion"))
-        {
-            echo 'insertion reussite';
-        }
-        else
-        {
-           echo 'insertion erreur !';
-        }
+          if($this->kml_model->save_kml('C:\wamp\www\PFE-Simulateur\kml\TCAR.kml',"testdinsertion"))
+          {
+              echo 'insertion reussite';
+          }
+          else
+          {
+             echo 'insertion erreur !';
+          }
 
 
+         $this->load->model('csv_model');
 
+          if($this->csv_model->delete_data_csv(array('name_simulation'=>'testdinsertion')))
+          {
+              echo 'suppression effectué';
+          }
+
+          if($this->csv_model->save_csv('C:\wamp\www\T2_tcar_6106_2009609_0443_0_141512_161546_0.0_.csv',"testdinsertion"))
+          {
+              echo 'insertion reussite';
+          }
+          else
+          {
+              echo 'insertion erreur !';
+          }
+          */
 
 	}
 }
