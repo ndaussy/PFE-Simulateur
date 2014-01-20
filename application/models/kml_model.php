@@ -16,8 +16,15 @@ class Kml_model extends CI_Model {
 
     public function save_kml($filename,$simulation)
     {
-        $kml = new SimpleXMLElement($filename);
-
+        //$filename='https://github.com/ndaussy/PFE-Simulateur/blob/master/kml/TCAR.kml';
+        $content = utf8_encode(file_get_contents($filename));
+        $kml = simplexml_load_string($content);
+        var_dump($kml->StyleMap);
+        var_dump($kml->Folder[0]);
+        echo "Value ".(string)$kml->Folder[0];
+        //var_dump($kml->Folder->Placemark->name);
+       // var_dump($kml->Folder->Placemark->Point->coordinate);
+        //var_dump($kml->folder->Placemark);
         /*
          * Placemark>
    <name>Boulingrin</name>
@@ -25,11 +32,12 @@ class Kml_model extends CI_Model {
          *
          */
 
-        for($a=0;$a<count($kml->Placemark);$a++)
+      /*  for($a=0;$a<count($kml->Placemark);$a++)
         {
             var_dump($kml->Placemark[$a]->name);
 
         }
+        */
 
         return true;
 

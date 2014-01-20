@@ -50,7 +50,7 @@ public function index()
 
         //$this->csv_model->delete_data_csv('testdinsertion');
 
-		if($this->kml_model->save_kml('C:\wamp\www\TCAR.kml',"testdinsertion"))
+		if($this->kml_model->save_kml('C:\wamp\www\PFE-Simulateur\kml\TCAR.kml',"testdinsertion"))
         {
             echo 'insertion reussite';
         }

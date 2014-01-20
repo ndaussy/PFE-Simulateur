@@ -26,7 +26,9 @@
                 var marqueur = new google.maps.Marker(optionsMarqueur);
 
                 var ctaLayer = new google.maps.KmlLayer({
+                    //url: 'http:://127.0.0.1/PFE-Simulateur/google_exemple_chicago.kml'
                     url: 'http://gmaps-samples.googlecode.com/svn/trunk/ggeoxml/cta.kml'
+                    //url: 'git://github.com/ndaussy/PFE-Simulateur/blob/master/kml/google_exemple_chicago.kml'
                 });
                 ctaLayer.setMap(maCarte);
             }
