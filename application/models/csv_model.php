@@ -217,15 +217,36 @@ class Csv_model extends CI_Model {
         }
     }
 
-    public function delete_data_csv($name_simulation)
+    public function delete_data_csv($Array_name_simulation)
     {
         try
         {
-            return $this->db->delete('csv', array('name_simulation' => $name_simulation));
-
+            if($this->is_in_csv($Array_name_simulation))
+            {
+            $this->db->delete('csv', $Array_name_simulation);
+            return true;
+            }
+            else
+            {
+            return false;
+            }
         }Catch(SQLiteException $sql)
         {
             echo $sql;
+        }
+    }
+
+    public function is_in_csv($arraySimulationName)
+    {
+        $q=$this->db->get_where('txt',$arraySimulationName);
+
+        if($q->num_rows()!=0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 

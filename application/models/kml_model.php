@@ -27,7 +27,7 @@ class Kml_model extends CI_Model {
             echo "Value ".(string)$kml->Document->Folder->Placemark[$a]->Point->coordinates;
         }
 
-       
+
 
 
 

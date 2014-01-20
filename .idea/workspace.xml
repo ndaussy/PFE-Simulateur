@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="736f8e7d-9338-46b1-9285-0c4dbb994677" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/csv_model.php" afterPath="$PROJECT_DIR$/application/models/csv_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/kml_model.php" afterPath="$PROJECT_DIR$/application/models/kml_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/simulation.php" afterPath="$PROJECT_DIR$/application/controllers/simulation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/simulation.php" afterPath="$PROJECT_DIR$/application/views/simulation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/simulation_model.php" afterPath="$PROJECT_DIR$/application/models/simulation_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/txt_model.php" afterPath="$PROJECT_DIR$/application/models/txt_model.php" />
     </list>
     <ignored path="PFE-Simulateur.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,40 +30,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Register.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/prog_C/source_Java-Emulation_Service_GPS/src/Register.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1156">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="send_data_dungle.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/send_data_dungle.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="41" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1496">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="csv_model.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="csv_model.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/csv_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="24" selection-start="3461" selection-end="3461" vertical-scroll-proportion="-0.0" vertical-offset="1700" max-vertical-offset="4233">
+            <state line="225" column="59" selection-start="7304" selection-end="7304" vertical-scroll-proportion="0.26595744" vertical-offset="172" max-vertical-offset="1037">
               <folding>
-                <marker date="1389984943992" expanded="true" signature="3591:3741" placeholder="SELECT * FRO..." />
-                <marker date="1389984943992" expanded="true" signature="3591:3736" placeholder="SELECT * FRO..." />
-                <marker date="1389984943992" expanded="true" signature="3591:3629" placeholder="SELECT * FRO..." />
-                <marker date="1389984943992" expanded="true" signature="6209:6592" placeholder="INSERT INTO ..." />
-                <marker date="1389984943992" expanded="true" signature="6209:6952" placeholder="INSERT INTO ..." />
-                <marker date="1389984943992" expanded="true" signature="6209:6226" placeholder="INSERT INTO ..." />
-                <marker date="1389984943992" expanded="true" signature="6209:6226" placeholder="INSERT INTO ..." />
-                <marker date="1389984943992" expanded="true" signature="6988:7067" placeholder="INSERT INTO ..." />
+                <element signature="n#save_csv#0;n#Csv_model#0;n#!!top" expanded="false" />
+                <element signature="n#is_in_csv_table#0;n#Csv_model#0;n#!!top" expanded="false" />
+                <element signature="n#insert_data_csv#0;n#Csv_model#0;n#!!top" expanded="false" />
+                <marker date="1390187536838" expanded="true" signature="3591:3741" placeholder="SELECT * FRO..." />
+                <marker date="1390187536838" expanded="true" signature="3591:3736" placeholder="SELECT * FRO..." />
+                <marker date="1390187536838" expanded="true" signature="3591:3629" placeholder="SELECT * FRO..." />
+                <marker date="1390187536838" expanded="true" signature="6209:6592" placeholder="INSERT INTO ..." />
+                <marker date="1390187536838" expanded="true" signature="6209:6952" placeholder="INSERT INTO ..." />
+                <marker date="1390187536838" expanded="true" signature="6209:6226" placeholder="INSERT INTO ..." />
+                <marker date="1390187536838" expanded="true" signature="6209:6226" placeholder="INSERT INTO ..." />
+                <marker date="1390187536838" expanded="true" signature="6988:7067" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -68,27 +54,27 @@
       <file leaf-file-name="map.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/map.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="25" selection-start="1045" selection-end="1108" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="4488">
+            <state line="29" column="25" selection-start="1045" selection-end="1108" vertical-scroll-proportion="-15.115385" vertical-offset="100" max-vertical-offset="4488">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kml_model.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/models/kml_model.php">
+      <file leaf-file-name="simulation.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/simulation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="7" selection-start="642" selection-end="642" vertical-scroll-proportion="0.63829786" vertical-offset="253" max-vertical-offset="731">
+            <state line="57" column="83" selection-start="1283" selection-end="1287" vertical-scroll-proportion="-3.9230769" vertical-offset="867" max-vertical-offset="1462">
               <folding>
-                <element signature="e#6#86#0" expanded="true" />
+                <marker date="1390186663669" expanded="true" signature="756:770" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/user.php">
+      <file leaf-file-name="simulation.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3264">
+            <state line="76" column="74" selection-start="1445" selection-end="1445" vertical-scroll-proportion="-10.461538" vertical-offset="1020" max-vertical-offset="2431">
               <folding />
             </state>
           </provider>
@@ -97,8 +83,24 @@
       <file leaf-file-name="txt_model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/txt_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="0" selection-start="3589" selection-end="3589" vertical-scroll-proportion="0.0" vertical-offset="2023" max-vertical-offset="3009">
-              <folding />
+            <state line="133" column="24" selection-start="3932" selection-end="3932" vertical-scroll-proportion="-1.5769231" vertical-offset="826" max-vertical-offset="1751">
+              <folding>
+                <element signature="n#save_csv#0;n#Txt_model#0;n#!!top" expanded="false" />
+                <element signature="n#insert_data_txt#0;n#Txt_model#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simulation_model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="29" selection-start="1489" selection-end="1489" vertical-scroll-proportion="-9.230769" vertical-offset="355" max-vertical-offset="1088">
+              <folding>
+                <element signature="n#addSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
+                <element signature="n#findSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
+                <element signature="n#isInSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,16 +159,18 @@
         <option value="$PROJECT_DIR$/Test_SOAP/SoapClient.php" />
         <option value="$PROJECT_DIR$/application/script_traitement_files/txt.php" />
         <option value="$PROJECT_DIR$/application/controllers/telecharger.php" />
-        <option value="$PROJECT_DIR$/application/models/simulation_model.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
         <option value="$PROJECT_DIR$/application/config/config_path.php" />
         <option value="$PROJECT_DIR$/application/models/send_data_dungle.php" />
         <option value="$PROJECT_DIR$/application/libraries/Csvimporter.php" />
-        <option value="$PROJECT_DIR$/application/models/txt_model.php" />
-        <option value="$PROJECT_DIR$/application/models/csv_model.php" />
         <option value="$PROJECT_DIR$/application/views/map.php" />
         <option value="$PROJECT_DIR$/application/controllers/welcome.php" />
         <option value="$PROJECT_DIR$/application/models/kml_model.php" />
+        <option value="$PROJECT_DIR$/application/views/simulation.php" />
+        <option value="$PROJECT_DIR$/application/controllers/simulation.php" />
+        <option value="$PROJECT_DIR$/application/models/csv_model.php" />
+        <option value="$PROJECT_DIR$/application/models/simulation_model.php" />
+        <option value="$PROJECT_DIR$/application/models/txt_model.php" />
       </list>
     </option>
   </component>
@@ -463,22 +467,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/application/models/txt_model.php</url>
-          <line>133</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapClientPort.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="833" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="34" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2244" />
@@ -605,19 +597,9 @@
         <state line="19" column="19" selection-start="340" selection-end="433" vertical-scroll-proportion="0.095744684" vertical-offset="219" max-vertical-offset="595" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="34" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2244" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/themes/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="402" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/simulation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="38" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1462" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/config.php">
@@ -665,11 +647,6 @@
         <state line="84" column="39" selection-start="3930" selection-end="3930" vertical-scroll-proportion="3.1595745" vertical-offset="240" max-vertical-offset="1632" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="9" selection-start="833" selection-end="833" vertical-scroll-proportion="1.1652893" vertical-offset="155" max-vertical-offset="1241" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="377" column="9" selection-start="10880" selection-end="10919" vertical-scroll-proportion="-5.1538463" vertical-offset="6275" max-vertical-offset="19142">
@@ -694,23 +671,6 @@
         <state line="66" column="18" selection-start="1758" selection-end="1758" vertical-scroll-proportion="2.537234" vertical-offset="168" max-vertical-offset="1411" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/txt_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="0" selection-start="3589" selection-end="3589" vertical-scroll-proportion="0.0" vertical-offset="2023" max-vertical-offset="3009">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/prog_C/source_Java-Emulation_Service_GPS/src/Register.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1156">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2057">
@@ -722,29 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="41" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1496">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/map.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="25" selection-start="1045" selection-end="1108" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="4488">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/csv_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="24" selection-start="3461" selection-end="3461" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="4233">
-          <folding>
-            <marker date="1389984943992" expanded="true" signature="3591:3741" placeholder="SELECT * FRO..." />
-            <marker date="1389984943992" expanded="true" signature="3591:3736" placeholder="SELECT * FRO..." />
-            <marker date="1389984943992" expanded="true" signature="3591:3629" placeholder="SELECT * FRO..." />
-            <marker date="1389984943992" expanded="true" signature="6209:6592" placeholder="INSERT INTO ..." />
-            <marker date="1389984943992" expanded="true" signature="6209:6952" placeholder="INSERT INTO ..." />
-            <marker date="1389984943992" expanded="true" signature="6209:6226" placeholder="INSERT INTO ..." />
-            <marker date="1389984943992" expanded="true" signature="6209:6226" placeholder="INSERT INTO ..." />
-            <marker date="1389984943992" expanded="true" signature="6988:7067" placeholder="INSERT INTO ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,9 +701,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/kml_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="7" selection-start="642" selection-end="642" vertical-scroll-proportion="0.63829786" vertical-offset="253" max-vertical-offset="731">
+        <state line="29" column="0" selection-start="635" selection-end="635" vertical-scroll-proportion="0.6760563" vertical-offset="253" max-vertical-offset="731">
           <folding>
             <element signature="e#6#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/gestionUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="381">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/prog_C/source_Java-Emulation_Service_GPS/src/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/map.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="25" selection-start="1045" selection-end="1108" vertical-scroll-proportion="-15.115385" vertical-offset="100" max-vertical-offset="4488">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="74" selection-start="1445" selection-end="1445" vertical-scroll-proportion="-10.461538" vertical-offset="1020" max-vertical-offset="2431">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/txt_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="24" selection-start="3932" selection-end="3932" vertical-scroll-proportion="-1.5769231" vertical-offset="826" max-vertical-offset="1751">
+          <folding>
+            <element signature="n#save_csv#0;n#Txt_model#0;n#!!top" expanded="false" />
+            <element signature="n#insert_data_txt#0;n#Txt_model#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="29" selection-start="1489" selection-end="1489" vertical-scroll-proportion="-9.230769" vertical-offset="355" max-vertical-offset="1088">
+          <folding>
+            <element signature="n#addSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
+            <element signature="n#findSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
+            <element signature="n#isInSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/simulation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="83" selection-start="1283" selection-end="1287" vertical-scroll-proportion="-3.9230769" vertical-offset="867" max-vertical-offset="1462">
+          <folding>
+            <marker date="1390186663669" expanded="true" signature="756:770" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/csv_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="225" column="59" selection-start="7304" selection-end="7304" vertical-scroll-proportion="0.26595744" vertical-offset="172" max-vertical-offset="1037">
+          <folding>
+            <element signature="n#save_csv#0;n#Csv_model#0;n#!!top" expanded="false" />
+            <element signature="n#is_in_csv_table#0;n#Csv_model#0;n#!!top" expanded="false" />
+            <element signature="n#insert_data_csv#0;n#Csv_model#0;n#!!top" expanded="false" />
+            <marker date="1390187536838" expanded="true" signature="3591:3741" placeholder="SELECT * FRO..." />
+            <marker date="1390187536838" expanded="true" signature="3591:3736" placeholder="SELECT * FRO..." />
+            <marker date="1390187536838" expanded="true" signature="3591:3629" placeholder="SELECT * FRO..." />
+            <marker date="1390187536838" expanded="true" signature="6209:6592" placeholder="INSERT INTO ..." />
+            <marker date="1390187536838" expanded="true" signature="6209:6952" placeholder="INSERT INTO ..." />
+            <marker date="1390187536838" expanded="true" signature="6209:6226" placeholder="INSERT INTO ..." />
+            <marker date="1390187536838" expanded="true" signature="6209:6226" placeholder="INSERT INTO ..." />
+            <marker date="1390187536838" expanded="true" signature="6988:7067" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

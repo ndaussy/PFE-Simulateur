@@ -61,17 +61,24 @@ class Simulation extends CI_Controller {
 		
 		$this->load->library('./../models/simulation_model');
 
-		if($this->input->post('Supprimer'))
+		if($this->input->post('supprimer'))
 		{
-
+            var_dump($this->input->post());
 
 			foreach ($this->input->post() as $key => $value) 
 			{
-				$data["simulation"][]=$value;
+                if($key!='supprimer')
+                {
+                    $data["simulation"][]=$value;
+                }
+
 			}
+
+            //tableau de recu de type simulation => 0 => nom_simu_a_delete
 			
 			$this->simulation_model->deleteSimulation($data['simulation']);
 
+            $this->index();
 		}
 		else if ($this->input->post('ajouter'))
 		{
@@ -82,6 +89,10 @@ class Simulation extends CI_Controller {
 			redirect('index','direction');
 
 		}
+        else
+        {
+            $this->index();
+        }
 		
 	}
 

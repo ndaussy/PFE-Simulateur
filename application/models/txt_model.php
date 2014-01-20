@@ -145,19 +145,39 @@ class Txt_model extends CI_Model {
         }
     }
 
-    public function delete_data_txt($name_simulation)
+    public function delete_data_txt($Array_name_simulation)
     {
         try
         {
-            return $this->db->delete('txt', array('name_simulation' => $name_simulation));
-
+            if($this->is_in_txt($Array_name_simulation))
+            {
+            $this->db->delete('txt', $Array_name_simulation);
+            return true;
+            }
+            else
+            {
+             return false;
+            }
         }Catch(SQLiteException $sql)
         {
             echo $sql;
         }
     }
 
+    public function is_in_txt($arraySimulationName)
+    {
+        $q=$this->db->get_where('txt',$arraySimulationName);
 
+        if($q->num_rows()!=0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
 
 
     public function select_data_txt_by_time($arraysimu)

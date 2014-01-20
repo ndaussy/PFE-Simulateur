@@ -2,7 +2,8 @@
 class Simulation_model extends CI_Model {
 
     private $txt;
-
+    private $kml;
+    private $csv;
     /*
     * name_simulation
     * username
@@ -51,10 +52,14 @@ class Simulation_model extends CI_Model {
         
         if($bool)
         {
-        
+            $this->load->model('txt_model');
+            $this->load->model('csv_model');
+
           foreach ($ArraySimu as $key => $value) 
           {
-             $this->db->delete('usersimulation', array('name_simulation' => $value,'username'=>$this->session->userdata('username'))); 
+             $this->db->delete('usersimulation', array('name_simulation' => $value,'username'=>$this->session->userdata('username')));
+             $this->txt_model-> delete_data_txt(array('name_simulation' => $value));
+             $this->csv_model-> delete_data_csv(array('name_simulation' => $value));
           }
        
 

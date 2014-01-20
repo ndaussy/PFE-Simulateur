@@ -1,5 +1,5 @@
 <div class="span10">
-taezzaeza
+
 	<legend> Simulation en BDD </legend>
 
 <?php echo form_open('simulation/gestion'); ?>
@@ -12,7 +12,7 @@ taezzaeza
 
 				  <input class="btn btn-primary" type="submit" value="Modifier"  name="modifier" class="ui-corner-all" />    
 
-				  <input  class="btn btn-warning" type="submit" value="Supprimer" name="supprimer" class="ui-corner-all" />       
+				  <input  class="btn btn-warning" type="submit" value="Supprimer" name="supprimer" class="ui-corner-all" />
 
 			</div>
 		</div>
