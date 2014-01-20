@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="736f8e7d-9338-46b1-9285-0c4dbb994677" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kml/TCAR.kml" afterPath="$PROJECT_DIR$/kml/TCAR.kml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/kml_model.php" afterPath="$PROJECT_DIR$/application/models/kml_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/map.php" afterPath="$PROJECT_DIR$/application/views/map.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/welcome.php" afterPath="$PROJECT_DIR$/application/controllers/welcome.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PFE-Simulateur.iws" />
@@ -53,13 +50,14 @@
       <file leaf-file-name="csv_model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/csv_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="24" selection-start="3461" selection-end="3461" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="4233">
+            <state line="100" column="24" selection-start="3461" selection-end="3461" vertical-scroll-proportion="-0.0" vertical-offset="1700" max-vertical-offset="4233">
               <folding>
                 <marker date="1389984943992" expanded="true" signature="3591:3741" placeholder="SELECT * FRO..." />
                 <marker date="1389984943992" expanded="true" signature="3591:3736" placeholder="SELECT * FRO..." />
                 <marker date="1389984943992" expanded="true" signature="3591:3629" placeholder="SELECT * FRO..." />
                 <marker date="1389984943992" expanded="true" signature="6209:6592" placeholder="INSERT INTO ..." />
                 <marker date="1389984943992" expanded="true" signature="6209:6952" placeholder="INSERT INTO ..." />
+                <marker date="1389984943992" expanded="true" signature="6209:6226" placeholder="INSERT INTO ..." />
                 <marker date="1389984943992" expanded="true" signature="6209:6226" placeholder="INSERT INTO ..." />
                 <marker date="1389984943992" expanded="true" signature="6988:7067" placeholder="INSERT INTO ..." />
               </folding>
@@ -79,10 +77,19 @@
       <file leaf-file-name="kml_model.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/kml_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="29" selection-start="441" selection-end="441" vertical-scroll-proportion="0.24734043" vertical-offset="247" max-vertical-offset="867">
+            <state line="29" column="7" selection-start="642" selection-end="642" vertical-scroll-proportion="0.63829786" vertical-offset="253" max-vertical-offset="731">
               <folding>
                 <element signature="e#6#86#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/user.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3264">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,7 +106,7 @@
       <file leaf-file-name="welcome.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="74" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1258">
+            <state line="52" column="74" selection-start="1413" selection-end="1417" vertical-scroll-proportion="-13.807693" vertical-offset="525" max-vertical-offset="1258">
               <folding />
             </state>
           </provider>
@@ -467,11 +474,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Test_SOAP/GeolocalizationReferenceBasic.wsdl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="14" selection-start="3265" selection-end="3265" vertical-scroll-proportion="0.0" vertical-offset="1073" max-vertical-offset="1666" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test_SOAP/SoapClientPort.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="14" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="833" />
@@ -723,6 +725,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/map.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="25" selection-start="1045" selection-end="1108" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="4488">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/csv_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="100" column="24" selection-start="3461" selection-end="3461" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="4233">
@@ -733,28 +742,29 @@
             <marker date="1389984943992" expanded="true" signature="6209:6592" placeholder="INSERT INTO ..." />
             <marker date="1389984943992" expanded="true" signature="6209:6952" placeholder="INSERT INTO ..." />
             <marker date="1389984943992" expanded="true" signature="6209:6226" placeholder="INSERT INTO ..." />
+            <marker date="1389984943992" expanded="true" signature="6209:6226" placeholder="INSERT INTO ..." />
             <marker date="1389984943992" expanded="true" signature="6988:7067" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/map.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="25" selection-start="1045" selection-end="1108" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="4488">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3264">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="74" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1258">
+        <state line="52" column="74" selection-start="1413" selection-end="1417" vertical-scroll-proportion="-13.807693" vertical-offset="525" max-vertical-offset="1258">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/kml_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="29" selection-start="441" selection-end="441" vertical-scroll-proportion="0.24734043" vertical-offset="247" max-vertical-offset="867">
+        <state line="29" column="7" selection-start="642" selection-end="642" vertical-scroll-proportion="0.63829786" vertical-offset="253" max-vertical-offset="731">
           <folding>
             <element signature="e#6#86#0" expanded="true" />
           </folding>
