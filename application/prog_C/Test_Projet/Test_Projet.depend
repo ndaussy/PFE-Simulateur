@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1390303703 source:c:\users\thomas\desktop\codeblocks\test_projet\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<winsock2.h>
+	"vs_can_api.h"
+
+1389186793 c:\users\thomas\desktop\codeblocks\test_projet\vs_can_api.h
+	<windows.h>
+	<semaphore.h>
+
+1390328049 source:c:\wamp\www\pfe-simulateur\application\prog_c\test_projet\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<winsock2.h>
+	"vs_can_api.h"
+
+1389186793 c:\wamp\www\pfe-simulateur\application\prog_c\test_projet\vs_can_api.h
+	<windows.h>
+	<semaphore.h>
+

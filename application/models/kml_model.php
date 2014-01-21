@@ -96,4 +96,18 @@ class Kml_model extends CI_Model {
         return true;
 
     }
+
+    public function getArretByLine($simu)
+    {
+        $q=$this->db->get_where('kml',array('ligne '=> $simu ),null,FALSE);
+
+        if($q->num_rows()!=0)
+        {
+            return $q->result_array();
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

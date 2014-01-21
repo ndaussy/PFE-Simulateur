@@ -1,5 +1,5 @@
 
-	    <?php var_dump($data);?>
+
       
 	    <script type="text/javascript"
 	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQs5tR44NEMgFLzDihOwTycxEn-uFBibY&sensor=false">
@@ -74,7 +74,7 @@
             <div class="row-fluid">
 
                <div class="span12">
-                <div id="container_2"  <div id="container" style="min-width: 200px; height: 200px; margin: 0 auto"></div></div>
+                <div id="container_2"  style="min-width: 200px; height: 200px; margin: 0 auto">  </div>
                </div>
 
 
@@ -84,7 +84,7 @@
                     $('#container_2').highcharts({
 
                         title: {
-                        text: 'Ligne Numeros 2'
+                        text: 'Ligne Numeros 1'
                         },
 
                         subtitle: {
@@ -92,8 +92,23 @@
                         },
 
                         xAxis: {
-                        categories: ['A1', 'A1', 'A1', 'A1', 'A1', 'A1',
-                        'A1', 'A1', 'A1', 'A1', 'A1', 'A1']
+                        categories: [
+                            <?php
+
+                                for($a=0;$a<count($data["kml"]);$a++)
+                                {
+                                    if($a!=count($data["kml"]) )
+                                    {
+                                        if( array_key_exists ($a,$data["kml"]))   echo '"'.$data["kml"][$a]['arret'].'", ';
+
+                                    }
+                                    else
+                                    {
+                                        if( array_key_exists ($a,$data["kml"]))  echo "'".$data["kml"][$a]['arret']."'";
+                                    }
+
+                                }
+                            ?>]
                         },
 
                         yAxis: {
@@ -102,26 +117,45 @@
                             },
 
                             plotLines: [{
-                            value: 2,
-                            width: 2,
+                            value: 1,
+                            width: 1,
                             color: '#808080'
                             }]
                         },
 
                         tooltip: {
-                        valueSuffix: '°C'
+                        valueSuffix: ''
                         },
 
                         legend: {
                         layout: 'vertical',
-                        align: 'right',
+                        align: 'center',
+                        enabled: false,
                         verticalAlign: 'middle',
-                        borderWidth: 0
+                        borderWidth: 1
                         },
 
                         series: [{
                         name: 'Ligne 1',
-                        data: [2,2,2,2,2,2,2,2,2,2,2,2]
+                        data: [
+                            <?php
+
+                                   for($a=0;$a<count($data["kml"]);$a++)
+                                   {
+
+                                       if($a!=count($data["kml"]) -1)
+                                       {
+                                         if( array_key_exists ($a,$data["kml"]))  echo '1 , ';
+
+                                       }
+                                       else
+                                       {
+                                         if( array_key_exists ($a,$data["kml"]))  echo '1  ';
+                                       }
+
+                                   }
+                               ?>
+                            ]
                         }
                         ]
                         });

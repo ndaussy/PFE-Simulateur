@@ -36,7 +36,7 @@ class Simulation extends CI_Controller {
 		}
 		else
 		{
-        var_dump($data);
+
 		$layout->views('simulation',$data);
 		}
 
@@ -61,7 +61,7 @@ class Simulation extends CI_Controller {
 
             if($this->input->post('supprimer'))
             {
-                var_dump($this->input->post());
+
 
                 foreach ($this->input->post() as $key => $value)
                 {
@@ -110,6 +110,7 @@ class Simulation extends CI_Controller {
     public function playSimulation($data)
     {
     //$this->load->model("simulation_model");
+    //
 
 
 
@@ -132,6 +133,19 @@ class Simulation extends CI_Controller {
         $data['name_simulation']='T2_tronquer';
         $data['time']='3268.3990';
 
+        $this->load->model('kml_model');
+
+        $data['kml']=$this->kml_model->getArretByLine('TCAR_91');
+       //suppression d'un elements sur deux
+        $cpt=count($data['kml']);
+        for($a=0;$a<$cpt;$a++)
+        {
+            if($a%2!=1)
+            {
+                unset($data['kml'][$a]);
+            }
+        }
+        //var_dump($data);
         $data['data']=$this->playSimulation($data);
 
 		$layout->views('map',$data);

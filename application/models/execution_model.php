@@ -16,7 +16,7 @@ class Execution_model extends CI_Model {
 
             if($exe==true)
             {
-                system($this->config->item('config_path_prog')."Test_Projet.exe ".$data[$nb_line]['frame']." ".$data[$nb_line]['time']." ".$data[$nb_line]['id']);
+                //system($this->config->item('config_path_prog')."Test_Projet.exe ".$data[$nb_line]['frame']." ".$data[$nb_line]['time']." ".$data[$nb_line]['id']);
 
 
                 //system($this->config->item('config_path_prog')."sendDataDungle.exe ".$data[$nb_line]['frame']." ".$data[$nb_line]['time']." ".$data[$nb_line]['id']);

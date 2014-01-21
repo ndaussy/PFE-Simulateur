@@ -76,12 +76,12 @@
                         echo '<Td>'.$value2.'</Td>';
                         }
 
-                        if($key=='csv_state')
+                        if($key=='state_csv')
                         {
                             echo '<Td>'.$value2.'</Td>';
                         }
 
-                        if($key=='txt_state')
+                        if($key=='state_txt')
                         {
                             echo '<Td>'.$value2.'</Td>';
                         }
