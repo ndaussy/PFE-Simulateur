@@ -34,7 +34,7 @@ class Txt_model extends CI_Model {
 
     }
    
-	public function save_csv($filename,$name_simulation)
+	public function save_txt($filename,$name_simulation)
 	{
 
         $etat_simu=true;
@@ -78,23 +78,20 @@ class Txt_model extends CI_Model {
                         $array_sql['frame']=trim($array_sql['frame']);
                         var_dump($array_sql['frame']);
 
-                        //echo "frame =".$array_sql['frame']."\n";
+
 
                         if($this->is_in_txt_table($array_sql)==false)
                         {
-                            echo "Tentative d'insertion";
+
                             $this->insert_data_txt($array_sql);
                         }
-                        else
-                        {
-                            echo "déjà présent en base";
-                        }
+
 
                     }
 
                     }Catch(Exception $ex)
                     {
-                        echo "Erreur lors du traitement des données Txt, ligne n°".$c." erreur : ".$ex;
+                        //echo "Erreur lors du traitement des données Txt, ligne n°".$c." erreur : ".$ex;
                         $etat_simu=false;
                     }
 
@@ -160,7 +157,7 @@ class Txt_model extends CI_Model {
             }
         }Catch(SQLiteException $sql)
         {
-            echo $sql;
+            echo $sql->getMessage();
         }
     }
 

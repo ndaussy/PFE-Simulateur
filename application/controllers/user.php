@@ -20,7 +20,7 @@ class User extends CI_Controller {
 	   
         $this->layout->views('../themes/connexion');
 
-        $this->layout->views('createAccount');
+        //$this->layout->views('createAccount');
      
 
 		$this->layout->view('../themes/footer');
@@ -153,32 +153,31 @@ class User extends CI_Controller {
 	function gestionUser()
 	{
 
+            if($this->user_model->isLoggedIn())
+            {
 
-		if($this->user_model->isLoggedIn())
-		{
+
+
 			$layout = new layout;
 
 			$layout->set_titre("Gestion du compte");
 
 			$layout->views('../themes/menu');
 
+
 			$data=array('sucess'=>'Identification Reussite','username'=>$this->session->userdata('username'));
 			$layout->views('../themes/loginSucess',$data);
 
-			$layout->views('gestionUser');
+            $layout->views('gestionUser');
+
 
 			$layout->view('../themes/footer');
 
-		}
-		else
-		{
-	
-			$this->load->helper('url');
-
-			redirect('welcome', 'direction');
-
-		
-		}
+            }
+        else
+        {
+            $this->index();
+        }
 
 
 	}

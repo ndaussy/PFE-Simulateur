@@ -26,7 +26,7 @@ public function index()
 
         $this->layout->views('../themes/menu');
 
-        if($this->user_model->isLoggedIn())
+        /*if($this->user_model->isLoggedIn())
         {
             $data=array('sucess'=>'Identification Reussite','username'=>$this->session->userdata('username'));
             $this->layout->views('../themes/loginSucess',$data);
@@ -36,7 +36,7 @@ public function index()
         {
             $this->layout->views('../themes/connexion');
 
-        }
+        }*/
 
 
         $this->layout->views('welcome_message')

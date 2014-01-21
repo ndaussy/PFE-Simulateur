@@ -1,17 +1,12 @@
 
-			<div class="span10">
+			<div class="span12">
 
 				<legend >Présentation </legend>
 
 				<span> Bienvenue sur le Site de gestion des Simulateurs de L'EBSF. Ce site a pour but de gérer les Simulateurs. </span>
 				</br> </br>
 				
-				<?php if(!$this->user_model->isLoggedIn())
-				{?>
-				<div class="alert alert-danger"> Pour acceder aux differents élements veuillez vous identifier </div>
-				<?php
-				}
-				?>
+
 
 				<div id="myCarousel" class="carousel slide">
 					<!-- Carousel items -->

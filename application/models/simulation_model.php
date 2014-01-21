@@ -17,63 +17,30 @@ class Simulation_model extends CI_Model {
         if(!$this->isInSimulation($ArraySimu['name_simulation']))
         {
 
-
-             if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN')
-             {
-
-            echo 'not yet implemented on win serveur';
-
-            return false;
-
-            }
-            else
-            {
-
-                $Userarray=array('name_simulation'=>$ArraySimu['name_simulation'],'username'=>$ArraySimu['username']);
+                $Userarray=array('name_simulation'=>$ArraySimu['name_simulation'],'state_txt'=>'Traitement non fini','state_csv'=>"Traitemment non commencé");
 
                 //ajout à la table usersimulation
                 $this->db->insert('usersimulation',$Userarray);
 
-
-
-                //UNIX
-                function shutdown() {
-                    posix_kill(posix_getpid(), SIGHUP);
-                }
-
-
-
-                // Switch over to daemon mode.
-
-                if ($pid = pcntl_fork())
-                    return;     // Parent
-
-                ob_end_clean(); // Discard the output buffer and close
-
-                fclose(STDIN);  // Close all of the standard
-                fclose(STDOUT); // file descriptors as we
-                fclose(STDERR); // are running as a daemon.
-
-                register_shutdown_function('shutdown');
-
-                if (posix_setsid() < 0)
-                    return;
-
-                if ($pid = pcntl_fork())
-                    return;     // Parent
-
-                // Now running as a daemon. This process will even survive
-                // an apachectl stop.
-
                 //Sauvegarde du txt
                 $this->load->model('txt_model');
-                $this->txt->save_Txt($ArraySimu['Path_txt'],$ArraySimu['name_simulation']);
+                $this->txt_model->save_txt($ArraySimu['Path_txt'],$ArraySimu['name_simulation']);
+
+                $Userarray['state_txt']="Insertion reussite";
+
+                unlink($ArraySimu['Path_txt']);
+
+                $Userarray['state_csv']="Traitement non fini";
 
                 //Sauvegarde du Csv
                 $this->load->model('csv_model');
-                $this->csv->save_csv($ArraySimu['Path_txt'],$ArraySimu['name_simulation']);
-            }
+                $this->csv_model->save_csv($ArraySimu['Path_csv'],$ArraySimu['name_simulation']);
 
+                $Userarray['state_csv']="Insertion reussite";
+
+                unlink($ArraySimu['Path_csv']);
+
+                return true;
         }
         else
         {
@@ -103,7 +70,7 @@ class Simulation_model extends CI_Model {
 
           foreach ($ArraySimu as $key => $value) 
           {
-             $this->db->delete('usersimulation', array('name_simulation' => $value,'username'=>$this->session->userdata('username')));
+             $this->db->delete('usersimulation', array('name_simulation' => $value));
              $this->txt_model-> delete_data_txt(array('name_simulation' => $value));
              $this->csv_model-> delete_data_csv(array('name_simulation' => $value));
              $this->kml_model-> delete_data_kml(array('name_simulation' => $value));
@@ -124,14 +91,14 @@ class Simulation_model extends CI_Model {
       if($this->isInSimulation($name_simulation))
       {
       
-         $query=$this->db->get_where('usersimulation',array('name_simulation'=>$name_simulation,'username'=>$this->session->userdata('username')), NULL, FALSE);
+         $query=$this->db->get_where('usersimulation',array('name_simulation'=>$name_simulation), NULL, FALSE);
 
          return $query->result_array();
       }
-      elseif($name_simulation=="all")
+     elseif($name_simulation=="all")
       {
         
-         $query=$this->db->get_where('usersimulation',array('username'=>$this->session->userdata('username')), NULL, FALSE);
+         $query=$this->db->get('usersimulation');
 
          return $query->result_array();
       }
@@ -144,10 +111,10 @@ class Simulation_model extends CI_Model {
     function isInSimulation($name_simulation)
     {
 
-        $q = $this->db->get_where('usersimulation',array('name_simulation'=>$name_simulation,'username'=>$this->session->userdata('username')), NULL, FALSE);
+        $q = $this->db->get_where('usersimulation',array('name_simulation'=>$name_simulation), NULL, FALSE);
 
 
-       if($q->num_rows()==1)
+       if($q->num_rows()!=0)
        {
 
         return true;

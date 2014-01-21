@@ -81,12 +81,16 @@ class Telecharger extends CI_Controller {
 			
 			$this->load->model('simulation_model');
 
-			
+            $data = array('CSV'=>'','TXT'=>'');
+
+            if($this->upload->do_upload('CSV'))
+            {
+                $data['CSV'] = $this->upload->data();
 
 				//Si les fichiers sont dl a changer car on dl deux fois ..
-				if ( $this->upload->do_upload('TXT') && $this->upload->do_upload('CSV'))
+                if ( $this->upload->do_upload('TXT') )
 				{
-					
+                    $data['TXT'] = $this->upload->data();
 					
 					
 					$this->load->library('form_validation');
@@ -108,23 +112,14 @@ class Telecharger extends CI_Controller {
 							$layout->set_titre("Telecharger Simulation");
 
 							$layout->views('../themes/menu');
-							
-							$data=array('sucess'=>'Identification Reussite','username'=>$this->session->userdata('username'));
-							$layout->views('../themes/loginSucess',$data);
-							
-							$data = array();
-
-							$data['upload_data' ]['CSV'] =$this->upload->data();
-
-
-
-							$data['upload_data']['TXT']=$this->upload->data();
-							
 
 							$this->simulation_model->addSimulation(array('name_simulation'=>$this->input->post('name_simulation'),
                                                                         'username'=>$this->session->userdata('username'),
-                                                                        'Path_csv'=>$data['upload_data' ]['CSV']['full_path'],
-                                                                        'Path_txt'=>$data['upload_data' ]['TXT']['full_path']));
+                                                                        'Path_csv'=>$data['CSV']['full_path'],
+                                                                        'Path_txt'=>$data['TXT']['full_path']));
+
+                            $data=array('sucess'=>'Identification Reussite','username'=>$this->session->userdata('username'));
+                            $layout->views('../themes/loginSucess',$data);
 
 
 							$layout->views('telecharger_do_upload', $data);
@@ -184,7 +179,11 @@ class Telecharger extends CI_Controller {
 					return false;
 					
 				}
-			
+            }
+            else
+            {
+                echo "blindage";
+            }
 
 		}
 		else

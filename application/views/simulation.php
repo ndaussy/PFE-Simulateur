@@ -6,6 +6,8 @@
 <div class="row-fluid">
 	<div class="span2"> </div>
 		<div class="span8">
+           <?php if($islogin)
+           {?>
 			<div  class="btn-group btn-group-justified">
 
 				  <input  class="btn btn-success" type="submit" value="Ajouter" name="ajouter" class="ui-corner-all" /> 
@@ -15,6 +17,7 @@
 				  <input  class="btn btn-warning" type="submit" value="Supprimer" name="supprimer" class="ui-corner-all" />
 
 			</div>
+            <?php } ?>
 		</div>
 	<div class="span2"> </div>
 	</br>
@@ -30,12 +33,17 @@
 			  		<thead> 
 			  		<tr> ';
 
-			echo '<th> Selectionner </th> '; 
+
+            if($islogin)
+            {
+                echo '<th> Selectionner </th> ';
+            }
+
 			  	
 			
 			foreach($result[0] as $item2 => $value)
 			{
-				if($item2=='name_simulation'||$item2=='date_add')
+				//if($item2=='name_simulation'||$item2=='date_add')
 				{
 				echo '<th>'.$item2.'</th> ';   
 				}
@@ -52,16 +60,31 @@
 
 			  	foreach ($value as $key => $value2) 
 			  	{
-			  		if($key=='name_simulation')
-			  		{
-			  		
-			  		 echo '<Td> <INPUT type="checkbox" name="name_simulation_'.$cpt++.'"; value="'.$value2.'"> </td>';
-			  		echo '<Td>'.$value2.'</Td>';
-			  		}
-			  		if($key=='date_add')
-			  		{
-			  		echo '<Td>'.$value2.'</Td>';
-			  		}
+                        if($key=='name_simulation')
+                        {
+
+                        if($islogin)
+                        {
+                            echo '<Td> <INPUT type="checkbox" name="name_simulation_'.$cpt++.'"; value="'.$value2.'"> </td>';
+                        }
+
+                        echo '<Td>'.$value2.'</Td>';
+                        }
+
+                        if($key=='date_add')
+                        {
+                        echo '<Td>'.$value2.'</Td>';
+                        }
+
+                        if($key=='csv_state')
+                        {
+                            echo '<Td>'.$value2.'</Td>';
+                        }
+
+                        if($key=='txt_state')
+                        {
+                            echo '<Td>'.$value2.'</Td>';
+                        }
 			  		
 			  	}
 

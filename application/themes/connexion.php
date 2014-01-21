@@ -1,4 +1,5 @@
   <div class="row-fluid">
+
 	      <div class="span2">
 
 	         <legend>Connexion</legend>
@@ -20,11 +21,20 @@
 
 			
 			    
-			<legend>Compte</legend>
+		<!--	<legend>Compte</legend>
 			
-			<a class="btn btn-success"  href="<?php echo site_url('user');?>"> crée un compte </a>
+			<a class="btn btn-success"  href="<?php// echo site_url('user');?>"> crée un compte </a>
 			 
-			</form>
+			-->
+              </form>
 
- 		</div>
+          </div>
+
+        <div class="span10">
+
+        </div>
+
+
+
+
  

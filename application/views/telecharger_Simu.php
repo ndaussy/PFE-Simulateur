@@ -1,10 +1,12 @@
-<div class="span10">
+<div class="span12">
 
 	<fieldset>
     <legend>Depot de simulation</legend>
 </div>
 
-<div class="span6">
+<div class="span12">
+
+    <fieldset>
 		<?php echo validation_errors(); 
 			  
 		?>

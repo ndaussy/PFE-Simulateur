@@ -28,7 +28,8 @@
 
                 var ctaLayer = new google.maps.KmlLayer({
                     //url: 'http:://127.0.0.1/PFE-Simulateur/google_exemple_chicago.kml'
-                    url: 'https://kml-pfe-hebergement.googlecode.com/svn/trunk/TCAR.kml'
+                    //url: 'https://kml-pfe-hebergement.googlecode.com/svn/trunk/TCAR.kml'
+                     url: 'https://kml-pfe-hebergement.googlecode.com/svn/trunk/TCAR_91.kml'
                     //url: 'git://github.com/ndaussy/PFE-Simulateur/blob/master/kml/google_exemple_chicago.kml'
                 });
                 ctaLayer.setMap(maCarte);
@@ -37,7 +38,7 @@
 	    </script>
 
 		
-	    <div class="span10" id="style">
+	    <div class="span12" id="style">
 	    	 <legend>Map</legend>
 
              <div class="row-fluid">
@@ -73,7 +74,7 @@
             <div class="row-fluid">
 
                <div class="span12">
-                <div id="container_2"  <div id="container" style="min-width: 200px; height: 200px; margin: 0 auto"></div>></div>
+                <div id="container_2"  <div id="container" style="min-width: 200px; height: 200px; margin: 0 auto"></div></div>
                </div>
 
 
