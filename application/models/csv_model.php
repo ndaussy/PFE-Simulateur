@@ -9,6 +9,8 @@ class Csv_model extends CI_Model {
        ini_set('memory_limit', '512M');
        ini_set('max_execution_time', '180');
 
+       $etat_simu=true;
+
         try
         {
             if (($handle = fopen($file_name, "r")) !== FALSE) {
@@ -99,13 +101,24 @@ class Csv_model extends CI_Model {
                 fclose($handle);
 
             }
-            return true;
+
+
+
+
         }
         catch ( Exception $e )
         {
         echo 'Caught exception: ', $e->getMessage (), "\n";
-            return false;
+        $etat_simu= false;
         }
+
+        if($etat_simu)
+        {
+            unlink($file_name);
+
+        }
+
+        return $etat_simu;
 
 
 

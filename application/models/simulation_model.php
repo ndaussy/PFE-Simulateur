@@ -28,7 +28,7 @@ class Simulation_model extends CI_Model {
 
                 $Userarray['state_txt']="Insertion reussite";
 
-                unlink($ArraySimu['Path_txt']);
+                $this->db->update('usersimulation', $Userarray, 'name_simulation = "'.$ArraySimu['name_simulation'].'"');
 
                 $Userarray['state_csv']="Traitement non fini";
 
@@ -37,8 +37,7 @@ class Simulation_model extends CI_Model {
                 $this->csv_model->save_csv($ArraySimu['Path_csv'],$ArraySimu['name_simulation']);
 
                 $Userarray['state_csv']="Insertion reussite";
-
-                unlink($ArraySimu['Path_csv']);
+                $this->db->update('usersimulation', $Userarray, 'name_simulation = "'.$ArraySimu['name_simulation'].'"');
 
                 return true;
         }

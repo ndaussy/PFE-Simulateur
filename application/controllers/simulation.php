@@ -129,7 +129,7 @@ class Simulation extends CI_Controller {
 
 		$this->load->library('./../models/simulation_model');
 
-        $data['name_simulation']='T2_Simulation';
+        $data['name_simulation']='T2_tronquer';
         $data['time']='3268.3990';
 
         $data['data']=$this->playSimulation($data);
