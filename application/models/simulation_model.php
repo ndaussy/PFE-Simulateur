@@ -48,7 +48,28 @@ class Simulation_model extends CI_Model {
         }
 
    }
-    
+
+    //[name_simulation] [time]
+    function playsimulation($arrayData)
+    {
+        $this->load->model('txt_model');
+
+        $arrayDataDungle=$this->txt_model->returnInformation($arrayData);
+
+       $this->load->model('execution_model');
+
+        if($this->execution_model->SendDataDungle($arrayDataDungle))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+
+    }
+
     //
     function deleteSimulation($ArraySimu)
     {

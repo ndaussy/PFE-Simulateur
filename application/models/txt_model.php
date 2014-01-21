@@ -5,9 +5,7 @@ class Txt_model extends CI_Model {
 
     public function is_in_txt_table($arraysimu)
     {
-        // for set memory limit & execution time
-        ini_set('memory_limit', '512M');
-        ini_set('max_execution_time', '780');
+
 
         $q=$this->db->query('SELECT * FROM txt WHERE
                                      name_simulation = "'.$arraysimu['name_simulation'].'"
@@ -33,9 +31,40 @@ class Txt_model extends CI_Model {
         }
 
     }
-   
+
+    //format du tableau recçu [0] => ['time'] ['name_simulation']
+    //Format du tableau retour ['frame'] ['time'] ['id']
+    public function returnInformation($arrayInfo)
+    {
+        $q=$this->db->get('txt',$arrayInfo);
+
+        if($q->num_rows()!=0)
+        {
+            $array_sql=$q->result_array();
+
+            for($nb_line=0;$nb_line<count($array_sql);$nb_line++)
+            {
+                $frame = str_split ($array_sql[$nb_line]['frame'], 2);
+
+                $array_sql[$nb_line]['frame']=$frame[0]." ".$frame[1]." ".$frame[2]." ".$frame[3]." ".$frame[4]." ".$frame[5]." ".$frame[6]." ".$frame[7];
+            }
+
+
+        }
+        else
+        {
+            $array_sql=array('0'=>array('time'=>0,'id'=>0,'frame'=>0));
+        }
+
+        return $array_sql;
+    }
+
 	public function save_txt($filename,$name_simulation)
 	{
+
+        // for set memory limit & execution time
+        ini_set('memory_limit', '512M');
+        ini_set('max_execution_time', '780');
 
         $etat_simu=true;
 
@@ -76,7 +105,6 @@ class Txt_model extends CI_Model {
                         $array_sql['frame']=$array_sql['frame'].$array_from_explode[$a];
                         }
                         $array_sql['frame']=trim($array_sql['frame']);
-                        var_dump($array_sql['frame']);
 
 
 

@@ -106,6 +106,17 @@ class Simulation extends CI_Controller {
 		
 	}
 
+    //[name_simulation] + [time]
+    public function playSimulation()
+    {
+    //$this->load->model("simulation_model");
+
+    $data['name_simulation']='T2_Simulation';
+    $data['time']='3268.3990';
+
+    $this->simulation_model->playsimulation($data);
+
+    }
 
 	public function map()
 	{
@@ -125,10 +136,14 @@ class Simulation extends CI_Controller {
 		$this->load->library('./../models/simulation_model');
 
 
+
 		$layout->views('map');
 
 		$layout->view('../themes/footer');	
 
+
+
+        $this->playSimulation();
 		/*}
 		else
 		{
