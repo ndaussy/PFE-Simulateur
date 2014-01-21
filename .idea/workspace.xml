@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="736f8e7d-9338-46b1-9285-0c4dbb994677" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/execution_model.php" afterPath="$PROJECT_DIR$/application/models/execution_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/kml_model.php" afterPath="$PROJECT_DIR$/application/models/kml_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/map.php" afterPath="$PROJECT_DIR$/application/views/map.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/simulation.php" afterPath="$PROJECT_DIR$/application/controllers/simulation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/simulation.php" afterPath="$PROJECT_DIR$/application/views/simulation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PFE-Simulateur.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,9 +106,9 @@
       <file leaf-file-name="map.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/map.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="38" selection-start="4271" selection-end="4271" vertical-scroll-proportion="0.22606383" vertical-offset="2159" max-vertical-offset="5100">
+            <state line="76" column="58" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.45212767" vertical-offset="1122" max-vertical-offset="5100">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -512,11 +507,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Test_SOAP/GeolocalizationReferenceBasic.wsdl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1666" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="6" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="731" />
@@ -839,11 +829,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="200" column="23" selection-start="4795" selection-end="4815" vertical-scroll-proportion="0.33333334" vertical-offset="3266" max-vertical-offset="8228">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/map.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="38" selection-start="4271" selection-end="4271" vertical-scroll-proportion="0.22606383" vertical-offset="2159" max-vertical-offset="5100">
+        <state line="76" column="58" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.45212767" vertical-offset="1122" max-vertical-offset="5100">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>

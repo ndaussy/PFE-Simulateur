@@ -64,7 +64,7 @@
 
 	    	 <div class="row-fluid">
 
-				    <div class="span12" id="map-canvas">
+				    <div class="span12" style="width: 100%" id="map-canvas">
 				  	<!--googleMap-->
 				    </div>
 
@@ -74,7 +74,7 @@
             <div class="row-fluid">
 
                <div class="span12">
-                <div id="container_2"  style="min-width: 200px; height: 200px; margin: 0 auto">  </div>
+                <div id="container_2"  style="width: 100%; height: 200px; margin: 0 auto">  </div>
                </div>
 
 
