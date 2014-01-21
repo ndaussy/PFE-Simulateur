@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<!-- Data derived from:
+       Ed Knittel - || tastypopsicle.com
+       Feel free to use this file for your own purposes.
+       Just leave the comments and credits when doing so.
+-->
+<Document>
+	<name>TCAR.kml</name>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	
+
+	
+
+	<Folder>
+		<name>TCAR_93</name>
+		<open>1</open>
+
+<Placemark>
+   <name>Deux Rivières</name>
+   <Point>
+    <coordinates>1.12366212825436,49.4388469985253,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Deux Rivières</name>
+   <Point>
+    <coordinates>1.12355492096302,49.4387201460845,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Basti</name>
+   <Point>
+    <coordinates>1.03604274840032,49.4562329516724,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Barr.de Darnetal</name>
+   <Point>
+    <coordinates>1.13521149638834,49.4392322566977,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Barr.de Darnetal</name>
+   <Point>
+    <coordinates>1.13501782782484,49.4392662599261,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Bd des Belges</name>
+   <Point>
+    <coordinates>1.08302026939309,49.4405870113355,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Bd des Belges</name>
+   <Point>
+    <coordinates>1.08271417448015,49.4407095991559,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Bizet</name>
+   <Point>
+    <coordinates>1.03193402447476,49.4584704149943,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Bourgogne</name>
+   <Point>
+    <coordinates>1.03106336021204,49.4439700639939,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Bourgogne</name>
+   <Point>
+    <coordinates>1.03126745617785,49.4440710984872,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>CHU Ch. Nicolle</name>
+   <Point>
+    <coordinates>1.10999642570818,49.439400365515,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>C.de la Corniche</name>
+   <Point>
+    <coordinates>1.04141071963788,49.4445129807939,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>C.de la Corniche</name>
+   <Point>
+    <coordinates>1.04121560609997,49.4446007216806,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Mairie Darnetal</name>
+   <Point>
+    <coordinates>1.1448235478973,49.4405854639186,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Mairie Darnetal</name>
+   <Point>
+    <coordinates>1.14502931703974,49.4406234344609,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Gascogne</name>
+   <Point>
+    <coordinates>1.03305326263789,49.4459051797602,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Gascogne</name>
+   <Point>
+    <coordinates>1.0332467952233,49.4458803220262,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Genêts</name>
+   <Point>
+    <coordinates>1.03680454966758,49.4544533983499,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Genêts</name>
+   <Point>
+    <coordinates>1.03715558627025,49.4541966545215,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Gounod</name>
+   <Point>
+    <coordinates>1.03447872978663,49.4559555313183,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Jean Ango</name>
+   <Point>
+    <coordinates>1.07053295437249,49.4463767559224,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Jean Ango</name>
+   <Point>
+    <coordinates>1.07022590669833,49.4465352371885,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Cathédrale</name>
+   <Point>
+    <coordinates>1.09246818929983,49.439579952529,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Cathédrale</name>
+   <Point>
+    <coordinates>1.09141880264864,49.4396769152954,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Louis Pasteur</name>
+   <Point>
+    <coordinates>1.07701477131229,49.4433363032525,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Louis Pasteur</name>
+   <Point>
+    <coordinates>1.07670709911071,49.4435217460268,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Menure</name>
+   <Point>
+    <coordinates>1.03508457732532,49.4581451332709,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>M.I.N.</name>
+   <Point>
+    <coordinates>1.04834350822153,49.4493487504764,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>M.I.N.</name>
+   <Point>
+    <coordinates>1.04815132562126,49.4493197439582,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Orléanais</name>
+   <Point>
+    <coordinates>1.0360947540966,49.4460458571648,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Orléanais</name>
+   <Point>
+    <coordinates>1.03605365768471,49.446036429658,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Place J. Jaurès</name>
+   <Point>
+    <coordinates>1.03471149389131,49.450594713662,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Place J. Jaurès</name>
+   <Point>
+    <coordinates>1.03474939731506,49.4507298806699,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Saint-Marc</name>
+   <Point>
+    <coordinates>1.1019457472315,49.4378986734168,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Saint-Marc</name>
+   <Point>
+    <coordinates>1.10155685996717,49.4380294439435,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Place Prat</name>
+   <Point>
+    <coordinates>1.0277568313318,49.4407269266439,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Place Prat</name>
+   <Point>
+    <coordinates>1.02775545435793,49.4407808152777,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Provence</name>
+   <Point>
+    <coordinates>1.03646012017632,49.4479364112948,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Provence</name>
+   <Point>
+    <coordinates>1.03645692813562,49.4480621507621,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>République</name>
+   <Point>
+    <coordinates>1.09766127389294,49.4390405453695,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>République</name>
+   <Point>
+    <coordinates>1.09610077937063,49.4391951774092,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Mont-Riboudet</name>
+   <Point>
+    <coordinates>1.06505605281051,49.4488704739943,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Mont-Riboudet</name>
+   <Point>
+    <coordinates>1.0646543278149,49.448956071442,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Eglise St-Jean</name>
+   <Point>
+    <coordinates>1.03457487292988,49.4521743903986,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Eglise St-Jean</name>
+   <Point>
+    <coordinates>1.03462975046403,49.4521839672164,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Théâtre des Arts</name>
+   <Point>
+    <coordinates>1.08931017570105,49.4402749835716,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Théâtre des Arts</name>
+   <Point>
+    <coordinates>1.08890724593467,49.4404145519103,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Place Touy</name>
+   <Point>
+    <coordinates>1.02938263119426,49.4428827533167,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Place Touy</name>
+   <Point>
+    <coordinates>1.02932661845061,49.4429180811353,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>CHU Ch. Nicolle</name>
+   <Point>
+    <coordinates>1.11095410595409,49.4396796275072,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Martainville</name>
+   <Point>
+    <coordinates>1.10571475537086,49.4381348913093,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Martainville</name>
+   <Point>
+    <coordinates>1.10528757972011,49.4381395091247,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Saint-Hilaire</name>
+   <Point>
+    <coordinates>1.11276672413357,49.4416565206296,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Saint-Hilaire</name>
+   <Point>
+    <coordinates>1.11258440714646,49.4412144634896,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Deux Rivières</name>
+   <Point>
+    <coordinates>1.12818840979818,49.440275990924,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Deux Rivières</name>
+   <Point>
+    <coordinates>1.12767624532497,49.4403786568964,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Les Canadiens</name>
+   <Point>
+    <coordinates>1.1490276710752,49.4410851545381,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Les Canadiens</name>
+   <Point>
+    <coordinates>1.14880895645592,49.4410111283959,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Durecu-Lavoisier</name>
+   <Point>
+    <coordinates>1.15043927732493,49.4437851877445,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Auberge Jeunesse</name>
+   <Point>
+    <coordinates>1.12028074184717,49.4414271779206,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Auberge Jeunesse</name>
+   <Point>
+    <coordinates>1.12065263503962,49.4414309324553,0</coordinates></Point>
+  </Placemark>
+</Folder>
+
+</Document>
+</kml>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+	<name>TCAR.kml</name>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>TCAR_91</name>
+		<open>1</open>
+<Placemark>
+   <name>Deux Rivières</name>
+   <Point>
+    <coordinates>1.12366212825436,49.4388469985253,0</coordinates>
+    </Point>
+  </Placemark>
+<Placemark>
+   <name>Deux Rivières</name>
+   <Point>
+    <coordinates>1.12355492096302,49.4387201460845,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Bd des Belges</name>
+   <Point>
+    <coordinates>1.08302026939309,49.4405870113355,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Bd des Belges</name>
+   <Point>
+    <coordinates>1.08271417448015,49.4407095991559,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Boulingrin</name>
+   <Point>
+    <coordinates>1.10569844044302,49.4468400006234,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Campus</name>
+   <Point>
+    <coordinates>1.06795773454174,49.4585585844247,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Campus</name>
+   <Point>
+    <coordinates>1.06799573156409,49.4586937398902,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Place Colbert</name>
+   <Point>
+    <coordinates>1.07098858676565,49.4613933621919,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Place Colbert</name>
+   <Point>
+    <coordinates>1.07118193745614,49.4613774252787,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>CHU Ch. Nicolle</name>
+   <Point>
+    <coordinates>1.10999642570818,49.439400365515,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Les Coquets</name>
+   <Point>
+    <coordinates>1.07669835740832,49.4623605398249,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Les Coquets</name>
+   <Point>
+    <coordinates>1.07664014577963,49.4624857022893,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Fond du Val</name>
+   <Point>
+    <coordinates>1.06847257901901,49.4516824684932,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Fond du Val</name>
+   <Point>
+    <coordinates>1.0686767794415,49.4517834388575,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Jean Ango</name>
+   <Point>
+    <coordinates>1.07053295437249,49.4463767559224,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Jean Ango</name>
+   <Point>
+    <coordinates>1.07022590669833,49.4465352371885,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Cathédrale</name>
+   <Point>
+    <coordinates>1.09246818929983,49.439579952529,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Cathédrale</name>
+   <Point>
+    <coordinates>1.09141880264864,49.4396769152954,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Louis Pasteur</name>
+   <Point>
+    <coordinates>1.07701477131229,49.4433363032525,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Louis Pasteur</name>
+   <Point>
+    <coordinates>1.07670709911071,49.4435217460268,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Mont aux Malades</name>
+   <Point>
+    <coordinates>1.07227556112779,49.4650901663964,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Mont aux Malades</name>
+   <Point>
+    <coordinates>1.072162880716,49.4651878041949,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Saint-Marc</name>
+   <Point>
+    <coordinates>1.1019457472315,49.4378986734168,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Saint-Marc</name>
+   <Point>
+    <coordinates>1.10155685996717,49.4380294439435,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>République</name>
+   <Point>
+    <coordinates>1.09766127389294,49.4390405453695,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>République</name>
+   <Point>
+    <coordinates>1.09610077937063,49.4391951774092,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Mont-Riboudet</name>
+   <Point>
+    <coordinates>1.06505605281051,49.4488704739943,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Mont-Riboudet</name>
+   <Point>
+    <coordinates>1.0646543278149,49.448956071442,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Théâtre des Arts</name>
+   <Point>
+    <coordinates>1.08931017570105,49.4402749835716,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Théâtre des Arts</name>
+   <Point>
+    <coordinates>1.08890724593467,49.4404145519103,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>CHU Ch. Nicolle</name>
+   <Point>
+    <coordinates>1.11095410595409,49.4396796275072,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Boulingrin</name>
+   <Point>
+    <coordinates>1.10575267797434,49.4468764896991,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Martainville</name>
+   <Point>
+    <coordinates>1.10571475537086,49.4381348913093,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Martainville</name>
+   <Point>
+    <coordinates>1.10528757972011,49.4381395091247,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Saint-Hilaire</name>
+   <Point>
+    <coordinates>1.11276672413357,49.4416565206296,0</coordinates></Point>
+  </Placemark>
+<Placemark>
+   <name>Saint-Hilaire</name>
+   <Point>
+    <coordinates>1.11258440714646,49.4412144634896,0</coordinates></Point>
+  </Placemark>
+	</Folder>
+
+	
+
+</Document>
+</kml>
