@@ -107,51 +107,41 @@ class Simulation extends CI_Controller {
 	}
 
     //[name_simulation] + [time]
-    public function playSimulation()
+    public function playSimulation($data)
     {
     //$this->load->model("simulation_model");
 
-    $data['name_simulation']='T2_Simulation';
-    $data['time']='3268.3990';
 
-    $this->simulation_model->playsimulation($data);
+
+    return $this->simulation_model->playsimulation($data);
 
     }
 
 	public function map()
 	{
-		/*if($this->user_model->isLoggedIn())
-		{*/
-		
+
 		$layout= new layout;
 		
 		$layout->set_titre("Map");
 		
 		$layout->views('../themes/menu');
-		
-		/*$data=array('sucess'=>'Identification Reussite','username'=>$this->session->userdata('username'));
-		$layout->views('../themes/loginSucess',$data);
-    */
+
 
 		$this->load->library('./../models/simulation_model');
 
+        $data['name_simulation']='T2_Simulation';
+        $data['time']='3268.3990';
 
+        $data['data']=$this->playSimulation($data);
 
-		$layout->views('map');
+		$layout->views('map',$data);
 
 		$layout->view('../themes/footer');	
 
 
 
-        $this->playSimulation();
-		/*}
-		else
-		{
-			$this->load->helper('url');
 
-			redirect('welcome', 'direction');
 
-		}*/
 
 	}
 

@@ -257,7 +257,30 @@ class Csv_model extends CI_Model {
     }
 
 
+   public function returnInformation($arrayInfo)
+   {
+       $q=$this->db->get('csv',$arrayInfo);
 
+       if($q->num_rows()==1)
+       {
+          return $array_sql=$q->result_array();
+
+          /* for($nb_line=0;$nb_line<count($array_sql);$nb_line++)
+           {
+               $frame = str_split ($array_sql[$nb_line]['frame'], 2);
+
+               $array_sql[$nb_line]['frame']=$frame[0]." ".$frame[1]." ".$frame[2]." ".$frame[3]." ".$frame[4]." ".$frame[5]." ".$frame[6]." ".$frame[7];
+           }
+            */
+
+       }
+       else
+       {
+           $array_sql=array('0'=>array('time'=>0,'id'=>0,'frame'=>0));
+       }
+
+       return $array_sql;
+   }
 
     public function select_data_csv_by_time($arraysimu)
     {

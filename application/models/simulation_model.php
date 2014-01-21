@@ -58,15 +58,20 @@ class Simulation_model extends CI_Model {
 
        $this->load->model('execution_model');
 
-        if($this->execution_model->SendDataDungle($arrayDataDungle))
+        if($this->execution_model->SendDataDungle($arrayDataDungle,true))
         {
-            return true;
+            //return true;
         }
         else
         {
             return false;
         }
 
+        $this->load->model('csv_model');
+
+        $arrayDataJava=$this->csv_model->returnInformation($arrayData);
+
+        return $arrayData;
 
     }
 
@@ -109,24 +114,24 @@ class Simulation_model extends CI_Model {
 
      function findSimulation($name_simulation)
     {
-      if($this->isInSimulation($name_simulation))
-      {
-      
-         $query=$this->db->get_where('usersimulation',array('name_simulation'=>$name_simulation), NULL, FALSE);
+          if($this->isInSimulation($name_simulation))
+          {
 
-         return $query->result_array();
-      }
-     elseif($name_simulation=="all")
-      {
-        
-         $query=$this->db->get('usersimulation');
+             $query=$this->db->get_where('usersimulation',array('name_simulation'=>$name_simulation), NULL, FALSE);
 
-         return $query->result_array();
-      }
-      else
-      {
-        return false; 
-      }
+             return $query->result_array();
+          }
+         elseif($name_simulation=="all")
+          {
+
+             $query=$this->db->get('usersimulation');
+
+             return $query->result_array();
+          }
+          else
+          {
+            return false;
+          }
     }
 
     function isInSimulation($name_simulation)

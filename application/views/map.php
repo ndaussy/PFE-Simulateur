@@ -1,5 +1,5 @@
 
-	
+	    <?php var_dump($data);?>
       
 	    <script type="text/javascript"
 	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQs5tR44NEMgFLzDihOwTycxEn-uFBibY&sensor=false">
