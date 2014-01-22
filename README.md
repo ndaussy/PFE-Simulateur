@@ -17,6 +17,9 @@ Configuration :
       --Configuration Wamp/Lamp :
       Configurer votre php.ini pour pouvoir uploader des fichiers supérieures à 200MO, pour cela ouvrer le fichier php.ini ( var/phpX/.. pour ubuntu & c:/wamp/php.. pour windows ). Trouver les lignes post_max_size = XXM && upload_max_filesize = XM.
     
+    
+    --Configuration uploads. crée un dossier 'uploads'  la racine du projet. c-a-d PFE-simulateur/uploads 
+    
     --Configuration de la base de donnée.
       
       Executer le fichier "Executable_ql.ql", Attention si vous ne réalisez pas cette étapes le site ne fonctionnera pas!.
