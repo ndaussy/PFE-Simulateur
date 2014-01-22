@@ -182,7 +182,22 @@ class Telecharger extends CI_Controller {
             }
             else
             {
-                echo "blindage";
+                $layout->set_titre("Telecharger Simulation");
+
+                $layout->views('../themes/menu');
+
+                $data=array('sucess'=>'Identification Reussite','username'=>$this->session->userdata('username'));
+                $layout->views('../themes/loginSucess',$data);
+
+                $data = array('erreur' => $this->upload->display_errors());
+
+                $layout->views('telecharger_Simu',$data);
+
+
+                $layout->view('../themes/footer');
+
+
+                return false;
             }
 
 		}
