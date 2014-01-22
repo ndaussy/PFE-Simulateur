@@ -86,7 +86,6 @@
 
 
          echo '</div>';
-
          echo '</div>';
         if(isset($_COOKIE['name_simulation']))//Affichage du tableaux de bord si la simulation est choisie
         {
@@ -132,16 +131,16 @@
                         categories: [
                             <?php
 
-                                for($a=0;$a<count($data["kml"]);$a++)
+                                for($a=0;$a<count($kml);$a++)
                                 {
-                                    if($a!=count($data["kml"]) )
+                                    if($a!=count($kml))
                                     {
-                                        if( array_key_exists ($a,$data["kml"]))   echo '"'.$data["kml"][$a]['arret'].'", ';
+                                        if( array_key_exists ($a,$kml))   echo '"'.$kml[$a]['arret'].'", ';
 
                                     }
                                     else
                                     {
-                                        if( array_key_exists ($a,$data["kml"]))  echo "'".$data["kml"][$a]['arret']."'";
+                                        if( array_key_exists ($a,$kml))  echo "'".$kml[$a]['arret']."'";
                                     }
 
                                 }
@@ -177,17 +176,17 @@
                         data: [
                             <?php
 
-                                   for($a=0;$a<count($data["kml"]);$a++)
+                                   for($a=0;$a<count($kml);$a++)
                                    {
 
-                                       if($a!=count($data["kml"]) -1)
+                                       if($a!=count($kml))
                                        {
-                                         if( array_key_exists ($a,$data["kml"]))  echo '1 , ';
+                                         if( array_key_exists ($a,$kml))  echo '1 , ';
 
                                        }
                                        else
                                        {
-                                         if( array_key_exists ($a,$data["kml"]))  echo '1  ';
+                                         if( array_key_exists ($a,$kml))  echo '1  ';
                                        }
 
                                    }

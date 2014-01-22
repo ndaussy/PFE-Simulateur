@@ -118,6 +118,11 @@ class Simulation extends CI_Controller {
 
         }
 
+        public function lancerSimu()
+        {
+
+        }
+
         public function map()
         {
             $layout= new layout;
