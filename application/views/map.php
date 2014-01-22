@@ -1,6 +1,4 @@
 
-
-      
 	    <script type="text/javascript"
 	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQs5tR44NEMgFLzDihOwTycxEn-uFBibY&sensor=false">
 	    </script>
@@ -37,13 +35,29 @@
             google.maps.event.addDomListener(window, 'load', initialisation);
 	    </script>
 
+        <div class="span12" id$"style>
+            <legend>Choix simulation</legend>
+        <div class="row-fluid">
+
+            <?php
+            echo '<select name="simulation">',"\n";
+            for($cpt=0; $cpt<count($data['name_simulation']); $cpt++)
+            {
+                echo '<option value="'.$data['name_simulation'][$cpt]['name_simulation'].'">'.$data['name_simulation'][$cpt]['name_simulation'].'</option>';
+            }
+            echo '</select>',"\n";
+            ?>
+
+            <button class="btn btn-info">Charger pour cette simulation</button>
+
+        </div>
+
+        </div>
 		
 	    <div class="span12" id="style">
 	    	 <legend>Map</legend>
 
-             <div class="row-fluid">
-                 Choix de la simulation :
-             </div>
+
 
           <!--   <div class="row-fluid">
                  <div class="span2">
