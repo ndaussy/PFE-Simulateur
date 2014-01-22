@@ -36,45 +36,68 @@
 	    </script>
 
         <div class="span12" id$"style>
-            <legend>Choix simulation</legend>
-        <div class="row-fluid">
+        <?php
 
-            <?php
-            echo '<select name="simulation">',"\n";
-            for($cpt=0; $cpt<count($data['name_simulation']); $cpt++)
+        if(isset($_COOKIE['name_simulation']))
+        {
+            //test de la clés
+
+            if(in_array($_COOKIE['name_simulation'],$name_Simulation))
             {
-                echo '<option value="'.$data['name_simulation'][$cpt]['name_simulation'].'">'.$data['name_simulation'][$cpt]['name_simulation'].'</option>';
+                echo validation_errors();
+
+                echo form_open('simulation/arretSimu');
+
+                echo '<legend>Simulation joué '.$_COOKIE['name_simulation'].'</legend>';
+                echo '<div class="row-fluid">';
+                echo ' <button class="btn btn-warning" name="arret_simulation" type="Submit">pause</button>';
+                echo ' <button class="btn btn-danger" name="name_simulation" type="Submit">Arreter la simulation</button>';
+                echo ' <button class="btn btn-sucess" name="name_simulation" type="Submit">lancer la simulation</button>';
+
             }
-            echo '</select>',"\n";
-            ?>
+            else
+            {
+              echo validation_errors();
 
-            <button class="btn btn-info">Charger pour cette simulation</button>
+              echo form_open('simulation/map');
 
-        </div>
 
-        </div>
-		
+
+               echo '<legend>Choix simulation</legend>';
+               echo '<div class="row-fluid">';
+
+
+                echo '<select name="simulation">',"\n";
+                for($cpt=0; $cpt<count($name_Simulation); $cpt++)
+                {
+                    echo '<option value="'.$name_Simulation[$cpt].'">'.$name_Simulation[$cpt].'</option>';
+                }
+                echo '</select>',"\n";
+
+
+                echo ' <button class="btn btn-info" name="name_simulation" type="Submit">Charger la simulation</button>';
+            }
+        }
+        else
+        {
+           echo ' Activer les cookies pour ce site';
+        }
+
+
+
+         echo '</div>';
+
+         echo '</div>';
+        if(isset($_COOKIE['name_simulation']))//Affichage du tableaux de bord si la simulation est choisie
+        {
+            if(in_array($_COOKIE['name_simulation'],$name_Simulation))
+            {
+         ?>
+
 	    <div class="span12" id="style">
 	    	 <legend>Map</legend>
 
 
-
-          <!--   <div class="row-fluid">
-                 <div class="span2">
-
-                                <input  type="image" src=<?php //echo  base_url()."/assets/img/flecheG.jpg";?>   name="previous">
-                        </div>
-
-                <div class="span6">
-                </div>
-
-
-                <div class="span2">
-
-                        <input  type="image" src=<?php //echo  base_url()."/assets/img/flecheD.jpg";?>   name="previous">
-
-                </div>
-            </div>-->
 
 	    	 <div class="row-fluid">
 
@@ -302,7 +325,9 @@
                 </div>
            </div>
 	    </div>
-
+        <?php
+            }
+        } ?>
 	 
 
 	 

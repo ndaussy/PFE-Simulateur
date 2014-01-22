@@ -4,6 +4,7 @@
     <list default="true" id="736f8e7d-9338-46b1-9285-0c4dbb994677" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/map.php" afterPath="$PROJECT_DIR$/application/views/map.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/simulation.php" afterPath="$PROJECT_DIR$/application/controllers/simulation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PFE-Simulateur.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,24 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="simulation_model.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="28" selection-start="3245" selection-end="3259" vertical-scroll-proportion="-4.923077" vertical-offset="722" max-vertical-offset="1105">
-              <folding>
-                <element signature="n#addSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
-                <element signature="n#deleteSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
-                <element signature="n#findSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
-                <element signature="n#isInSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="user.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="12" selection-start="579" selection-end="579" vertical-scroll-proportion="-6.5384617" vertical-offset="612" max-vertical-offset="3247">
+            <state line="46" column="12" selection-start="579" selection-end="579" vertical-scroll-proportion="-2.6153846" vertical-offset="714" max-vertical-offset="3247">
               <folding />
             </state>
           </provider>
@@ -61,18 +48,36 @@
       <file leaf-file-name="map.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/map.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="13" selection-start="1783" selection-end="1783" vertical-scroll-proportion="-5.230769" vertical-offset="612" max-vertical-offset="5338">
+            <state line="48" column="52" selection-start="1834" selection-end="1834" vertical-scroll-proportion="16.673077" vertical-offset="1683" max-vertical-offset="5763">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#2;n#!!top" expanded="true" />
-                <marker date="1390406400720" expanded="true" signature="2885:3130" placeholder="..." />
-                <marker date="1390406400720" expanded="true" signature="2922:3043" placeholder="..." />
-                <marker date="1390406400720" expanded="true" signature="3071:3130" placeholder="..." />
-                <marker date="1390406400720" expanded="true" signature="3071:3527" placeholder="..." />
-                <marker date="1390406400720" expanded="true" signature="3158:3513" placeholder="{...}" />
-                <marker date="1390406400720" expanded="true" signature="3192:3267" placeholder="{&quot;text&quot;: 'Ligne Numeros 1'...}" />
-                <marker date="1390406400720" expanded="true" signature="3398:3513" placeholder="{...}" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <marker date="1390413774694" expanded="true" signature="3417:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3479:3601" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3545:3584" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3675:3796" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3824:4280" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+                <marker date="1390413774694" expanded="true" signature="3911:4266" placeholder="{...}" />
+                <marker date="1390413774694" expanded="true" signature="3945:4020" placeholder="{&quot;text&quot;: 'Ligne Numeros 1'...}" />
+                <marker date="1390413774694" expanded="true" signature="4151:4266" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -90,16 +95,7 @@
       <file leaf-file-name="simulation.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="33" selection-start="2868" selection-end="2868" vertical-scroll-proportion="0.2225131" vertical-offset="2329" max-vertical-offset="2992">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simulation.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/simulation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="29" selection-start="1409" selection-end="1611" vertical-scroll-proportion="-6.1538463" vertical-offset="996" max-vertical-offset="1853">
+            <state line="221" column="13" selection-start="5669" selection-end="5669" vertical-scroll-proportion="0.55497384" vertical-offset="3545" max-vertical-offset="4165">
               <folding />
             </state>
           </provider>
@@ -160,8 +156,8 @@
         <option value="$PROJECT_DIR$/application/config/config_path.php" />
         <option value="$PROJECT_DIR$/application/models/simulation_model.php" />
         <option value="$PROJECT_DIR$/application/models/execution_model.php" />
-        <option value="$PROJECT_DIR$/application/controllers/simulation.php" />
         <option value="$PROJECT_DIR$/application/views/map.php" />
+        <option value="$PROJECT_DIR$/application/controllers/simulation.php" />
       </list>
     </option>
   </component>
@@ -741,23 +737,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/simulation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="29" selection-start="1409" selection-end="1611" vertical-scroll-proportion="-6.1538463" vertical-offset="996" max-vertical-offset="1853">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/txt_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="40" selection-start="1683" selection-end="1683" vertical-scroll-proportion="-5.230769" vertical-offset="969" max-vertical-offset="3774">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="28" selection-start="3245" selection-end="3259" vertical-scroll-proportion="-4.923077" vertical-offset="722" max-vertical-offset="1105">
+        <state line="120" column="28" selection-start="3245" selection-end="3259" vertical-scroll-proportion="1.2696335" vertical-offset="365" max-vertical-offset="1105">
           <folding>
             <element signature="n#addSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
             <element signature="n#deleteSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
@@ -769,7 +751,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="12" selection-start="579" selection-end="579" vertical-scroll-proportion="-6.5384617" vertical-offset="612" max-vertical-offset="3247">
+        <state line="46" column="12" selection-start="579" selection-end="579" vertical-scroll-proportion="-2.6153846" vertical-offset="714" max-vertical-offset="3247">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/simulation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="29" selection-start="1409" selection-end="1611" vertical-scroll-proportion="0.2853403" vertical-offset="1047" max-vertical-offset="1853">
           <folding />
         </state>
       </provider>
@@ -781,27 +770,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/txt_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="40" selection-start="1683" selection-end="1683" vertical-scroll-proportion="-5.230769" vertical-offset="969" max-vertical-offset="3774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/map.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="13" selection-start="1783" selection-end="1783" vertical-scroll-proportion="-5.230769" vertical-offset="612" max-vertical-offset="5338">
+        <state line="48" column="52" selection-start="1834" selection-end="1834" vertical-scroll-proportion="16.673077" vertical-offset="1683" max-vertical-offset="5763">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#2;n#!!top" expanded="true" />
-            <marker date="1390406400720" expanded="true" signature="2885:3130" placeholder="..." />
-            <marker date="1390406400720" expanded="true" signature="2922:3043" placeholder="..." />
-            <marker date="1390406400720" expanded="true" signature="3071:3130" placeholder="..." />
-            <marker date="1390406400720" expanded="true" signature="3071:3527" placeholder="..." />
-            <marker date="1390406400720" expanded="true" signature="3158:3513" placeholder="{...}" />
-            <marker date="1390406400720" expanded="true" signature="3192:3267" placeholder="{&quot;text&quot;: 'Ligne Numeros 1'...}" />
-            <marker date="1390406400720" expanded="true" signature="3398:3513" placeholder="{...}" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <marker date="1390413774694" expanded="true" signature="3417:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3479:3601" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3545:3584" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3638:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3675:3796" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3824:4280" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3824:3883" placeholder="..." />
+            <marker date="1390413774694" expanded="true" signature="3911:4266" placeholder="{...}" />
+            <marker date="1390413774694" expanded="true" signature="3945:4020" placeholder="{&quot;text&quot;: 'Ligne Numeros 1'...}" />
+            <marker date="1390413774694" expanded="true" signature="4151:4266" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="33" selection-start="2868" selection-end="2868" vertical-scroll-proportion="0.2225131" vertical-offset="2329" max-vertical-offset="2992">
+        <state line="221" column="13" selection-start="5669" selection-end="5669" vertical-scroll-proportion="0.55497384" vertical-offset="3545" max-vertical-offset="4165">
           <folding />
         </state>
       </provider>
