@@ -45,10 +45,10 @@
                  Choix de la simulation :
              </div>
 
-             <div class="row-fluid">
+          <!--   <div class="row-fluid">
                  <div class="span2">
 
-                                <input  type="image" src=<?php echo  base_url()."/assets/img/flecheG.jpg";?>   name="previous">
+                                <input  type="image" src=<?php //echo  base_url()."/assets/img/flecheG.jpg";?>   name="previous">
                         </div>
 
                 <div class="span6">
@@ -57,10 +57,10 @@
 
                 <div class="span2">
 
-                        <input  type="image" src=<?php echo  base_url()."/assets/img/flecheD.jpg";?>   name="previous">
+                        <input  type="image" src=<?php //echo  base_url()."/assets/img/flecheD.jpg";?>   name="previous">
 
                 </div>
-            </div>
+            </div>-->
 
 	    	 <div class="row-fluid">
 
