@@ -14,7 +14,13 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/PFE-Simulateur';
+if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
+    $config['base_url']	= 'http://localhost/PFE-Simulateur';
+} else {
+    $config['base_url'] = 'var/www/prog_C/';
+}
+
+
 
 /*
 |--------------------------------------------------------------------------
