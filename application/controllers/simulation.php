@@ -128,7 +128,9 @@ class Simulation extends CI_Controller {
 		$layout->views('../themes/menu');
 
 
-		$this->load->library('./../models/simulation_model');
+		$this->load->model('simulation_model');
+
+        $data['Simulation_save']=$this->simulation_model->findSimulation('all');
 
         $data['name_simulation']='T2_tronquer';
         $data['time']='3268.3990';

@@ -57,6 +57,13 @@ class Simulation_model extends CI_Model {
 
        $this->load->model('execution_model');
 
+        //lancer le serveur de synchronisation
+        $this->execution_model->serveurSynchronisation();
+
+        //Lancement service gps
+        $this->execution_model->Gps();
+
+        //lancer l'execution pour le dungle
         if($this->execution_model->SendDataDungle($arrayDataDungle,true))
         {
             //return true;

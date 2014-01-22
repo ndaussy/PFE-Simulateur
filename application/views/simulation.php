@@ -63,10 +63,10 @@
                         if($key=='name_simulation')
                         {
 
-                        if($islogin)
-                        {
-                            echo '<Td> <INPUT type="checkbox" name="name_simulation_'.$cpt++.'"; value="'.$value2.'"> </td>';
-                        }
+                            if($islogin)
+                            {
+                                echo '<Td> <INPUT type="checkbox" name="name_simulation_'.$cpt++.'"; value="'.$value2.'"> </td>';
+                            }
 
                         echo '<Td>'.$value2.'</Td>';
                         }

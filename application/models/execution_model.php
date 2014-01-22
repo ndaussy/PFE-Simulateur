@@ -17,7 +17,7 @@ class Execution_model extends CI_Model {
             if($exe==true)
             {
                 //echo  $this->config->item('config_path_prog')."Test_Projet.exe ".$data[$nb_line]['frame']." ".$data[$nb_line]['time']." ".$data[$nb_line]['id'];
-                echo 'lancement process';
+                //echo 'lancement process';
                 if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
                     //lancement asynchrone.
                     pclose(popen($this->config->item('config_path_prog_dungle')." ".$data[$nb_line]['frame']." ".$data[$nb_line]['time']." ".$data[$nb_line]['id'], "r"));
@@ -46,7 +46,7 @@ class Execution_model extends CI_Model {
     }
 
 
-    public function Gps($data)
+    public function Gps()
     {
         if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
             //lancement asynchrone.
