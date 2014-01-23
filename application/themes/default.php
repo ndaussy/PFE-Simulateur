@@ -3,16 +3,21 @@
     <head>
         <title><?php echo $titre; ?></title>
         <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $charset; ?>" />
-        <link rel="icon" type="image/png" href=<?php echo base_url()."/assets/img/logo_ebsf.png";?> />
+        <link rel="icon" type="image/png" href="<?php echo base_url()."assets/img/logo_ebsf.png";?>" />
         
         <?php foreach($css as $url): ?>
         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $url; ?>" />
         <?php endforeach; ?>
 
+        <?php foreach($js_query as $url) {
 
-        <?php foreach($js as $url): ?>
-            <script type="text/javascript" src="<?php echo $url; ?>"></script>
-        <?php endforeach; ?>
+
+                echo '<script type="text/javascript" src="'.$url.'"></script>';
+        }  ?>
+
+
+
+
 
     </head>
     <body>
@@ -34,8 +39,14 @@
 
         </div>
 
+            <?php foreach($js as $url)
+            {
 
+                echo '<script type="text/javascript" src="'.$url.'"></script>';
+
+            } ?>
         
 
     </body>
+
 </html>

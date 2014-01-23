@@ -28,9 +28,11 @@ class Layout
 	$this->var['css'] = array(  base_url()."assets/css/style.css",
 								base_url()."assets/css/bootstrap.min.css",
 								base_url()."assets/css/bootstrap-responsive.min.css");
-    
+
+    $this->var['js_query'] = array(base_url()."assets/javascript/jquery-1.10.2.min.js");
+
     $this->var['js'] = array(
-                         base_url()."assets/javascript/jquery-1.10.2.min.js",
+
     						base_url()."assets/javascript/bootstrap.min.js",
                             base_url()."assets/javascript/highcharts.js",
                             base_url()."assets/javascript/highcharts-more.js",
@@ -126,6 +128,7 @@ class Layout
 		}
 		public function ajouter_js($nom)
 		{
+
 		    if(is_string($nom) AND !empty($nom) AND file_exists('./assets/javascript/' . $nom . '.js'))
 		    {
 		        $this->var['js'][] = js_url($nom);

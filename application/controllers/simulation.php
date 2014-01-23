@@ -137,7 +137,8 @@ class Simulation extends CI_Controller {
             }
             unset($data['name_simulation']);
 
-            if (!get_cookie('name_simulation')) {//premiére visite sur la page
+            if (!get_cookie('name_simulation'))
+            {//premiére visite sur la page
                 // cookie not set, first visit
 
                 // create cookie to avoid hitting this case again
@@ -164,7 +165,9 @@ class Simulation extends CI_Controller {
             }
             else
             {
-                echo 'simulation choisi';
+               // echo 'simulation choisi';
+                $layout->ajouter_js("Interface_user/GoogleMap");
+                $layout->ajouter_js("Interface_user/Ligne");
 
                 $this->load->helper(array('form', 'url'));//deuxieme visites aprés validation du formulaire
 
