@@ -72,7 +72,7 @@ class Telecharger extends CI_Controller {
 
 			$config['upload_path'] = './uploads/';
 			$config['allowed_types'] = 'txt|csv';
-			$config['max_size']	= '0';
+			$config['max_size']	= '0';//Rajouter pour que sa tape dans le fichier ini
 			$config['max_width']  = '0';
 			$config['max_height']  = '0';
 			$config['overwrite'] = true;

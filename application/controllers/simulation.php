@@ -109,10 +109,6 @@ class Simulation extends CI_Controller {
         //[name_simulation] + [time]
         public function playSimulation($data)
         {
-        //$this->load->model("simulation_model");
-        //
-
-
 
         return $this->simulation_model->playsimulation($data);
 
@@ -121,13 +117,48 @@ class Simulation extends CI_Controller {
         public function lancerSimu()
         {
 
+            $this->load->library('form_validation');
+            $this->load->helper('form');
+            $this->load->helper('cookie');
+
+            $this->load->model('simulation_model');
+
+            if($this->input->post('ajax') == '1') {
+
+                $this->form_validation->set_rules('time', 'time', 'trim|required|xss_clean');
+                $this->form_validation->set_message('required', 'Please fill in the fields');
+
+                if($this->form_validation->run() == FALSE) {
+                    echo validation_errors();
+                } else {
+                    //var_dump($_COOKIE);
+                    //Prendre la prochaine itération du temps; réaliser la requête & renvoyé le résultat
+                    $arraydata=array('name_simulation'=>$_COOKIE['name_simulation'],'Scumul'=>$this->input->post('time'),'time'=>$this->input->post('time'));
+
+                   if(($receivedata=$this->simulation_model->findSmallestTimeBetweenTxtCsv($arraydata))!=false)
+                   {
+
+                       echo $receivedata[0]['min( Scumul )'].'login successful';
+                    //var_dump($receivedata);
+                   }
+                   else
+                   {
+
+                   }
+
+
+                }
+            }
+
         }
 
         public function map()
         {
             $layout= new layout;
+            $this->load->library('form_validation');
             $this->load->helper('cookie');
             $this->load->model('simulation_model');
+            $this->load->helper('form');
             $layout->set_titre("Map");
             $data['name_simulation']=$this->simulation_model->findSimulation('all');
 
@@ -137,26 +168,9 @@ class Simulation extends CI_Controller {
             }
             unset($data['name_simulation']);
 
-            if (!get_cookie('name_simulation'))
-            {//premiére visite sur la page
-                // cookie not set, first visit
-
-                // create cookie to avoid hitting this case again
-                $cookie = array(
-                    'name'   => 'name_simulation',
-                    'value'  => 'null',
-                    'expire' => '86500'
-                );
-
-
-
-                $this->input->set_cookie($cookie);
-
-
-
+            if (!get_cookie('name_simulation'))//faire le choix de la
+            {
                 $layout->views('../themes/menu');
-
-
 
                 $layout->views('map',$data);
 
@@ -186,7 +200,16 @@ class Simulation extends CI_Controller {
                 else
                 {
 
-                    $_COOKIE['name_simulation']=$this->input->post('simulation');
+                    if(in_array($this->input->post('simulation'),$data['name_Simulation']))
+                    {
+                    // create cookie to avoid hitting this case again
+                    $cookie = array(
+                        'name'   => 'name_simulation',
+                        'value'  => $this->input->post('simulation'),
+                        'expire' => '1286500'
+                    );
+
+                    $this->input->set_cookie($cookie);
 
                     $layout= new layout;
 
@@ -217,6 +240,11 @@ class Simulation extends CI_Controller {
                     $layout->views('map',$data);
 
                     $layout->view('../themes/footer');
+                    }
+                    else
+                    {
+                        echo "A faire ";
+                    }
                 }
             }
 
@@ -229,6 +257,7 @@ class Simulation extends CI_Controller {
             if (get_cookie('name_simulation'))
             {
                 delete_cookie('name_simulation');
+                delete_cookie('time');
 
                 $this->map();
 

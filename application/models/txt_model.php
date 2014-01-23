@@ -64,7 +64,7 @@ class Txt_model extends CI_Model {
 
         // for set memory limit & execution time
         ini_set('memory_limit', '512M');
-        ini_set('max_execution_time', '780');
+        ini_set('max_execution_time', '2780');
 
         $etat_simu=true;
 

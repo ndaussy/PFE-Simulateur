@@ -81,6 +81,28 @@ class Simulation_model extends CI_Model {
 
     }
 
+    //format $data 'name_simulation'=>Tata Scumul=>0.0 time=>0.0
+    function findSmallestTimeBetweenTxtCsv($data)
+    {
+       $q=' SELECT min( Scumul )
+            FROM `csv`
+            WHERE Scumul != '.$data['Scumul'].'
+                AND name_simulation = "'.$data['name_simulation'].'";';
+
+        echo $q;
+
+        $q=$this->db->query($q);
+
+        if($q->num_rows()==1)
+        {
+            return $q->result_array();
+        }
+        else
+        {
+            return false;
+        }
+
+    }
     //
     function deleteSimulation($ArraySimu)
     {
