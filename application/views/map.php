@@ -12,7 +12,7 @@
 
                 //test de la clés
 
-                if(in_array($_COOKIE['name_simulation'],$name_Simulation)&&isset($_COOKIE['name_simulation']))
+                if(isset($_COOKIE['name_simulation']))//si existe
                 {
                     echo validation_errors();
 
@@ -29,7 +29,7 @@
                     echo'</form>';
 
                 }
-                else
+                else//si existe pas
                 {
                     echo validation_errors();
 

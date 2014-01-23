@@ -8,12 +8,12 @@
         <?php foreach($css as $url): ?>
         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $url; ?>" />
         <?php endforeach; ?>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-        <?php /* foreach($js_query as $url) {
+
+        <?php  foreach($js_query as $url) {
 
 
                 echo '<script type="text/javascript" src="'.$url.'"></script>';
-        } */ ?>
+        }  ?>
 
 
 

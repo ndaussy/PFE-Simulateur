@@ -86,7 +86,7 @@ class Simulation_model extends CI_Model {
     {
        $q=' SELECT min( Scumul )
             FROM `csv`
-            WHERE Scumul != '.$data['Scumul'].'
+            WHERE Scumul > '.$data['Scumul'].'
                 AND name_simulation = "'.$data['name_simulation'].'";';
 
         echo $q;

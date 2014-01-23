@@ -138,7 +138,7 @@ class Simulation extends CI_Controller {
                    if(($receivedata=$this->simulation_model->findSmallestTimeBetweenTxtCsv($arraydata))!=false)
                    {
 
-                       echo $receivedata[0]['min( Scumul )'].'login successful';
+                       echo " Valeur retour : ".$receivedata[0]['min( Scumul )'];
                     //var_dump($receivedata);
                    }
                    else
@@ -168,7 +168,7 @@ class Simulation extends CI_Controller {
             }
             unset($data['name_simulation']);
 
-            if (!get_cookie('name_simulation'))//faire le choix de la
+            if (isset($_COOKIE['name_simulation']))//Si n'existe pas
             {
                 $layout->views('../themes/menu');
 
@@ -252,16 +252,32 @@ class Simulation extends CI_Controller {
 
         public function arretSimu()
         {
+            $layout= new layout;
             $this->load->helper('cookie');
+            $this->load->model('simulation_model');
+            $this->load->helper('form');
+            $layout->set_titre("Map");
+            $data['name_simulation']=$this->simulation_model->findSimulation('all');
 
-            if (get_cookie('name_simulation'))
+            if(isset($_COOKIE['name_simulation']))
             {
                 delete_cookie('name_simulation');
                 delete_cookie('time');
 
-                $this->map();
+                
+
 
             }
+
+            $layout= new layout;
+
+            $layout->set_titre("Map");
+
+            $layout->views('../themes/menu');
+
+            $layout->views('map',$data);
+
+            $layout->view('../themes/footer');
         }
 
 
