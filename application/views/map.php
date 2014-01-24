@@ -75,8 +75,11 @@
                     data: form_data,
                     success:
                         function (msg) {
-                            alert('message send');
+                            //alert('message send');
                             $('#message').html(msg);
+                            document.getElementById('time').value=msg;
+
+                            //$('#time').html(msg);
                         }
                 });
 
@@ -84,7 +87,6 @@
 
                 return false;
             });
-
 
 
         });
@@ -104,6 +106,7 @@
 
 	    <div class="span12" id="style">
 	    	 <legend>Map</legend>
+         <div class="span12"> </div>
         <?
        // require_once(base_url().'/assets/javascript/Interface_user/ChargementPageClient.js');
         ?>
@@ -114,7 +117,7 @@
         <div id="message">
             </div>
 
-            <?=form_input(array('name'=>'time','value'=>'0.0','class'=>'time textbox','style'=>'width:150px;'))?><br />
+            <?=form_input(array('name'=>'time','id'=>'time','value'=>'0.0','class'=>'time textbox','style'=>'width:150px;'))?><br />
 
             <p>
         <?='<br />'.form_submit('submit','test','id="submit"')?>

@@ -123,14 +123,17 @@ class Simulation extends CI_Controller {
 
             $this->load->model('simulation_model');
 
-            if($this->input->post('ajax') == '1') {
+            if($this->input->post('ajax') == '1')
+            {
 
                 $this->form_validation->set_rules('time', 'time', 'trim|required|xss_clean');
                 $this->form_validation->set_message('required', 'Please fill in the fields');
 
-                if($this->form_validation->run() == FALSE) {
+                if($this->form_validation->run() == FALSE)
+                {
                     echo validation_errors();
-                } else {
+                } else
+                {
                     //var_dump($_COOKIE);
                     //Prendre la prochaine itération du temps; réaliser la requête & renvoyé le résultat
                     $arraydata=array('name_simulation'=>$_COOKIE['name_simulation'],'Scumul'=>$this->input->post('time'),'time'=>$this->input->post('time'));
@@ -138,7 +141,7 @@ class Simulation extends CI_Controller {
                    if(($receivedata=$this->simulation_model->findSmallestTimeBetweenTxtCsv($arraydata))!=false)
                    {
 
-                       echo " Valeur retour : ".$receivedata[0]['min( Scumul )'];
+                       echo $receivedata[0]['min( Scumul )'];
                     //var_dump($receivedata);
                    }
                    else
@@ -264,7 +267,7 @@ class Simulation extends CI_Controller {
                 delete_cookie('name_simulation');
                 delete_cookie('time');
 
-                
+
 
 
             }

@@ -89,7 +89,7 @@ class Simulation_model extends CI_Model {
             WHERE Scumul > '.$data['Scumul'].'
                 AND name_simulation = "'.$data['name_simulation'].'";';
 
-        echo $q;
+       // echo $q;
 
         $q=$this->db->query($q);
 
