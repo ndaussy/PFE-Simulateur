@@ -272,15 +272,7 @@ class Simulation extends CI_Controller {
 
             }
 
-            $layout= new layout;
-
-            $layout->set_titre("Map");
-
-            $layout->views('../themes/menu');
-
-            $layout->views('map',$data);
-
-            $layout->view('../themes/footer');
+            $this->map();
         }
 
 

@@ -1,7 +1,84 @@
 
 
 
-            <?php require_once(base_url().'/assets/javascript/Interface_user/GoogleMap.js');  ?>
+
+
+            <script >
+
+                $(document).ready(function() {
+
+                    var myVar;
+                    var DoSimu=true;
+
+
+
+                    $('#lancerSimu').click(function() {
+
+                        DoSimu=true;
+
+                        var timeExecution=0.0;
+                        //myVar=setInterval(function(){Execution()},1000);//Execute toutes les 1000 milliseconde la fonction
+
+                        function Execution()
+                        {
+                        var Ancientime=$('.time').val();
+                        var TempsRecu=0.0;
+
+                        //declaration d'une forme
+                        var form_data = {
+                            time : $('.time').val(),
+                            ajax : '1',
+                            tempsMoyenRequete : 0.10//100ms
+                        };
+
+                        $.ajax({
+                            url: "<?php echo site_url('simulation/lancerSimu'); ?>",
+                            type: 'POST',
+                            async : false,
+                            data: form_data,
+                            success:
+                                function (msg) {
+                                    //alert('message send');
+                                    $('#message').html(msg);
+
+                                    //alert(timeExecution);
+                                    TempsRecu=msg;
+                                    document.getElementById('time').value=msg;
+                                }
+                        });
+
+                            timeExecution=Ancientime-TempsRecu-0.1;
+
+                        return false;
+
+                        };
+
+                        function Timeout()
+                        {
+                            if(DoSimu)
+                            {
+                            setTimeout(Execution,timeExecution);
+                            }
+                        }
+
+                        myVar=setInterval(function(){Timeout()},100);//Execute toutes les 1000 milliseconde la fonction
+
+
+
+                    });
+
+                    $('#pause').click(function() {
+
+                        DoSimu=false;
+
+                    });
+
+
+
+
+                });
+
+            </script>
 
 	    </script>
 
@@ -14,19 +91,25 @@
 
                 if(isset($_COOKIE['name_simulation']))//si existe
                 {
+
+                    require_once(base_url().'/assets/javascript/Interface_user/GoogleMap.js');
+
                     echo validation_errors();
 
-                    echo form_open('simulation/arretSimu');
+
 
                     echo '<legend>Simulation joué '.$_COOKIE['name_simulation'].'</legend>';
                     echo '<div class="row-fluid">';
 
+                     echo form_open('simulation/arretSimu');
+                    echo ' <button class="btn btn-danger"  name="name_simulation" type="Submit">Arreter la simulation</button>';
+                     echo'</form>';
 
-                    echo ' <button class="btn btn-danger" name="name_simulation" type="Submit">Arreter la simulation</button>';
-                    echo ' <button class="btn btn-warning" name="arret_simulation" type="Submit">pause</button>';
-                    echo ' <button class="btn btn-success" name="name_simulation" type="Submit">lancer la simulation</button>';
 
-                    echo'</form>';
+                   echo ' <button class="btn btn-warning" id="pause" name="arret_simulation" type="Submit">pause</button>';
+
+                    echo ' <button class="btn btn-success" id="lancerSimu" name="name_simulation" >Lancer la simulation</button>';
+                    echo '</div>';
 
                 }
                 else//si existe pas
@@ -61,39 +144,7 @@
              </div>
         </div>
 
-          <script >
-        $(document).ready(function() {
-            $('#submit').click(function() {
-                var form_data = {
-                    time : $('.time').val(),
-                    ajax : '1'
-                };
-                $.ajax({
-                    url: "<?php echo site_url('simulation/lancerSimu'); ?>",
-                    type: 'POST',
-                    async : false,
-                    data: form_data,
-                    success:
-                        function (msg) {
-                            //alert('message send');
-                            $('#message').html(msg);
-                            document.getElementById('time').value=msg;
 
-                            //$('#time').html(msg);
-                        }
-                });
-
-
-
-                return false;
-            });
-
-
-        });
-
-
-
-        </script>
 
         <?php
         if(isset($_COOKIE['name_simulation']))//Affichage du tableaux de bord si la simulation est choisie
@@ -115,6 +166,8 @@
  echo form_open('simulation/lancerSimu');
  ?>
         <div id="message">
+            </div>
+        <div id="timer">
             </div>
 
             <?=form_input(array('name'=>'time','id'=>'time','value'=>'0.0','class'=>'time textbox','style'=>'width:150px;'))?><br />

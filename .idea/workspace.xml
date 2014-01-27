@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="736f8e7d-9338-46b1-9285-0c4dbb994677" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\application\models\soap_gps.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/map.php" afterPath="$PROJECT_DIR$/application/views/map.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/simulation.php" afterPath="$PROJECT_DIR$/application/controllers/simulation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/simulation_model.php" afterPath="$PROJECT_DIR$/application/models/simulation_model.php" />
@@ -31,28 +32,97 @@
       <file leaf-file-name="simulation.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="16" selection-start="3345" selection-end="3345" vertical-scroll-proportion="-13.730769" vertical-offset="1020" max-vertical-offset="4199">
+            <state line="273" column="0" selection-start="7698" selection-end="7698" vertical-scroll-proportion="-18.307692" vertical-offset="136" max-vertical-offset="952">
               <folding>
+                <element signature="n#index#0;n#Simulation#0;n#!!top" expanded="false" />
                 <element signature="n#gestion#0;n#Simulation#0;n#!!top" expanded="false" />
+                <element signature="n#playSimulation#0;n#Simulation#0;n#!!top" expanded="false" />
+                <element signature="n#lancerSimu#0;n#Simulation#0;n#!!top" expanded="false" />
+                <element signature="n#map#0;n#Simulation#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simulation_model.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
+      <file leaf-file-name="simulation.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/simulation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="9" selection-start="2588" selection-end="2588" vertical-scroll-proportion="0.3768116" vertical-offset="1339" max-vertical-offset="3298">
+            <state line="68" column="29" selection-start="1409" selection-end="1611" vertical-scroll-proportion="-15.961538" vertical-offset="741" max-vertical-offset="1853">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/themes/menu.php">
+      <file leaf-file-name="telecharger_Simu.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/telecharger_Simu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="50" selection-start="2796" selection-end="2946" vertical-scroll-proportion="-36.923077" vertical-offset="213" max-vertical-offset="1632">
+            <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="884">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="telecharger_do_upload.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/telecharger_do_upload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="272">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simulation_model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="0" selection-start="2387" selection-end="2387" vertical-scroll-proportion="-8.653846" vertical-offset="200" max-vertical-offset="1972">
+              <folding>
+                <element signature="e#238#1480#0" expanded="false" />
+                <element signature="e#1432#1480#0" expanded="false" />
+                <element signature="n#playsimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
+                <element signature="n#findSmallestTimeBetweenTxtCsv#0;n#Simulation_model#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/map.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="59" selection-start="831" selection-end="831" vertical-scroll-proportion="-0.16068053" vertical-offset="595" max-vertical-offset="3859">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ligne.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/javascript/Interface_user/Ligne.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="6" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1479">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="telecharger.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/telecharger.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="115" column="66" selection-start="2559" selection-end="2572" vertical-scroll-proportion="-9.807693" vertical-offset="1700" max-vertical-offset="3859">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kml_model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/kml_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="0" selection-start="887" selection-end="887" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="374">
+              <folding>
+                <element signature="n#is_in_txt_table#0;n#Kml_model#0;n#!!top" expanded="false" />
+                <element signature="n#delete_data_kml#0;n#Kml_model#0;n#!!top" expanded="false" />
+                <element signature="n#insert_data_kml#0;n#Kml_model#0;n#!!top" expanded="false" />
+                <element signature="n#save_kml#0;n#Kml_model#0;n#!!top" expanded="false" />
+                <element signature="n#getArretByLine#0;n#Kml_model#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,47 +132,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="0" selection-start="597" selection-end="597" vertical-scroll-proportion="9.0" vertical-offset="404" max-vertical-offset="969">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="txt_model.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/txt_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="212" column="15" selection-start="5422" selection-end="5441" vertical-scroll-proportion="-14.692307" vertical-offset="3222" max-vertical-offset="3774">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="25" selection-start="1023" selection-end="1032" vertical-scroll-proportion="34.576923" vertical-offset="1477" max-vertical-offset="6375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/map.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="30" selection-start="2556" selection-end="2556" vertical-scroll-proportion="-14.038462" vertical-offset="1012" max-vertical-offset="2958">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1390579811147" expanded="true" signature="3447:3459" placeholder="..." />
-                <marker date="1390579811147" expanded="true" signature="3573:3781" placeholder="..." />
-                <marker date="1390579811147" expanded="true" signature="3880:3919" placeholder="..." />
-                <marker date="1390579811147" expanded="true" signature="3968:4167" placeholder="..." />
-                <marker date="1390579811147" expanded="true" signature="3968:4167" placeholder="..." />
-                <marker date="1390579811147" expanded="true" signature="3968:4167" placeholder="..." />
-                <marker date="1390579811147" expanded="true" signature="4005:4126" placeholder="..." />
-                <marker date="1390579811147" expanded="true" signature="4256:4450" placeholder="..." />
-                <marker date="1390579811147" expanded="true" signature="4293:4450" placeholder="..." />
-                <marker date="1390579811147" expanded="true" signature="4338:4403" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -171,9 +200,9 @@
         <option value="$PROJECT_DIR$/application/controllers/my_controleur.php" />
         <option value="$PROJECT_DIR$/assets/javascript/Interface_user/ChargementPageClient.js" />
         <option value="$PROJECT_DIR$/application/themes/default.php" />
-        <option value="$PROJECT_DIR$/application/views/map.php" />
-        <option value="$PROJECT_DIR$/application/controllers/simulation.php" />
         <option value="$PROJECT_DIR$/application/models/simulation_model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/simulation.php" />
+        <option value="$PROJECT_DIR$/application/views/map.php" />
       </list>
     </option>
   </component>
@@ -332,24 +361,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PFE-Simulateur" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PFE-Simulateur" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -368,43 +379,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="errors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PFE-Simulateur" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PFE-Simulateur" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PFE-Simulateur" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PFE-Simulateur" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -505,23 +480,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10091047" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18968134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18968134" sideWeight="0.74634147" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18968134" sideWeight="0.25365853" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3197492" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1645768" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -582,21 +557,7 @@
     <entry file="file://$PROJECT_DIR$/application/views/map.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="49" selection-start="2922" selection-end="2937" vertical-scroll-proportion="0.0" vertical-offset="2021" max-vertical-offset="2975">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1390579811147" expanded="true" signature="3447:3459" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="3573:3781" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="3880:3919" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="3968:4167" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="3968:4167" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="3968:4167" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="4005:4126" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="4256:4450" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="4293:4450" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="4338:4403" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -668,11 +629,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1683" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/soap_gps.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="314" selection-end="314" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="510" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/unit_test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2550" />
@@ -688,29 +644,9 @@
         <state line="200" column="23" selection-start="4795" selection-end="4815" vertical-scroll-proportion="0.33333334" vertical-offset="3266" max-vertical-offset="8228" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/kml_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="0" selection-start="2456" selection-end="2456" vertical-scroll-proportion="-59.03846" vertical-offset="301" max-vertical-offset="1938" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/execution_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="18" selection-start="749" selection-end="749" vertical-scroll-proportion="-6.5" vertical-offset="154" max-vertical-offset="1513" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/telecharger_Simu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="884" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/telecharger_do_upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="0.26631853" vertical-offset="0" max-vertical-offset="383" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/simulation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="29" selection-start="1409" selection-end="1611" vertical-scroll-proportion="0.2853403" vertical-offset="1047" max-vertical-offset="1853" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
@@ -756,11 +692,6 @@
     <entry file="file://$PROJECT_DIR$/application/themes/connexion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="1.2905759" vertical-offset="0" max-vertical-offset="765" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascript/Interface_user/Ligne.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="1479" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/javascript/Interface_user/Vitesse.js">
@@ -817,18 +748,6 @@
         <state line="7" column="52" selection-start="548" selection-end="548" vertical-scroll-proportion="0.22410546" vertical-offset="0" max-vertical-offset="531" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/telecharger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="85" selection-start="1501" selection-end="1501" vertical-scroll-proportion="-2.8333333" vertical-offset="2822" max-vertical-offset="3859" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/themes/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="597" selection-end="597" vertical-scroll-proportion="9.0" vertical-offset="404" max-vertical-offset="969">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/txt_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="212" column="15" selection-start="5422" selection-end="5441" vertical-scroll-proportion="-14.692307" vertical-offset="3222" max-vertical-offset="3774">
@@ -850,39 +769,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/map.php">
+    <entry file="file://$PROJECT_DIR$/application/themes/default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="30" selection-start="2556" selection-end="2556" vertical-scroll-proportion="-14.038462" vertical-offset="1012" max-vertical-offset="2958">
+        <state line="10" column="0" selection-start="597" selection-end="597" vertical-scroll-proportion="9.0" vertical-offset="404" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/telecharger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="66" selection-start="2559" selection-end="2572" vertical-scroll-proportion="-9.807693" vertical-offset="1700" max-vertical-offset="3859">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/simulation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="29" selection-start="1409" selection-end="1611" vertical-scroll-proportion="-15.961538" vertical-offset="741" max-vertical-offset="1853">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/telecharger_do_upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/telecharger_Simu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="0" selection-start="2387" selection-end="2387" vertical-scroll-proportion="-8.653846" vertical-offset="200" max-vertical-offset="1972">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1390579811147" expanded="true" signature="3447:3459" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="3573:3781" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="3880:3919" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="3968:4167" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="3968:4167" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="3968:4167" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="4005:4126" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="4256:4450" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="4293:4450" placeholder="..." />
-            <marker date="1390579811147" expanded="true" signature="4338:4403" placeholder="..." />
+            <element signature="e#238#1480#0" expanded="false" />
+            <element signature="e#1432#1480#0" expanded="false" />
+            <element signature="n#playsimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
+            <element signature="n#findSmallestTimeBetweenTxtCsv#0;n#Simulation_model#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="16" selection-start="3345" selection-end="3345" vertical-scroll-proportion="-13.730769" vertical-offset="1020" max-vertical-offset="4199">
+        <state line="273" column="0" selection-start="7698" selection-end="7698" vertical-scroll-proportion="-18.307692" vertical-offset="136" max-vertical-offset="952">
           <folding>
+            <element signature="n#index#0;n#Simulation#0;n#!!top" expanded="false" />
             <element signature="n#gestion#0;n#Simulation#0;n#!!top" expanded="false" />
+            <element signature="n#playSimulation#0;n#Simulation#0;n#!!top" expanded="false" />
+            <element signature="n#lancerSimu#0;n#Simulation#0;n#!!top" expanded="false" />
+            <element signature="n#map#0;n#Simulation#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
+    <entry file="file://$PROJECT_DIR$/application/models/kml_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="9" selection-start="2588" selection-end="2588" vertical-scroll-proportion="0.3768116" vertical-offset="1339" max-vertical-offset="3298">
+        <state line="57" column="0" selection-start="887" selection-end="887" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="374">
+          <folding>
+            <element signature="n#is_in_txt_table#0;n#Kml_model#0;n#!!top" expanded="false" />
+            <element signature="n#delete_data_kml#0;n#Kml_model#0;n#!!top" expanded="false" />
+            <element signature="n#insert_data_kml#0;n#Kml_model#0;n#!!top" expanded="false" />
+            <element signature="n#save_kml#0;n#Kml_model#0;n#!!top" expanded="false" />
+            <element signature="n#getArretByLine#0;n#Kml_model#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/javascript/Interface_user/Ligne.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/map.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="59" selection-start="831" selection-end="831" vertical-scroll-proportion="-0.16068053" vertical-offset="595" max-vertical-offset="3859">
           <folding />
         </state>
       </provider>

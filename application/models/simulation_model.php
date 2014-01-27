@@ -81,12 +81,12 @@ class Simulation_model extends CI_Model {
 
     }
 
-    //format $data 'name_simulation'=>Tata Scumul=>0.0 time=>0.0
+    //format $data 'name_simulation'=>Tata Scumul=>0.0 time=>0.0 ajout d'un delta du au temps de requête
     function findSmallestTimeBetweenTxtCsv($data)
     {
        $q=' SELECT min( Scumul )
             FROM `csv`
-            WHERE Scumul > '.$data['Scumul'].'
+            WHERE Scumul > ('.$data['Scumul'].'+0.1)
                 AND name_simulation = "'.$data['name_simulation'].'";';
 
        // echo $q;
@@ -103,6 +103,7 @@ class Simulation_model extends CI_Model {
         }
 
     }
+
     //
     function deleteSimulation($ArraySimu)
     {
