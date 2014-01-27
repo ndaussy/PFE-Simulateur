@@ -9,6 +9,7 @@
 
                     var myVar;
                     var DoSimu=true;
+                    var EndSimu=false;
 
 
 
@@ -38,16 +39,25 @@
                             data: form_data,
                             success:
                                 function (msg) {
-                                    //alert('message send');
+
                                     $('#message').html(msg);
 
-                                    //alert(timeExecution);
                                     TempsRecu=msg;
+
                                     document.getElementById('time').value=msg;
                                 }
                         });
-
+                            if(Ancientime==TempsRecu)
+                            {
+                                EndSimu=true;
+                                document.getElementById('time').value='Simulation terminé';
+                            }
+                            else
+                            {
                             timeExecution=Ancientime-TempsRecu-0.1;
+                            }
+
+
 
                         return false;
 
@@ -55,13 +65,20 @@
 
                         function Timeout()
                         {
-                            if(DoSimu)
+                            if(DoSimu||!EndSimu)
                             {
                             setTimeout(Execution,timeExecution);
                             }
+                            else if(EndSimu)//arret simu
+                            {
+                            clearInterval(myVar);
+                            }
                         }
 
-                        myVar=setInterval(function(){Timeout()},100);//Execute toutes les 1000 milliseconde la fonction
+                        if(!EndSimu)
+                        {
+                            myVar=setInterval(function(){Timeout()},100);//Execute toutes les 1000 milliseconde la fonction
+                        }
 
 
 
