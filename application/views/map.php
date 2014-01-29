@@ -16,6 +16,7 @@
                     $('#lancerSimu').click(function() {
 
                         DoSimu=true;
+                        EndSimu=false;
 
                         var timeExecution=0.0;
                         //myVar=setInterval(function(){Execution()},1000);//Execute toutes les 1000 milliseconde la fonction
@@ -24,6 +25,7 @@
                         {
                         var Ancientime=$('.time').val();
                         var TempsRecu=0.0;
+
 
                         //declaration d'une forme
                         var form_data = {
@@ -40,17 +42,24 @@
                             success:
                                 function (msg) {
 
-                                    $('#message').html(msg);
-
-                                    TempsRecu=msg;
-
                                     document.getElementById('time').value=msg;
+
+                                    if(msg!=false)//reçoit false à la fin
+                                    {
+                                    $('#message').html(msg);
+                                    TempsRecu=msg;
+                                        //alert(msg.join(""));
+                                    }
+                                    else
+                                    {
+                                    EndSimu=true;
+                                    }
                                 }
                         });
-                            if(Ancientime==TempsRecu)
+                            if(EndSimu)
                             {
-                                EndSimu=true;
                                 document.getElementById('time').value='Simulation terminé';
+                                $('#message').html("Simulation terminé");
                             }
                             else
                             {
@@ -65,11 +74,12 @@
 
                         function Timeout()
                         {
-                            if(DoSimu||!EndSimu)
+                            if(DoSimu)//pour la pause
                             {
                             setTimeout(Execution,timeExecution);
                             }
-                            else if(EndSimu)//arret simu
+
+                            if(EndSimu)//arret simu
                             {
                             clearInterval(myVar);
                             }
@@ -109,7 +119,7 @@
                 if(isset($_COOKIE['name_simulation']))//si existe
                 {
 
-                    require_once(base_url().'/assets/javascript/Interface_user/GoogleMap.js');
+                    //require_once(base_url().'/assets/javascript/Interface_user/GoogleMap.js');
 
                     echo validation_errors();
 
@@ -179,18 +189,14 @@
        // require_once(base_url().'/assets/javascript/Interface_user/ChargementPageClient.js');
         ?>
 
-        <?php
- echo form_open('simulation/lancerSimu');
- ?>
-        <div id="message">
-            </div>
-        <div id="timer">
-            </div>
-
+                <?php
+         echo form_open('simulation/lancerSimu');
+         ?>
+        <div id="message"></div>
             <?=form_input(array('name'=>'time','id'=>'time','value'=>'0.0','class'=>'time textbox','style'=>'width:150px;'))?><br />
 
             <p>
-        <?='<br />'.form_submit('submit','test','id="submit"')?>
+
         </p>
             <?=form_close("\n")?>
 

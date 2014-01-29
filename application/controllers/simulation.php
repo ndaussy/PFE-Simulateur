@@ -106,16 +106,12 @@ class Simulation extends CI_Controller {
 
         }
 
-        //[name_simulation] + [time]
-        public function playSimulation($data)
-        {
 
-        return $this->simulation_model->playsimulation($data);
-
-        }
 
         public function lancerSimu()
         {
+
+
 
             $this->load->library('form_validation');
             $this->load->helper('form');
@@ -127,26 +123,30 @@ class Simulation extends CI_Controller {
             {
 
                 $this->form_validation->set_rules('time', 'time', 'trim|required|xss_clean');
-                $this->form_validation->set_message('required', 'Please fill in the fields');
+                $this->form_validation->set_message('required', '0');
 
                 if($this->form_validation->run() == FALSE)
                 {
-                    echo validation_errors();
+                    echo false;
                 } else
                 {
-                    //var_dump($_COOKIE);
                     //Prendre la prochaine itération du temps; réaliser la requête & renvoyé le résultat
                     $arraydata=array('name_simulation'=>$_COOKIE['name_simulation'],'Scumul'=>$this->input->post('time'),'time'=>$this->input->post('time'));
 
-                   if(($receivedata=$this->simulation_model->findSmallestTimeBetweenTxtCsv($arraydata))!=false)
+                    //lance la simu pour les valeurs récupéré => tableau envoyé name_simulation,Scumul,time;
+                    $this->simulation_model->playsimulation($arraydata);
+
+
+
+                    if(($receivedata=$this->simulation_model->findSmallestTimeBetweenTxtCsv($arraydata))!=false)//si on ne trouve plus rien
                    {
+                      //play les simulations :
 
                        echo $receivedata[0]['min( Scumul )'];
-                    //var_dump($receivedata);
                    }
                    else
                    {
-
+                       echo false;
                    }
 
 

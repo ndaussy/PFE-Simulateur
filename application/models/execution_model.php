@@ -9,9 +9,10 @@ class Execution_model extends CI_Model {
 
     try
     {
+        var_dump($data);
         for($nb_line=0;$nb_line<count($data);$nb_line++)
         {
-            //echo $this->config->item('config_path_prog')."sendDataDungle.exe ".$data[$nb_line]['frame']." ".$data[$nb_line]['time']." ".$data[$nb_line]['id']."\n";
+            //echo $this->config->item('config_path_prog')a."sendDataDungle.exe ".$data[$nb_line]['frame']." ".$dta[$nb_line]['time']." ".$data[$nb_line]['id']."\n";
             //Appel de la fonction du dungle
 
             if($exe==true)
@@ -20,11 +21,11 @@ class Execution_model extends CI_Model {
                 //echo 'lancement process';
                 if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
                     //lancement asynchrone.
-                    pclose(popen($this->config->item('config_path_prog_dungle')." ".$data[$nb_line]['frame']." ".$data[$nb_line]['time']." ".$data[$nb_line]['id'], "r"));
+                    pclose(popen($this->config->item('config_path_prog_dungle')." ".$data[$nb_line]['frame']." ".$data[$nb_line]['id'] , "r"));
 
                 } else {
 
-                    system($this->config->item('config_path_prog')."Test_Projet.exe ".$data[$nb_line]['frame']." ".$data[$nb_line]['time']." ".$data[$nb_line]['id']." $!");
+                    system($this->config->item('config_path_prog')."Test_Projet.exe ".$data[$nb_line]['frame']." ".$data[$nb_line]['id']." $!");
 
                 }
 

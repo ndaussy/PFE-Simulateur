@@ -51,33 +51,33 @@ class Simulation_model extends CI_Model {
     //[name_simulation] [time]
     function playsimulation($arrayData)
     {
-        $this->load->model('txt_model');
-
-        $arrayDataDungle=$this->txt_model->returnInformation($arrayData);
 
        $this->load->model('execution_model');
 
         //lancer le serveur de synchronisation
-        $this->execution_model->serveurSynchronisation();
+       //$this->execution_model->serveurSynchronisation();
+
+       // $this->load->model('csv_model');
+
+       // $arrayDataJava=$this->csv_model->returnInformation($arrayData);
 
         //Lancement service gps
-        $this->execution_model->Gps();
+       //$this->execution_model->Gps();
 
+
+        $this->load->model('txt_model');
         //lancer l'execution pour le dungle
-        if($this->execution_model->SendDataDungle($arrayDataDungle,true))
+        if($this->execution_model->SendDataDungle( $this->txt_model->returnInformation(array('name_simulation'=>$arrayData['name_simulation'],'time'=>$arrayData['time']))
+           ,true))
         {
-            //return true;
+
         }
         else
         {
             return false;
         }
 
-        $this->load->model('csv_model');
 
-        $arrayDataJava=$this->csv_model->returnInformation($arrayData);
-
-        return $arrayData;
 
     }
 

@@ -42,9 +42,11 @@ public function index()
         $this->layout->views('welcome_message')
             ->view('../themes/footer');
 
+       /* $this->load->model('simulation_model');
 
-
-
+        //[name_simulation] [time]
+        $this->simulation_model->playsimulation(array("name_simulation"=>"T1_tronquer","time"=>'0.0'));
+        */
 
         /*   $this->load->model('kml_model');
 

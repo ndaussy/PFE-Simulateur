@@ -33,15 +33,18 @@ class Txt_model extends CI_Model {
     }
 
     //format du tableau recçu [0] => ['time'] ['name_simulation']
-    //Format du tableau retour ['frame'] ['time'] ['id']
     public function returnInformation($arrayInfo)
     {
-        $q=$this->db->get('txt',$arrayInfo);
+
+        $q=$this->db->query('SELECT * FROM txt WHERE
+                                     name_simulation = "'.$arrayInfo['name_simulation'].'"
+                                     AND time = '.$arrayInfo['time'].';'
+                            , FALSE);
 
         if($q->num_rows()!=0)
         {
             $array_sql=$q->result_array();
-
+            
             for($nb_line=0;$nb_line<count($array_sql);$nb_line++)
             {
                 $frame = str_split ($array_sql[$nb_line]['frame'], 2);
@@ -160,10 +163,7 @@ class Txt_model extends CI_Model {
     {
         try
         {
-
            return $this->db->insert('txt',$data);
-
-
         }Catch(Exception $sql)
         {
             echo $sql->getMessage();
