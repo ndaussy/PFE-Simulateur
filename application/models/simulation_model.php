@@ -55,21 +55,16 @@ class Simulation_model extends CI_Model {
 
         if(isset($_COOKIE))
         {
-            $option=explode ( '_' , $_COOKIE['Option']);
 
-            for($a = 0; $a < count($option) ;$a++)////declenche les register services.
-            {
-                if($option[$a]=='rmc')
+                if(strstr($_COOKIE['Option'], "rmc"))
                 {
-                    $this->execution_model->RegisterService($option[$a],true);
+                    $this->execution_model->RegisterService("rmc",true);
                 }
-                if($option[$a]=='gga')
+                if(strstr($_COOKIE['Option'], "gga"))
                 {
-                    $this->execution_model->RegisterService($option[$a],true);
+                    $this->execution_model->RegisterService("gga",true);
                 }
-            }
 
-        //lancement serveur synchronisation
         }
 
     }
@@ -81,10 +76,7 @@ class Simulation_model extends CI_Model {
        $this->load->model('execution_model');
         if(isset($_COOKIE))
         {
-            $option=explode ( '_' , $_COOKIE['Option']);
 
-            for($a = 0; $a < count($option) ;$a++)////declenche les register services.
-            {
                 //lancer le serveur de synchronisation
                 //$this->execution_model->serveurSynchronisation();
 
@@ -93,13 +85,13 @@ class Simulation_model extends CI_Model {
                 // $arrayDataJava=$this->csv_model->returnInformation($arrayData);
 
 
-                if($option[$a]=='rmc')
+                if(strstr($_COOKIE['Option'], "rmc"))
                 {
                     //Lancement service gps
                     $this->execution_model->Gps(true);
                 }
 
-                if($option[$a]=='can')
+                if(strstr($_COOKIE['Option'], "can"))
                 {
                     $this->load->model('txt_model');
                     //lancer l'execution pour le dungle
@@ -114,7 +106,7 @@ class Simulation_model extends CI_Model {
                     }
                 }
 
-            }
+
         }
 
 
