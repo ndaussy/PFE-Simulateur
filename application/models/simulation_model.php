@@ -55,7 +55,7 @@ class Simulation_model extends CI_Model {
 
         if(isset($_COOKIE))
         {
-
+                //Service GPS
                 if(strstr($_COOKIE['Option'], "rmc"))
                 {
                     $this->execution_model->RegisterService("rmc",true);
@@ -64,8 +64,35 @@ class Simulation_model extends CI_Model {
                 {
                     $this->execution_model->RegisterService("gga",true);
                 }
+                //Serveur pour fin de service ( ne gére pas la synchro )
 
         }
+
+    }
+
+    //Fin de simulation -- permet d'envoyer une requête indiquant la fin de la simulation
+    function finSimulation()
+    {
+
+            $host="127.0.0.1";
+            $port_gga=9999;
+            $port_rmc=9900;
+            $socket = socket_create(AF_INET, SOCK_DGRAM, SOL_UDP);
+
+            // create the request packet
+           // $packet = "fin simulation";
+
+             $packet =  "fin simulation";
+
+            // UDP is connectionless, so we just send on it.
+            for($a=0;$a<20;$a++)
+            {
+            socket_sendto($socket, $packet, strlen($packet),0, $host, $port_gga);
+
+            socket_sendto($socket, $packet, strlen($packet),0, $host, $port_rmc);
+            }
+
+            socket_close($socket);
 
     }
 
@@ -76,25 +103,41 @@ class Simulation_model extends CI_Model {
        $this->load->model('execution_model');
         if(isset($_COOKIE))
         {
-
+                $rmc=true;
+                $gga=false;
                 //lancer le serveur de synchronisation
                 //$this->execution_model->serveurSynchronisation();
 
-                // $this->load->model('csv_model');
+                $this->load->model('csv_model');
 
-                // $arrayDataJava=$this->csv_model->returnInformation($arrayData);
+                $arrayDataJava=$this->csv_model->returnInformation($arrayData);
+                //var_dump($arrayDataJava);
+                $dataSendGpsRmc=$arrayDataJava[0]['Latitude']." ".$arrayDataJava[0]['Longitude'];
+
+                if($arrayDataJava[0]['Altitude']!=0)
+                {
+                    $rmc=true;//à mettre à false si on souhaite pas que des trames GGA soit utilisé pour le RMC
+                    $gga=true;
+                    $dataSendGpsGga=$dataSendGpsRmc." ".$arrayDataJava[0]['Altitude'];
+                }
 
 
-                if(strstr($_COOKIE['Option'], "rmc"))
+                if(strstr($_COOKIE['Option'], "rmc")&&$rmc)//permet de gérer si la simulation émule ce service
                 {
                     //Lancement service gps
-                    $this->execution_model->Gps(true);
+                    $this->execution_model->Gps("rmc",$dataSendGpsRmc,true);
+                }
+                if(strstr($_COOKIE['Option'], "gga")&&$gga)
+                {
+                    //Lancement service gps
+                    $this->execution_model->Gps("gga",$dataSendGpsGga,true);
                 }
 
                 if(strstr($_COOKIE['Option'], "can"))
                 {
                     $this->load->model('txt_model');
                     //lancer l'execution pour le dungle
+
                     if($this->execution_model->SendDataDungle( $this->txt_model->returnInformation(array('name_simulation'=>$arrayData['name_simulation'],'time'=>$arrayData['time']))
                         ,true))
                     {

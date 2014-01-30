@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" > 
     <head>
+        <?php header("Cache-Control: no-cache, must-revalidate" );?>
         <title><?php echo $titre; ?></title>
         <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $charset; ?>" />
         <link rel="icon" type="image/png" href="<?php echo base_url()."assets/img/logo_ebsf.png";?>" />

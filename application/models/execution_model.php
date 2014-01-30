@@ -14,7 +14,7 @@ class Execution_model extends CI_Model {
         {
             //echo $this->config->item('config_path_prog')a."sendDataDungle.exe ".$data[$nb_line]['frame']." ".$dta[$nb_line]['time']." ".$data[$nb_line]['id']."\n";
             //Appel de la fonction du dungle
-            $dataFinal=array();
+            $dataFinal="";
             $dataFinal=$dataFinal." ".$data[$nb_line]['frame']." ".$data[$nb_line]['id']." ";
 
         }
@@ -25,6 +25,7 @@ class Execution_model extends CI_Model {
             //echo 'lancement process';
             if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
                 //lancement asynchrone.
+                //pclose(popen($this->config->item('config_path_prog_dungle')." F3 00 00 0C FF FF FF FF FEF1 "  , "r"));
                 pclose(popen($this->config->item('config_path_prog_dungle').$dataFinal , "r"));
 
             } else {
@@ -49,13 +50,22 @@ class Execution_model extends CI_Model {
     }
 
 
-    public function Gps($exe)
+    public function Gps($type,$data,$exe)
     {
         if($exe==true)
         {
             if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
-                //lancement asynchrone.//3 ou 4 argument, 1er argument port d'envoi exemple 3 argument == gga
-                pclose(popen($this->config->item('config_path_prog_gps')." 44100 0 0 0 ", "r"));
+                if($type=="gga")
+                {
+                   $port=44200;
+                }
+                elseif($type=="rmc")
+                {
+                   $port=44100;
+                }
+                //lancement asynchrone.//3 ou 4 argument, 1er argument port d'envoi exemple 3 argument == gga //
+                //format data = Latitude Longitude Altitude
+                pclose(popen($this->config->item('config_path_prog_gps')." ".$port." ".$data , "r"));
 
             } else {
 
@@ -76,11 +86,13 @@ class Execution_model extends CI_Model {
             if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
                 //definition des ports
                 if($name=='gga')
-                {$port=44200;}
+                {$port=44200;
+                 $port_message_fin=9999;}
                 if($name=='rmc')
-                {$port=44100;}
+                {$port=44100;
+                $port_message_fin=9900;}
                 //lancement asynchrone.
-                pclose(popen($this->config->item('config_path_prog_register')." gps_".$name." ".$port, "r"));
+                pclose(popen($this->config->item('config_path_prog_register')." gps_".$name." ".$port." ".$port_message_fin, "r"));
 
             } else {
 
