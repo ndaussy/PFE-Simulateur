@@ -150,17 +150,44 @@
                     echo '<legend>Choix simulation</legend>';
                     echo '<div class="row-fluid">';
 
+                    echo '<div class="row-fluid">';
+                        echo '<div class="span2">';
+                        echo 'Simulation à jouer';
+                        echo '</div>';
 
-                    echo '<select name="simulation">',"\n";
-                    for($cpt=0; $cpt<count($name_Simulation); $cpt++)
-                    {
-                        echo '<option value="'.$name_Simulation[$cpt].'">'.$name_Simulation[$cpt].'</option>';
-                    }
-                    echo '</select>',"\n";
+                        echo '<div class=span4>';
+                        echo '<select name="simulation">',"\n";
+                        for($cpt=0; $cpt<count($name_Simulation); $cpt++)
+                        {
+                            echo '<option value="'.$name_Simulation[$cpt].'">'.$name_Simulation[$cpt].'</option>';
+                        }
+                        echo '</select>',"\n";
+                         echo '</div>';
+                     echo '</div>';
 
 
-                    echo ' <button class="btn btn-info" name="name_simulation" type="Submit">Charger la simulation</button>';
+                     echo '<div class="row-fluid">';
+                        echo '<div class="span2">';
+                        echo 'Option Simulation';
+                        echo '</div>';
 
+                        echo '<div class=span4>';
+                        echo '<input type="checkbox" name="GGA" checked value="gga">GGA</br>
+                        <input type="checkbox" name="RMC" checked value="rmc">RMC</br>
+                        <input type="checkbox" name="Can" checked value="can">CAN';
+                         echo '</div>';
+                     echo '</div>';
+
+
+                    echo '<div class="row-fluid">';
+                        echo '<div class="span2">';
+                        echo 'Chargement simulation';
+                        echo '</div>';
+
+                        echo '<div class=span4>';
+                     echo ' <button class="btn btn-info" name="name_simulation" type="Submit">Charger la simulation</button>';
+                      echo '</div>';
+                    echo '</div>';
                     echo '</form>';
                 }
 

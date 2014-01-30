@@ -130,11 +130,38 @@ class Simulation extends CI_Controller {
                     echo false;
                 } else
                 {
+                    if($this->input->post('time')==0.0)//Initialiser les registers
+                    {
+                        if(isset($_COOKIE['Option']))//Si les options sont choisi
+                        {
+                            $option=explode ( '_' , $_COOKIE['Option']);
+
+                            //declenche les register services.
+                            if(isset($option['gga']))
+                            {
+                                $this->simulation_model->RegisterService('rmc',true);
+                            }
+                            if(isset($option['rmc']))
+                            {
+                                $this->simulation_model->RegisterService('gga',true);
+                            }
+
+                            //lancement serveur synchronisation
+
+                        }
+                    }
+
+                    if($this->input->post('time')=='Simulation terminé')
+                    {
+                        Sleep(10);
+                    }
+
+
                     //Prendre la prochaine itération du temps; réaliser la requête & renvoyé le résultat
                     $arraydata=array('name_simulation'=>$_COOKIE['name_simulation'],'Scumul'=>$this->input->post('time'),'time'=>$this->input->post('time'));
 
                     //lance la simu pour les valeurs récupéré => tableau envoyé name_simulation,Scumul,time;
-                    $this->simulation_model->playsimulation($arraydata);
+                    $this->simulation_model->playsimulation($arraydata);//on envoit les données.
 
 
 
@@ -205,6 +232,17 @@ class Simulation extends CI_Controller {
 
                     if(in_array($this->input->post('simulation'),$data['name_Simulation']))
                     {
+
+
+
+                    $cookie = array(
+                        'name' => 'Option',
+                        'value' => $this->input->post('GGA')."_".$this->input->post('RMC')."_".$this->input->post('Can'),
+                        'expire' => '128650'
+                    );
+
+                    $this->input->set_cookie($cookie);
+
                     // create cookie to avoid hitting this case again
                     $cookie = array(
                         'name'   => 'name_simulation',
@@ -266,9 +304,7 @@ class Simulation extends CI_Controller {
             {
                 delete_cookie('name_simulation');
                 delete_cookie('time');
-
-
-
+                delete_cookie('Option');
 
             }
 

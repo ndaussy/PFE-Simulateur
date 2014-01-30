@@ -60,15 +60,16 @@ class Simulation_model extends CI_Model {
        // $this->load->model('csv_model');
 
        // $arrayDataJava=$this->csv_model->returnInformation($arrayData);
+       $this->execution_model->RegisterService("gps_gga",true);
 
         //Lancement service gps
-       //$this->execution_model->Gps();
+       $this->execution_model->Gps(true);
 
 
         $this->load->model('txt_model');
         //lancer l'execution pour le dungle
         if($this->execution_model->SendDataDungle( $this->txt_model->returnInformation(array('name_simulation'=>$arrayData['name_simulation'],'time'=>$arrayData['time']))
-           ,true))
+           ,false))
         {
 
         }
