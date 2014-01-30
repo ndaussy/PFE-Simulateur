@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="736f8e7d-9338-46b1-9285-0c4dbb994677" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/prog_C/GpsRegister.jar" afterPath="$PROJECT_DIR$/application/prog_C/GpsRegister.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/config_path.php" afterPath="$PROJECT_DIR$/application/config/config_path.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/csv_model.php" afterPath="$PROJECT_DIR$/application/models/csv_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/execution_model.php" afterPath="$PROJECT_DIR$/application/models/execution_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/map.php" afterPath="$PROJECT_DIR$/application/views/map.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/simulation.php" afterPath="$PROJECT_DIR$/application/controllers/simulation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/simulation_model.php" afterPath="$PROJECT_DIR$/application/models/simulation_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/txt_model.php" afterPath="$PROJECT_DIR$/application/models/txt_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PFE-Simulateur.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +31,7 @@
       <file leaf-file-name="simulation.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="34" selection-start="4138" selection-end="4138" vertical-scroll-proportion="-17.0" vertical-offset="2193" max-vertical-offset="5593">
+            <state line="147" column="59" selection-start="3918" selection-end="3932" vertical-scroll-proportion="-12.961538" vertical-offset="2162" max-vertical-offset="5355">
               <folding />
             </state>
           </provider>
@@ -76,11 +71,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="execution_model.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="simulation_model.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="99" column="17" selection-start="2962" selection-end="2962" vertical-scroll-proportion="0.5264188" vertical-offset="802" max-vertical-offset="3400">
+              <folding>
+                <element signature="n#addSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="execution_model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/execution_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="30" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.49902153" vertical-offset="1071" max-vertical-offset="2057">
-              <folding />
+            <state line="67" column="0" selection-start="1865" selection-end="1865" vertical-scroll-proportion="-3.0384614" vertical-offset="822" max-vertical-offset="1632">
+              <folding>
+                <element signature="n#Gps#0;n#Execution_model#0;n#!!top" expanded="false" />
+                <element signature="n#serveurSynchronisation#0;n#Execution_model#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,10 +184,10 @@
         <option value="$PROJECT_DIR$/application/models/csv_model.php" />
         <option value="$PROJECT_DIR$/application/models/txt_model.php" />
         <option value="$PROJECT_DIR$/application/config/config_path.php" />
-        <option value="$PROJECT_DIR$/application/models/simulation_model.php" />
         <option value="$PROJECT_DIR$/application/views/map.php" />
         <option value="$PROJECT_DIR$/application/controllers/simulation.php" />
         <option value="$PROJECT_DIR$/application/models/execution_model.php" />
+        <option value="$PROJECT_DIR$/application/models/simulation_model.php" />
       </list>
     </option>
   </component>
@@ -474,7 +483,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1358" height="726" extended-state="0" />
+    <frame x="1" y="1" width="1358" height="726" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -544,7 +553,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="24" />
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -801,32 +810,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="63" selection-start="1901" selection-end="1901" vertical-scroll-proportion="-11.153846" vertical-offset="152" max-vertical-offset="2720">
-          <folding>
-            <element signature="n#addSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/config_path.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="117" selection-start="471" selection-end="482" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="25" selection-start="1023" selection-end="1032" vertical-scroll-proportion="34.576923" vertical-offset="1477" max-vertical-offset="6375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="10" selection-start="1443" selection-end="1443" vertical-scroll-proportion="-27.384615" vertical-offset="104" max-vertical-offset="1547">
           <folding />
         </state>
       </provider>
@@ -854,17 +840,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="10" selection-start="1443" selection-end="1443" vertical-scroll-proportion="-27.384615" vertical-offset="104" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config_path.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="117" selection-start="471" selection-end="482" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="34" selection-start="4138" selection-end="4138" vertical-scroll-proportion="-17.0" vertical-offset="2193" max-vertical-offset="5593">
+        <state line="147" column="59" selection-start="3918" selection-end="3932" vertical-scroll-proportion="-12.961538" vertical-offset="2162" max-vertical-offset="5355">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/execution_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="30" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.49902153" vertical-offset="1071" max-vertical-offset="2057">
-          <folding />
+        <state line="67" column="0" selection-start="1865" selection-end="1865" vertical-scroll-proportion="-3.0384614" vertical-offset="822" max-vertical-offset="1632">
+          <folding>
+            <element signature="n#Gps#0;n#Execution_model#0;n#!!top" expanded="false" />
+            <element signature="n#serveurSynchronisation#0;n#Execution_model#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="17" selection-start="2962" selection-end="2962" vertical-scroll-proportion="0.5264188" vertical-offset="802" max-vertical-offset="3400">
+          <folding>
+            <element signature="n#addSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

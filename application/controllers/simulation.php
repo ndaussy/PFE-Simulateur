@@ -128,29 +128,13 @@ class Simulation extends CI_Controller {
                 if($this->form_validation->run() == FALSE)
                 {
                     echo false;
+
                 } else
                 {
                     if($this->input->post('time')==0.0)//Initialiser les registers
                     {
-                        if(isset($_COOKIE['Option']))//Si les options sont choisi
-                        {
-                            $option=explode ( '_' , $_COOKIE['Option']);
-
-                            //declenche les register services.
-                            if(isset($option['gga']))
-                            {
-                                $this->simulation_model->RegisterService('rmc',true);
-                            }
-                            if(isset($option['rmc']))
-                            {
-                                $this->simulation_model->RegisterService('gga',true);
-                            }
-
-                            //lancement serveur synchronisation
-
-                        }
+                     $this->simulation_model->initializationSimulation();
                     }
-
                     if($this->input->post('time')=='Simulation terminé')
                     {
                         Sleep(10);
@@ -198,8 +182,9 @@ class Simulation extends CI_Controller {
             }
             unset($data['name_simulation']);
 
-            if (isset($_COOKIE['name_simulation']))//Si n'existe pas
+            if (isset($_COOKIE['name_simulation']))//Si existe
             {
+
                 $layout->views('../themes/menu');
 
                 $layout->views('map',$data);
@@ -207,7 +192,7 @@ class Simulation extends CI_Controller {
                 $layout->view('../themes/footer');
 
             }
-            else
+            else//si les cookies n'existe pas
             {
                // echo 'simulation choisi';
                 $layout->ajouter_js("Interface_user/GoogleMap");
@@ -307,6 +292,7 @@ class Simulation extends CI_Controller {
                 delete_cookie('Option');
 
             }
+
 
             $this->map();
         }

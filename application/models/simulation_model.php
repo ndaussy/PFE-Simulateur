@@ -48,35 +48,75 @@ class Simulation_model extends CI_Model {
 
    }
 
+    //Lancement des registers & serveurs.
+    function initializationSimulation()
+    {
+        $this->load->model('execution_model');
+
+        if(isset($_COOKIE))
+        {
+            $option=explode ( '_' , $_COOKIE['Option']);
+
+            for($a = 0; $a < count($option) ;$a++)////declenche les register services.
+            {
+                if($option[$a]=='rmc')
+                {
+                    $this->execution_model->RegisterService($option[$a],true);
+                }
+                if($option[$a]=='gga')
+                {
+                    $this->execution_model->RegisterService($option[$a],true);
+                }
+            }
+
+        //lancement serveur synchronisation
+        }
+
+    }
+
     //[name_simulation] [time]
     function playsimulation($arrayData)
     {
 
        $this->load->model('execution_model');
-
-        //lancer le serveur de synchronisation
-       //$this->execution_model->serveurSynchronisation();
-
-       // $this->load->model('csv_model');
-
-       // $arrayDataJava=$this->csv_model->returnInformation($arrayData);
-       $this->execution_model->RegisterService("gps_gga",true);
-
-        //Lancement service gps
-       $this->execution_model->Gps(true);
-
-
-        $this->load->model('txt_model');
-        //lancer l'execution pour le dungle
-        if($this->execution_model->SendDataDungle( $this->txt_model->returnInformation(array('name_simulation'=>$arrayData['name_simulation'],'time'=>$arrayData['time']))
-           ,false))
+        if(isset($_COOKIE))
         {
+            $option=explode ( '_' , $_COOKIE['Option']);
 
+            for($a = 0; $a < count($option) ;$a++)////declenche les register services.
+            {
+                //lancer le serveur de synchronisation
+                //$this->execution_model->serveurSynchronisation();
+
+                // $this->load->model('csv_model');
+
+                // $arrayDataJava=$this->csv_model->returnInformation($arrayData);
+
+
+                if($option[$a]=='rmc')
+                {
+                    //Lancement service gps
+                    $this->execution_model->Gps(true);
+                }
+
+                if($option[$a]=='can')
+                {
+                    $this->load->model('txt_model');
+                    //lancer l'execution pour le dungle
+                    if($this->execution_model->SendDataDungle( $this->txt_model->returnInformation(array('name_simulation'=>$arrayData['name_simulation'],'time'=>$arrayData['time']))
+                        ,true))
+                    {
+
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+
+            }
         }
-        else
-        {
-            return false;
-        }
+
 
 
 
