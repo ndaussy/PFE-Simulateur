@@ -104,16 +104,16 @@ class Simulation_model extends CI_Model {
         if(isset($_COOKIE))
         {
                 $rmc=true;
-                $gga=false;
+                $gga=true;
                 //lancer le serveur de synchronisation
                 //$this->execution_model->serveurSynchronisation();
 
                 $this->load->model('csv_model');
 
-                $arrayDataJava=$this->csv_model->returnInformation($arrayData);
+                $arrayDataJava=$this->csv_model->returnInformation(array('name_simulation'=>$arrayData['name_simulation'],'Scumul'=>$arrayData["time"]));
                 //var_dump($arrayDataJava);
                 $dataSendGpsRmc=$arrayDataJava[0]['Latitude']." ".$arrayDataJava[0]['Longitude'];
-
+                $dataSendGpsGga=$dataSendGpsRmc;
                 if($arrayDataJava[0]['Altitude']!=0)
                 {
                     $rmc=true;//à mettre à false si on souhaite pas que des trames GGA soit utilisé pour le RMC
@@ -121,7 +121,8 @@ class Simulation_model extends CI_Model {
                     $dataSendGpsGga=$dataSendGpsRmc." ".$arrayDataJava[0]['Altitude'];
                 }
 
-
+                //$dataSendGpsGga=$dataSendGpsRmc." 49.8954879";
+                //echo $dataSendGpsGga;
                 if(strstr($_COOKIE['Option'], "rmc")&&$rmc)//permet de gérer si la simulation émule ce service
                 {
                     //Lancement service gps
@@ -130,6 +131,7 @@ class Simulation_model extends CI_Model {
                 if(strstr($_COOKIE['Option'], "gga")&&$gga)
                 {
                     //Lancement service gps
+
                     $this->execution_model->Gps("gga",$dataSendGpsGga,true);
                 }
 

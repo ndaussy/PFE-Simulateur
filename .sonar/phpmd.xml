@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<pmd version="1.4.1" timestamp="2013-11-20T16:03:12+00:00">
-  <file name="C:\wamp\www\QL\application\controllers\telecharger.php">
-    <violation beginline="64" endline="194" rule="ExcessiveMethodLength" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivemethodlength" class="Telecharger" method="do_upload" priority="1">
-      The method do_upload() has 131 lines of code. Current threshold is set to 100. Avoid really long methods.
-    </violation>
-  </file>
-</pmd>

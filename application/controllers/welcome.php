@@ -41,9 +41,8 @@ public function index()
 
         $this->layout->views('welcome_message')
             ->view('../themes/footer');
-        $this->load->model('simulation_model');
-        $this->simulation_model->finSimulation();
         //pclose(popen($this->config->item('config_path_prog_dungle')." F3 00 00 0C FF FF FF FF FEF1 "  , "r"));
+
        /* $this->load->model('simulation_model');
 
         //[name_simulation] [time]

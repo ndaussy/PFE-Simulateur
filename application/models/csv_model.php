@@ -6,8 +6,8 @@ class Csv_model extends CI_Model {
 	{
 
         // for set memory limit & execution time
-       ini_set('memory_limit', '512M');
-       ini_set('max_execution_time', '180');
+       ini_set('memory_limit', '1512M');
+       ini_set('max_execution_time', '6780');
 
        $etat_simu=true;
 
@@ -114,8 +114,8 @@ class Csv_model extends CI_Model {
 
         if($etat_simu)
         {
-            unlink($file_name);
-
+            //unlink($file_name);
+            //erreur permission denied
         }
 
         return $etat_simu;
@@ -189,8 +189,7 @@ class Csv_model extends CI_Model {
 
     public function insert_data_csv($data)
     {
-        ini_set('memory_limit', '512M');
-        ini_set('max_execution_time', '6780');
+
 
         try
         {
@@ -275,7 +274,8 @@ class Csv_model extends CI_Model {
 
    public function returnInformation($arrayInfo)
    {
-       $q=$this->db->get('csv',$arrayInfo);
+
+       $q=$this->db->get_where('csv',$arrayInfo);
 
        if($q->num_rows()==1)
        {
@@ -292,7 +292,7 @@ class Csv_model extends CI_Model {
        }
        else
        {
-           $array_sql=array('0'=>array('time'=>0,'id'=>0,'frame'=>0));
+           $array_sql=array('0'=>"erreur query nb rows != 1");
        }
 
        return $array_sql;
