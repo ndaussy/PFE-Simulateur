@@ -79,6 +79,10 @@ class Txt_model extends CI_Model {
 			{
                     try
                     {
+                   
+                    if(strlen(trim($line)))//si la ligne n'est pas vide
+                    {
+
                     //Test de l'id avant ajout.
                     //$array[2]--id
                     //$array[0]--time
@@ -118,6 +122,7 @@ class Txt_model extends CI_Model {
                         }
 
 
+                    }
                     }
 
                     }Catch(Exception $ex)
