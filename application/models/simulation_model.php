@@ -17,7 +17,7 @@ class Simulation_model extends CI_Model {
         if(!$this->isInSimulation($ArraySimu['name_simulation']))
         {
 
-                $Userarray=array('name_simulation'=>$ArraySimu['name_simulation'],'state_txt'=>'Traitement non fini','state_csv'=>"Traitemment non commencé");
+                $Userarray=array('name_simulation'=>$ArraySimu['name_simulation'],'state_txt'=>'Traitement non fini','state_csv'=>"Traitement non commencé");
 
                 //ajout à la table usersimulation
                 $this->db->insert('usersimulation',$Userarray);
@@ -28,9 +28,9 @@ class Simulation_model extends CI_Model {
 
                 $Userarray['state_txt']="Insertion reussite";
 
-                $this->db->update('usersimulation', $Userarray, 'name_simulation = "'.$ArraySimu['name_simulation'].'"');
-
                 $Userarray['state_csv']="Traitement non fini";
+
+                $this->db->update('usersimulation', $Userarray, 'name_simulation = "'.$ArraySimu['name_simulation'].'"');
 
                 //Sauvegarde du Csv
                 $this->load->model('csv_model');
