@@ -183,7 +183,7 @@ class Simulation extends CI_Controller {
             $layout->set_titre("Map");
             $data['name_simulation']=$this->simulation_model->findSimulation('all');
 
-            for($a=0;$a<count($data['name_simulation']);$a++)
+            for($a=0;$a<count($data['name_simulation']);$a++)//mise en forme du tableau pour obtenir une verification + facile chez le client
             {
                 $data['name_Simulation'][$a]=$data['name_simulation'][$a]["name_simulation"];
             }
@@ -191,9 +191,7 @@ class Simulation extends CI_Controller {
 
             if (isset($_COOKIE['name_simulation']))//Si existe
             {
-                $layout->ajouter_js("Interface_user/GoogleMap");
-                $layout->ajouter_js("Interface_user/Ligne");
-
+            //ne rien faire & poursuivre l'affichage finale
 
             }
             else//si les cookies n'existe pas

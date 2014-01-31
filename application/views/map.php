@@ -119,7 +119,7 @@
                 if(isset($_COOKIE['name_simulation']))//si existe
                 {
 
-                    //require_once(base_url().'/assets/javascript/Interface_user/GoogleMap.js');
+                    require_once(base_url().'/assets/javascript/Interface_user/GoogleMap.js');
 
                     echo validation_errors();
 

@@ -2,65 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="736f8e7d-9338-46b1-9285-0c4dbb994677" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\caches\persistit_tempvol_1729821928956214711.tmp" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\checkstyle\META-INF\lib\antlr-2.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\checkstyle\META-INF\lib\checkstyle-5.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\checkstyle\sonar-checkstyle-plugin-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\core\sonar-core-plugin-4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\cpd\sonar-cpd-plugin-4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\dbcleaner\sonar-dbcleaner-plugin-4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\design\sonar-design-plugin-4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\emailnotifications\META-INF\lib\activation-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\emailnotifications\META-INF\lib\commons-email-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\emailnotifications\META-INF\lib\mail-1.4.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\emailnotifications\sonar-email-notifications-plugin-4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\findbugs\META-INF\lib\annotations-2.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\findbugs\META-INF\lib\asm-3.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\findbugs\META-INF\lib\asm-commons-3.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\findbugs\META-INF\lib\asm-tree-3.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\findbugs\META-INF\lib\bcel-2.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\findbugs\META-INF\lib\dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\findbugs\META-INF\lib\findbugs-2.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\findbugs\META-INF\lib\jFormatString-2.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\findbugs\META-INF\lib\jaxen-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\findbugs\sonar-findbugs-plugin-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\jacoco\META-INF\lib\asm-all-4.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\jacoco\META-INF\lib\org.jacoco.agent-0.6.3.201306030806.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\jacoco\META-INF\lib\org.jacoco.core-0.6.3.201306030806.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\jacoco\sonar-jacoco-plugin-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\java\META-INF\lib\sonar-common-rules-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\java\sonar-java-plugin-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\l10nen\sonar-l10n-en-plugin-4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\mavenbatch\sonar-maven-batch-plugin-4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\php\META-INF\lib\jdom-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\php\META-INF\lib\jsr305-1.3.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\php\META-INF\lib\sonar-common-rules-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\php\META-INF\lib\sslr-core-1.19.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\php\sonar-php-plugin-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\pmd\META-INF\lib\asm-3.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\pmd\META-INF\lib\jaxen-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\pmd\META-INF\lib\jdom-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\pmd\META-INF\lib\pmd-4.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\pmd\sonar-pmd-plugin-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\squidjava\META-INF\lib\asm-all-3.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\squidjava\META-INF\lib\java-checks-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\squidjava\META-INF\lib\java-squid-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\squidjava\META-INF\lib\jaxen-1.1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\squidjava\META-INF\lib\jsr305-1.3.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\squidjava\META-INF\lib\sslr-core-1.19.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\squidjava\META-INF\lib\sslr-squid-bridge-2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\squidjava\META-INF\lib\sslr-xpath-1.19.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\squidjava\sonar-squid-java-plugin-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\.sonartmp\plugins\surefire\sonar-surefire-plugin-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\build\logs\ruleset1668640244008121558.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\build\logs\ruleset6862819606393123267.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\pdepend.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\phpcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\PFE-Simulateur\.sonar\phpmd.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/csv_model.php" afterPath="$PROJECT_DIR$/application/models/csv_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/simulation_model.php" afterPath="$PROJECT_DIR$/application/models/simulation_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/txt_model.php" afterPath="$PROJECT_DIR$/application/models/txt_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/welcome.php" afterPath="$PROJECT_DIR$/application/controllers/welcome.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/map.php" afterPath="$PROJECT_DIR$/application/views/map.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/simulation.php" afterPath="$PROJECT_DIR$/application/controllers/simulation.php" />
     </list>
     <ignored path="PFE-Simulateur.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,10 +26,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="simulation.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="simulation.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="49" selection-start="4291" selection-end="4294" vertical-scroll-proportion="-32.076923" vertical-offset="1784" max-vertical-offset="5423">
+            <state line="185" column="141" selection-start="5355" selection-end="5355" vertical-scroll-proportion="0.26185566" vertical-offset="3018" max-vertical-offset="5389">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/map.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="121" column="20" selection-start="3489" selection-end="3489" vertical-scroll-proportion="-9.346154" vertical-offset="1814" max-vertical-offset="4709">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoogleMap.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/javascript/Interface_user/GoogleMap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="82" selection-start="984" selection-end="1048" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
@@ -101,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simulation_model.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="simulation_model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="120" selection-start="3359" selection-end="3359" vertical-scroll-proportion="0.32706767" vertical-offset="404" max-vertical-offset="3315">
+            <state line="112" column="120" selection-start="3359" selection-end="3359" vertical-scroll-proportion="16.846153" vertical-offset="1016" max-vertical-offset="3315">
               <folding>
                 <element signature="n#addSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
                 <element signature="n#initializationSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
@@ -209,15 +170,15 @@
         <option value="$PROJECT_DIR$/application/controllers/my_controleur.php" />
         <option value="$PROJECT_DIR$/assets/javascript/Interface_user/ChargementPageClient.js" />
         <option value="$PROJECT_DIR$/application/config/config_path.php" />
-        <option value="$PROJECT_DIR$/application/views/map.php" />
         <option value="$PROJECT_DIR$/application/themes/default.php" />
         <option value="$PROJECT_DIR$/assets/javascript/Interface_user/GoogleMap.js" />
-        <option value="$PROJECT_DIR$/application/controllers/simulation.php" />
         <option value="$PROJECT_DIR$/application/models/execution_model.php" />
         <option value="$PROJECT_DIR$/application/models/txt_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/welcome.php" />
         <option value="$PROJECT_DIR$/application/models/csv_model.php" />
         <option value="$PROJECT_DIR$/application/models/simulation_model.php" />
+        <option value="$PROJECT_DIR$/application/views/map.php" />
+        <option value="$PROJECT_DIR$/application/controllers/simulation.php" />
       </list>
     </option>
   </component>
@@ -433,24 +394,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PFE-Simulateur" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PFE-Simulateur" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -633,23 +576,7 @@
     <entry file="file://$PROJECT_DIR$/application/views/map.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="49" selection-start="2922" selection-end="2937" vertical-scroll-proportion="0.0" vertical-offset="2021" max-vertical-offset="2975">
-          <folding>
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -671,14 +598,6 @@
     <entry file="file://$PROJECT_DIR$/application/libraries/Csvimporter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="18" selection-start="1758" selection-end="1758" vertical-scroll-proportion="2.537234" vertical-offset="168" max-vertical-offset="1411" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/prog_C/source_Java-Emulation_Service_GPS/src/Register.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1156" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/script_traitement_files/csv.php">
@@ -838,36 +757,6 @@
         <state line="68" column="29" selection-start="1409" selection-end="1611" vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="1853" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/map.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="79" selection-start="5572" selection-end="5572" vertical-scroll-proportion="-9.807693" vertical-offset="2703" max-vertical-offset="4709">
-          <folding>
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1391075780716" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascript/Interface_user/GoogleMap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="965" selection-end="965" vertical-scroll-proportion="0.92727274" vertical-offset="0" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/welcome_message.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="30" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="867">
@@ -920,6 +809,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/execution_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="47" selection-start="2314" selection-end="2314" vertical-scroll-proportion="-20.846153" vertical-offset="767" max-vertical-offset="1598">
+          <folding>
+            <element signature="n#RegisterService#0;n#Execution_model#0;n#!!top" expanded="false" />
+            <element signature="n#serveurSynchronisation#0;n#Execution_model#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/csv_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="276" column="0" selection-start="8290" selection-end="8290" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="952">
@@ -934,31 +833,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/execution_model.php">
+    <entry file="file://$PROJECT_DIR$/application/views/map.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="47" selection-start="2314" selection-end="2314" vertical-scroll-proportion="-20.846153" vertical-offset="767" max-vertical-offset="1598">
-          <folding>
-            <element signature="n#RegisterService#0;n#Execution_model#0;n#!!top" expanded="false" />
-            <element signature="n#serveurSynchronisation#0;n#Execution_model#0;n#!!top" expanded="false" />
-          </folding>
+        <state line="121" column="20" selection-start="3489" selection-end="3489" vertical-scroll-proportion="-9.346154" vertical-offset="1814" max-vertical-offset="4709">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
+    <entry file="file://$PROJECT_DIR$/assets/javascript/Interface_user/GoogleMap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="49" selection-start="4291" selection-end="4294" vertical-scroll-proportion="-32.076923" vertical-offset="1784" max-vertical-offset="5423">
+        <state line="31" column="82" selection-start="984" selection-end="1048" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="120" selection-start="3359" selection-end="3359" vertical-scroll-proportion="0.32706767" vertical-offset="404" max-vertical-offset="3315">
+        <state line="112" column="120" selection-start="3359" selection-end="3359" vertical-scroll-proportion="16.846153" vertical-offset="1016" max-vertical-offset="3315">
           <folding>
             <element signature="n#addSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
             <element signature="n#initializationSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
             <element signature="n#finSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="141" selection-start="5355" selection-end="5355" vertical-scroll-proportion="0.26185566" vertical-offset="3018" max-vertical-offset="5389">
+          <folding />
         </state>
       </provider>
     </entry>
