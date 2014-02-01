@@ -174,7 +174,8 @@ class Simulation extends CI_Controller {
 
         public function map()
         {
-            header("Cache-Control: no-cache, must-revalidate" );//pour cookies
+            $this->output->set_header("Cache-Control: no-cache, must-revalidate");
+            //header("Cache-Control: no-cache, must-revalidate" );//pour cookies
             $layout= new layout;
             $this->load->library('form_validation');
             $this->load->helper('cookie');
@@ -262,6 +263,8 @@ class Simulation extends CI_Controller {
                             }
                         }
 
+                        //Relance pour cookies.
+                        redirect('Simulation/map', 'refresh');
                     }
                     else
                     {
@@ -296,7 +299,7 @@ class Simulation extends CI_Controller {
             $this->simulation_model->finSimulation();
 
 
-            $this->map();
+            redirect('Simulation/map', 'refresh');
         }
 
 

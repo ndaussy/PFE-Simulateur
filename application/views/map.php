@@ -46,11 +46,11 @@
                                     {//VitesseNav - TourMinute valeur retour
                                     var tabReturn = JSON.parse(msg);
                                     document.getElementById('time').value= tabReturn.Scumul;
-                                        $('#Longitude').html(tabReturn.Longitude);
-                                        $('#Latitude').html(tabReturn.Latitude);
-                                        $('#Altitude').html(tabReturn.Altitude);
-                                        $('#VitesseNav').html(tabReturn.VitesseNav);
-                                        $('#TourMinute').html(tabReturn.TourMinute);
+                                        $('#Longitude').html("Longitude "+tabReturn.Longitude);
+                                        $('#Latitude').html("Latitude "+tabReturn.Latitude);
+                                        $('#Altitude').html("Altitude "+tabReturn.Altitude);
+                                        $('#VitesseNav').html("VitesseNav "+tabReturn.VitesseNav);
+                                        $('#TourMinute').html("TourMinute "+tabReturn.TourMinute);
                                     $('#message').html(tabReturn.Scumul);
 
                                         TempsRecu= tabReturn.Scumul;
@@ -227,11 +227,11 @@
          ?>
         <div id="message"></div>
             <?=form_input(array('name'=>'time','id'=>'time','value'=>'0.0','class'=>'time textbox','style'=>'width:150px;'))?><br />
-        <div id="Latitude"></div>
-        <div id="Longitude"></div>
-        <div id="Altitude"></div>
-        <div id="TourMinute"></div>
-        <div id="VitesseNav"></div>
+        <div id="Latitude">Latitude</div>
+        <div id="Longitude">Longitude</div>
+        <div id="Altitude">Altitude</div>
+        <div id="TourMinute">tourMinute</div>
+        <div id="VitesseNav">VitesseNav</div>
             <p>
 
         </p>
