@@ -16,7 +16,11 @@ Configuration :
     
       --Configuration Wamp/Lamp :
       Configurer votre php.ini pour pouvoir uploader des fichiers supérieures à 200MO, pour cela ouvrer le fichier php.ini ( var/phpX/.. pour ubuntu & c:/wamp/php.. pour windows ). Trouver les lignes post_max_size = XXM && upload_max_filesize = XM.
-    
+      
+      Activé "Allow_url_require" dans php ini.
+      
+      Activé php_socket dans les extensions php, si ce n'est pas fait vous aurez une erreur en fin de simulation lors de
+      l'arret des services GPS.
     
     --Configuration uploads. crée un dossier 'uploads'  la racine du projet. c-a-d PFE-simulateur/uploads 
     
