@@ -151,8 +151,8 @@ class Simulation extends CI_Controller {
                             if(($receivedata=$this->simulation_model->findSmallestTimeBetweenTxtCsv($arraydata))!=false)//si on ne trouve plus rien
                             {
 
-
-                                echo $receivedata[0]['min( Scumul )'];
+                                echo json_encode($receivedata[0]);
+                                //echo $receivedata[0]['min( Scumul )'];
                             }
                             else
                             {

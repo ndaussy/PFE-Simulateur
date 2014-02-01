@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="736f8e7d-9338-46b1-9285-0c4dbb994677" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/map.php" afterPath="$PROJECT_DIR$/application/views/map.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/simulation.php" afterPath="$PROJECT_DIR$/application/controllers/simulation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/simulation.php" afterPath="$PROJECT_DIR$/application/views/simulation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/simulation_model.php" afterPath="$PROJECT_DIR$/application/models/simulation_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PFE-Simulateur.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +32,7 @@
       <file leaf-file-name="simulation.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="141" selection-start="5355" selection-end="5355" vertical-scroll-proportion="-2.4423077" vertical-offset="3018" max-vertical-offset="5389">
+            <state line="153" column="32" selection-start="4273" selection-end="4273" vertical-scroll-proportion="-51.0" vertical-offset="1275" max-vertical-offset="5389">
               <folding />
             </state>
           </provider>
@@ -37,7 +41,7 @@
       <file leaf-file-name="map.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/map.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="20" selection-start="3489" selection-end="3489" vertical-scroll-proportion="-9.346154" vertical-offset="1814" max-vertical-offset="4709">
+            <state line="233" column="27" selection-start="7895" selection-end="7895" vertical-scroll-proportion="-4.75" vertical-offset="3714" max-vertical-offset="4845">
               <folding />
             </state>
           </provider>
@@ -46,28 +50,7 @@
       <file leaf-file-name="txt_model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/txt_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="9" selection-start="4530" selection-end="4530" vertical-scroll-proportion="-18.346153" vertical-offset="1070" max-vertical-offset="2941">
-              <folding>
-                <element signature="n#is_in_txt_table#0;n#Txt_model#0;n#!!top" expanded="false" />
-                <element signature="n#returnInformation#0;n#Txt_model#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoogleMap.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/javascript/Interface_user/GoogleMap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="82" selection-start="984" selection-end="1048" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="731">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="25" selection-start="1023" selection-end="1032" vertical-scroll-proportion="34.576923" vertical-offset="1477" max-vertical-offset="6375">
+            <state line="145" column="9" selection-start="4530" selection-end="4530" vertical-scroll-proportion="-0.0" vertical-offset="2465" max-vertical-offset="3859">
               <folding />
             </state>
           </provider>
@@ -76,11 +59,26 @@
       <file leaf-file-name="simulation_model.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="16" selection-start="844" selection-end="844" vertical-scroll-proportion="0.46575344" vertical-offset="272" max-vertical-offset="3927">
-              <folding>
-                <element signature="n#initializationSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
-                <element signature="n#finSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
-              </folding>
+            <state line="164" column="108" selection-start="5354" selection-end="5354" vertical-scroll-proportion="0.662768" vertical-offset="2448" max-vertical-offset="4641">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="telecharger_Simu.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/telecharger_Simu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="0" selection-start="788" selection-end="788" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="884">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gestionUser.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/gestionUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="22" selection-start="332" selection-end="332" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="374">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,13 +86,8 @@
       <file leaf-file-name="csv_model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/csv_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="276" column="0" selection-start="8290" selection-end="8290" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="952">
+            <state line="74" column="60" selection-start="2674" selection-end="2674" vertical-scroll-proportion="-10.461538" vertical-offset="714" max-vertical-offset="5355">
               <folding>
-                <element signature="n#save_csv#0;n#Csv_model#0;n#!!top" expanded="false" />
-                <element signature="n#is_in_csv_table#0;n#Csv_model#0;n#!!top" expanded="false" />
-                <element signature="n#insert_data_csv#0;n#Csv_model#0;n#!!top" expanded="false" />
-                <element signature="n#delete_data_csv#0;n#Csv_model#0;n#!!top" expanded="false" />
-                <element signature="n#is_in_csv#0;n#Csv_model#0;n#!!top" expanded="false" />
                 <marker date="1391186675446" expanded="true" signature="6679:6696" placeholder="INSERT INTO ..." />
               </folding>
             </state>
@@ -104,19 +97,7 @@
       <file leaf-file-name="execution_model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/execution_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="47" selection-start="2314" selection-end="2314" vertical-scroll-proportion="-20.846153" vertical-offset="767" max-vertical-offset="1598">
-              <folding>
-                <element signature="n#RegisterService#0;n#Execution_model#0;n#!!top" expanded="false" />
-                <element signature="n#serveurSynchronisation#0;n#Execution_model#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcome.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1355" selection-end="1355" vertical-scroll-proportion="-7.1153846" vertical-offset="563" max-vertical-offset="1564">
+            <state line="77" column="47" selection-start="2314" selection-end="2314" vertical-scroll-proportion="-0.0" vertical-offset="1309" max-vertical-offset="2295">
               <folding />
             </state>
           </provider>
@@ -166,7 +147,6 @@
         <option value="$PROJECT_DIR$/application/models/send_data_dungle.php" />
         <option value="$PROJECT_DIR$/application/views/telecharger_Simu.php" />
         <option value="$PROJECT_DIR$/application/models/kml_model.php" />
-        <option value="$PROJECT_DIR$/application/views/simulation.php" />
         <option value="$PROJECT_DIR$/application/themes/footer.php" />
         <option value="$PROJECT_DIR$/assets/Interface_user/Ligne.js" />
         <option value="$PROJECT_DIR$/assets/Interface_user/GoogleMap.js" />
@@ -186,8 +166,9 @@
         <option value="$PROJECT_DIR$/application/models/txt_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/welcome.php" />
         <option value="$PROJECT_DIR$/application/models/csv_model.php" />
-        <option value="$PROJECT_DIR$/application/views/map.php" />
+        <option value="$PROJECT_DIR$/application/views/simulation.php" />
         <option value="$PROJECT_DIR$/application/controllers/simulation.php" />
+        <option value="$PROJECT_DIR$/application/views/map.php" />
         <option value="$PROJECT_DIR$/application/models/simulation_model.php" />
       </list>
     </option>
@@ -228,6 +209,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -406,7 +388,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -502,7 +483,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1358" height="726" extended-state="1" />
+    <frame x="1" y="1" width="1358" height="726" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -510,7 +491,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10230769" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20076923" sideWeight="0.74634147" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20384616" sideWeight="0.74634147" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18968134" sideWeight="0.25365853" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3197492" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -518,13 +499,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1645768" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -544,9 +525,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17941177" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -576,11 +557,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/config/config_path.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="306">
+        <state line="44" column="0" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="563" max-vertical-offset="1564">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config_path.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="306" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/map.php">
@@ -638,11 +624,6 @@
     <entry file="file://$PROJECT_DIR$/application/controllers/unit_test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2550" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/gestionUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="22" selection-start="332" selection-end="332" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="374" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/common.rnc">
@@ -752,40 +733,24 @@
         <state line="57" column="0" selection-start="887" selection-end="887" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="374" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/telecharger_Simu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="884" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/javascript/Interface_user/Ligne.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="6" selection-start="157" selection-end="157" vertical-scroll-proportion="0.2886248" vertical-offset="0" max-vertical-offset="1479" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/simulation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="29" selection-start="1409" selection-end="1611" vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="1853" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/welcome_message.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="30" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="867">
-          <folding />
-        </state>
+        <state line="1" column="30" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="867" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/config_path.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="44" selection-start="169" selection-end="236" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
+        <state line="3" column="44" selection-start="169" selection-end="236" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="323" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="25" selection-start="1023" selection-end="1032" vertical-scroll-proportion="34.576923" vertical-offset="1477" max-vertical-offset="6375">
-          <folding />
-        </state>
+        <state line="34" column="25" selection-start="1023" selection-end="1032" vertical-scroll-proportion="34.576923" vertical-offset="1477" max-vertical-offset="6375" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
@@ -797,45 +762,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/themes/default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="68" selection-start="250" selection-end="250" vertical-scroll-proportion="0.097328246" vertical-offset="0" max-vertical-offset="986">
-          <folding />
-        </state>
+        <state line="3" column="68" selection-start="250" selection-end="250" vertical-scroll-proportion="0.097328246" vertical-offset="0" max-vertical-offset="986" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1355" selection-end="1355" vertical-scroll-proportion="-7.1153846" vertical-offset="563" max-vertical-offset="1564">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/execution_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="47" selection-start="2314" selection-end="2314" vertical-scroll-proportion="-20.846153" vertical-offset="767" max-vertical-offset="1598">
-          <folding>
-            <element signature="n#RegisterService#0;n#Execution_model#0;n#!!top" expanded="false" />
-            <element signature="n#serveurSynchronisation#0;n#Execution_model#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/csv_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="276" column="0" selection-start="8290" selection-end="8290" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="952">
-          <folding>
-            <element signature="n#save_csv#0;n#Csv_model#0;n#!!top" expanded="false" />
-            <element signature="n#is_in_csv_table#0;n#Csv_model#0;n#!!top" expanded="false" />
-            <element signature="n#insert_data_csv#0;n#Csv_model#0;n#!!top" expanded="false" />
-            <element signature="n#delete_data_csv#0;n#Csv_model#0;n#!!top" expanded="false" />
-            <element signature="n#is_in_csv#0;n#Csv_model#0;n#!!top" expanded="false" />
-            <marker date="1391186675446" expanded="true" signature="6679:6696" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/map.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="20" selection-start="3489" selection-end="3489" vertical-scroll-proportion="-9.346154" vertical-offset="1814" max-vertical-offset="4709">
+        <state line="44" column="0" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="563" max-vertical-offset="1564">
           <folding />
         </state>
       </provider>
@@ -847,30 +779,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
+    <entry file="file://$PROJECT_DIR$/application/views/simulation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="141" selection-start="5355" selection-end="5355" vertical-scroll-proportion="-2.4423077" vertical-offset="3018" max-vertical-offset="5389">
+        <state line="5" column="9" selection-start="117" selection-end="117" vertical-scroll-proportion="0.165692" vertical-offset="0" max-vertical-offset="1853">
+          <folding>
+            <marker date="1391195573122" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/gestionUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="22" selection-start="332" selection-end="332" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="374">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/txt_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="9" selection-start="4530" selection-end="4530" vertical-scroll-proportion="-18.346153" vertical-offset="1070" max-vertical-offset="2941">
+        <state line="145" column="9" selection-start="4530" selection-end="4530" vertical-scroll-proportion="0.0" vertical-offset="2465" max-vertical-offset="3859">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/simulation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="32" selection-start="4273" selection-end="4273" vertical-scroll-proportion="-51.0" vertical-offset="1275" max-vertical-offset="5389">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/execution_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="47" selection-start="2314" selection-end="2314" vertical-scroll-proportion="0.0" vertical-offset="1309" max-vertical-offset="2295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/csv_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="60" selection-start="2674" selection-end="2674" vertical-scroll-proportion="-10.461538" vertical-offset="714" max-vertical-offset="5355">
           <folding>
-            <element signature="n#is_in_txt_table#0;n#Txt_model#0;n#!!top" expanded="false" />
-            <element signature="n#returnInformation#0;n#Txt_model#0;n#!!top" expanded="false" />
+            <marker date="1391186675446" expanded="true" signature="6679:6696" placeholder="INSERT INTO ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/telecharger_Simu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="788" selection-end="788" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/map.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="233" column="27" selection-start="7895" selection-end="7895" vertical-scroll-proportion="-4.75" vertical-offset="3714" max-vertical-offset="4845">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/simulation_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="16" selection-start="844" selection-end="844" vertical-scroll-proportion="0.46575344" vertical-offset="272" max-vertical-offset="3927">
-          <folding>
-            <element signature="n#initializationSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
-            <element signature="n#finSimulation#0;n#Simulation_model#0;n#!!top" expanded="false" />
-          </folding>
+        <state line="164" column="108" selection-start="5354" selection-end="5354" vertical-scroll-proportion="0.662768" vertical-offset="2448" max-vertical-offset="4641">
+          <folding />
         </state>
       </provider>
     </entry>

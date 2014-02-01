@@ -12,9 +12,9 @@
 
 				  <input  class="btn btn-success" type="submit" value="Ajouter" name="ajouter" class="ui-corner-all" /> 
 
-				  <input class="btn btn-primary" type="submit" value="Modifier"  name="modifier" class="ui-corner-all" />    
+				  <input class="btn btn-warning" type="submit" value="Modifier"  name="modifier" class="ui-corner-all" />
 
-				  <input  class="btn btn-warning" type="submit" value="Supprimer" name="supprimer" class="ui-corner-all" />
+				  <input  class="btn btn-danger" type="submit" value="Supprimer" name="supprimer" class="ui-corner-all" />
 
 			</div>
             <?php } ?>

@@ -2,7 +2,6 @@
 
 
 
-
             <script >
 
                 $(document).ready(function() {
@@ -42,12 +41,19 @@
                             success:
                                 function (msg) {
 
-                                    document.getElementById('time').value=msg;
 
                                     if(msg!=false)//reçoit false à la fin
-                                    {
-                                    $('#message').html(msg);
-                                    TempsRecu=msg;
+                                    {//VitesseNav - TourMinute valeur retour
+                                    var tabReturn = JSON.parse(msg);
+                                    document.getElementById('time').value= tabReturn.Scumul;
+                                        $('#Longitude').html(tabReturn.Longitude);
+                                        $('#Latitude').html(tabReturn.Latitude);
+                                        $('#Altitude').html(tabReturn.Altitude);
+                                        $('#VitesseNav').html(tabReturn.VitesseNav);
+                                        $('#TourMinute').html(tabReturn.TourMinute);
+                                    $('#message').html(tabReturn.Scumul);
+
+                                        TempsRecu= tabReturn.Scumul;
                                         //alert(msg.join(""));
                                     }
                                     else
@@ -172,9 +178,9 @@
                         echo '</div>';
 
                         echo '<div class=span4>';
-                        echo '<input type="checkbox" name="GGA" checked value="gga">GGA</br>
-                        <input type="checkbox" name="RMC" checked value="rmc">RMC</br>
-                        <input type="checkbox" name="Can" checked value="can">CAN';
+                        echo '<input type="checkbox" name="GGA" checked value="gga"> Service gps, trame GGA</br>
+                        <input type="checkbox" name="RMC" checked value="rmc"> Service gps, trame RMC</br>
+                        <input type="checkbox" name="Can" checked value="can"> CAN';
                          echo '</div>';
                      echo '</div>';
 
@@ -221,15 +227,17 @@
          ?>
         <div id="message"></div>
             <?=form_input(array('name'=>'time','id'=>'time','value'=>'0.0','class'=>'time textbox','style'=>'width:150px;'))?><br />
-
+        <div id="Latitude"></div>
+        <div id="Longitude"></div>
+        <div id="Altitude"></div>
+        <div id="TourMinute"></div>
+        <div id="VitesseNav"></div>
             <p>
 
         </p>
             <?=form_close("\n")?>
 
-       <!-- <form action="/simulation/lancerSimu" method="post" id="frmIdentification">
-            <button class="btn btn-success" id="data" value="test" onclick="displayDate()">Test Javascript</button>
-        </form>-->
+
 	    	 <div class="row-fluid">
 
 				    <div class="span12" style="width: 100%" id="map-canvas">
