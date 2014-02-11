@@ -134,8 +134,25 @@ class Layout
 		        $this->var['js'][] = js_url($nom);
 		        return true;
 		    }
+            else
+            {
+                echo 'error chargement js '.$nom;
+            }
 		    return false;
-		}	
+		}
+
+    public function ajouter_js_externe($nom)
+    {
+
+        //if(is_string($nom) AND !empty($nom) AND file_exists('./assets/javascript/' . $nom . '.js'))
+        {
+            $this->var['js'][] = js_url($nom);
+            return true;
+        }
+
+
+        //return false;
+    }
 
 }
 

@@ -138,7 +138,7 @@ class Txt_model extends CI_Model {
 
             if($etat_simu)
             {
-                //unlink($filename);
+                unlink($filename);
                 //erreur permission denied
             }
 

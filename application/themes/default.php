@@ -5,7 +5,7 @@
         <title><?php echo $titre; ?></title>
         <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $charset; ?>" />
 
-        <link rel="icon" type="image/png" href="<?php echo base_url()."assets/img/logo_ebsf.png";?>" />
+        <link rel="icon" type="image/png" href="<?php  echo img_url('logo.jpg'); ?>" />
         
         <?php foreach($css as $url): ?>
         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $url; ?>" />

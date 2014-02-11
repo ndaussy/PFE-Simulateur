@@ -1,119 +1,9 @@
+<script type="text/javascript">
+    var Direction = "<?php echo site_url('simulation/lancerSimu'); ?>"
+</script>
 
 
 
-
-            <script >
-
-                $(document).ready(function() {
-
-                    var myVar;
-                    var DoSimu=true;
-                    var EndSimu=false;
-
-
-
-                    $('#lancerSimu').click(function() {
-
-                        DoSimu=true;
-                        EndSimu=false;
-
-                        var timeExecution=0.0;
-                        //myVar=setInterval(function(){Execution()},1000);//Execute toutes les 1000 milliseconde la fonction
-
-                        function Execution()
-                        {
-                        var Ancientime=$('.time').val();
-                        var TempsRecu=0.0;
-
-
-                        //declaration d'une forme
-                        var form_data = {
-                            time : $('.time').val(),
-                            ajax : '1',
-                            tempsMoyenRequete : 0.10//100ms
-                        };
-
-                        $.ajax({
-                            url: "<?php echo site_url('simulation/lancerSimu'); ?>",
-                            type: 'POST',
-                            async : false,
-                            data: form_data,
-                            success:
-                                function (msg) {
-
-
-                                    if(msg!=false)//reçoit false à la fin
-                                    {//VitesseNav - TourMinute valeur retour
-                                    var tabReturn = JSON.parse(msg);
-                                    document.getElementById('time').value= tabReturn.Scumul;
-                                        $('#Longitude').html("Longitude "+tabReturn.Longitude);
-                                        $('#Latitude').html("Latitude "+tabReturn.Latitude);
-                                        $('#Altitude').html("Altitude "+tabReturn.Altitude);
-                                        $('#VitesseNav').html("VitesseNav "+tabReturn.VitesseNav);
-                                        $('#TourMinute').html("TourMinute "+tabReturn.TourMinute);
-                                    $('#message').html(tabReturn.Scumul);
-
-                                        TempsRecu= tabReturn.Scumul;
-                                        //alert(msg.join(""));
-                                    }
-                                    else
-                                    {
-                                    EndSimu=true;
-                                    }
-                                }
-                        });
-                            if(EndSimu)
-                            {
-                                document.getElementById('time').value='Simulation terminé';
-                                $('#message').html("Simulation terminé");
-                            }
-                            else
-                            {
-                            timeExecution=Ancientime-TempsRecu-0.1;
-                            }
-
-
-
-                        return false;
-
-                        };
-
-                        function Timeout()
-                        {
-                            if(DoSimu)//pour la pause
-                            {
-                            setTimeout(Execution,timeExecution);
-                            }
-
-                            if(EndSimu)//arret simu
-                            {
-                            clearInterval(myVar);
-                            }
-                        }
-
-                        if(!EndSimu)
-                        {
-                            myVar=setInterval(function(){Timeout()},100);//Execute toutes les 1000 milliseconde la fonction
-                        }
-
-
-
-                    });
-
-                    $('#pause').click(function() {
-
-                        DoSimu=false;
-
-                    });
-
-
-
-
-                });
-
-            </script>
-
-	    </script>
 
         <div class="row-fluid">
             <div class="span12" >
@@ -125,23 +15,62 @@
                 if(isset($_COOKIE['name_simulation']))//si existe
                 {
 
-                    require_once(base_url().'/assets/javascript/Interface_user/GoogleMap.js');
+
 
                     echo validation_errors();
 
 
 
-                    echo '<legend>Simulation joué '.$_COOKIE['name_simulation'].'</legend>';
+                    echo '<legend>Simulation play '.$_COOKIE['name_simulation'].'</legend>';
                     echo '<div class="row-fluid">';
-
+                        echo '<div class="span6">';
                      echo form_open('simulation/arretSimu');
-                    echo ' <button class="btn btn-danger"  name="name_simulation" type="Submit">Arreter la simulation</button>';
+                    echo ' <button class="btn btn-danger"  name="name_simulation" type="Submit">Stop Simulation</button>';
+
+
                      echo'</form>';
 
+                    echo ' <button class="btn btn-warning" id="pause" name="arret_simulation">Pause</button>';
 
-                   echo ' <button class="btn btn-warning" id="pause" name="arret_simulation" type="Submit">pause</button>';
+                    echo ' <button class="btn btn-success" id="lancerSimu" name="name_simulation" >Play Simulation</button>';
 
-                    echo ' <button class="btn btn-success" id="lancerSimu" name="name_simulation" >Lancer la simulation</button>';
+
+
+
+                    echo '</div>';
+
+                    echo '<div class="span6">';
+
+
+                    echo '<div class="row-fluid">';
+                    ?>
+
+                    <div class="row-fluid">
+                        <input type="checkbox" name="TempsReel" id="tempsreel" > Real time <br>
+                    </br>
+
+                    </div>
+
+                    <?php
+                         echo form_open('simulation/lancerSimu');?>
+
+                        Relative time (s) :
+                            <?=form_input(array('name'=>'time','id'=>'time','value'=>'0.0','class'=>'time textbox','style'=>'width:150px;'))?><br />
+
+                        <?=form_close("\n")?>
+
+                    </div>
+
+                    <div class="row-fluid">
+                    <div id="Latence"/>
+                    </div>
+
+                    <div class="row-fluid">
+                        Delta between requests (s) :
+                        <INPUT type="text" value="0.5" id="delta" class="textbox time "/>
+                    </div>
+
+                    <?php
                     echo '</div>';
 
                 }
@@ -153,12 +82,12 @@
 
 
 
-                    echo '<legend>Choix simulation</legend>';
+                    echo '<legend>Choice simulation</legend>';
                     echo '<div class="row-fluid">';
 
                     echo '<div class="row-fluid">';
                         echo '<div class="span2">';
-                        echo 'Simulation à jouer';
+                        echo 'Simulation to play';
                         echo '</div>';
 
                         echo '<div class=span4>';
@@ -187,11 +116,12 @@
 
                     echo '<div class="row-fluid">';
                         echo '<div class="span2">';
-                        echo 'Chargement simulation';
+                        //echo 'Loading simuation';
                         echo '</div>';
 
                         echo '<div class=span4>';
-                     echo ' <button class="btn btn-info" name="name_simulation" type="Submit">Charger la simulation</button>';
+                     echo '</br></br>';
+                     echo ' <button class="btn btn-success" name="name_simulation" type="Submit">Begin simulation</button>';
                       echo '</div>';
                     echo '</div>';
                     echo '</form>';
@@ -217,63 +147,87 @@
 
 	    <div class="span12" id="style">
 	    	 <legend>Map</legend>
-         <div class="span12"> </div>
-        <?
-       // require_once(base_url().'/assets/javascript/Interface_user/ChargementPageClient.js');
-        ?>
 
-                <?php
-         echo form_open('simulation/lancerSimu');
-         ?>
-        <div id="message"></div>
-            <?=form_input(array('name'=>'time','id'=>'time','value'=>'0.0','class'=>'time textbox','style'=>'width:150px;'))?><br />
-        <div id="Latitude">Latitude</div>
-        <div id="Longitude">Longitude</div>
-        <div id="Altitude">Altitude</div>
-        <div id="TourMinute">tourMinute</div>
-        <div id="VitesseNav">VitesseNav</div>
-            <p>
 
-        </p>
-            <?=form_close("\n")?>
+
+            <script type="text/javascript"
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQs5tR44NEMgFLzDihOwTycxEn-uFBibY&sensor=false">
+            </script>
 
 
 	    	 <div class="row-fluid">
 
-				    <div class="span12" style="width: 100%" id="map-canvas">
+				    <div class="span12" style="width: 100%;" id="map-canvas">
 				  	<!--googleMap-->
 				    </div>
 
 
 			</div>
 
-            <div class="row-fluid">
+            <div class="row-fluid"><!--GoogleMap-->
 
                <div class="span12">
                 <div id="container_2"  style="width: 100%; height: 200px; margin: 0 auto">  </div>
                </div>
 
 
-        <?php require_once(base_url().'/assets/javascript/Interface_user/Ligne.js');  ?>
+         <?php require_once(base_url().'/assets/javascript/Interface_user/Ligne.js');  ?>
 
 
 
-            <div class="row-fluid">
+            <div class="row-fluid"><!--Tableau de bord-->
 
                 <div class="span4">
-                <div id="container" style="min-width: 210px; max-width: 300px; height: 250px; margin: 0 auto"></div>
-
-        <?php require_once(base_url().'/assets/javascript/Interface_user/Vitesse.js');  ?>
-
-                </div>
+                    <div id="TourMinute" style="min-width: 200px; max-width: 200px; height: 250px; margin: 0 auto"></div>
 
 
                 </div>
+
+
+                <div class="span4">
+
+                    <div class="row-fluid"><!-- Time -->
+
+                        <div class="span2" >
+                        </div>
+                        <div class="span8" id="Scumul">
+                        </div>
+                        <div class="span2" >
+                            </div>
+
+                    </div>
+
+                    <div class="row-fluid"><!--Porte & Kilometrage -->
+                        <div class="span6" id="EtatPorte" ><!-- Etat Porte-->
+
+                            <p>Door status :</p>
+
+                            <div class="span4" id="PorteClose" style="display:none">
+
+                                <img src="<?php echo img_url('button-red.png'); ?>"  />
+                             </div>
+
+                             <div class="span4" id="PorteOpen" style="display:none">
+                                <img src="<?php echo img_url('button-green.png'); ?>"  />
+                             </div>
+
+                        </div><!-- Etat Porte-->
+                        <p>Kilometers :</p>
+                        <div class="span6" id="Kilometrage"></div><!-- Kilometrage-->
+                    </div><!--Porte & Kilometrage -->
+
+                </div>
+
+            <div class="span4">
+                <div id="VitesseNav" style="min-width: 200px; max-width: 200px; height: 250px; margin: 0 auto"></div>
+
+            </div>
+
            </div>
 	    </div>
         <?php
             }
         } ?>
-	 
+
 
 	 

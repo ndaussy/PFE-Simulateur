@@ -1,7 +1,7 @@
 <div class="span10">
 
 	<fieldset>
-    <legend>Depot de simulation</legend>
+    <legend>Upload Simulation</legend>
 </div>
 
 <div class="span10">
@@ -22,24 +22,24 @@
 		}
 		?>
 
-		<label> Nom de la simulation </label>
+		<label> Simulation's name </label>
 		<input type="text" name="name_simulation" value="Nom_Simulation" required/>
 
-		<label> Selectionner votre fichier .csv à dl</label>
+		<label> Select file .csv to upload</label>
 
 		 <?php echo form_open_multipart('telecharger/do_upload');?>
 
 		<input class ="btn-info" type="file" name="CSV"  required/>
 
-		 <label> Selectionner votre fichier .txt à dl</label>
+		 <label>Select file .txt to upload</label>
 
 		<?php echo form_open_multipart('telecharger/do_upload');?>
 
 		<input class ="btn-info" type="file" name="TXT"  required/>
 
-          <label> Soumettre la simulation </label>  
+          <label> Recorded Simulation </label>
 
-		  <input class="btn-success" type="submit" value="Envoyer" class="ui-corner-all" />     
+		  <input class="btn-success" type="submit" value="Send" class="ui-corner-all" />
 		</form> 
 
 	</fieldset>

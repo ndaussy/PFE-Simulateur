@@ -3,7 +3,7 @@
 </head>
 <body>
 
-<div class="alert alert-success">Vos fichiers ont été téléchargé sur le serveur.</div>
+<div class="alert alert-success">File was uploaded with sucess.</div>
 
 
 </div>

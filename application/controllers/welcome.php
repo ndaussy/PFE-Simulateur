@@ -22,7 +22,7 @@ public function index()
 
         //$this->load->library('../models/Client_Socket_model.php');
 
-        $this->layout->set_titre("Page d'acceuil");
+        $this->layout->set_titre("Home");
 
         $this->layout->views('../themes/menu');
 
@@ -43,10 +43,10 @@ public function index()
             ->view('../themes/footer');
         //pclose(popen($this->config->item('config_path_prog_dungle')." F3 00 00 0C FF FF FF FF FEF1 "  , "r"));
 
-       /* $this->load->model('simulation_model');
+        /*$this->load->model('lignes_model');
 
-        //[name_simulation] [time]
-        $this->simulation_model->playsimulation(array("name_simulation"=>"T1_tronquer","time"=>'0.0'));
+        //[name_simulation] path
+        $this->lignes_model->save_lignes(array("name_simulation"=>"T1","filename"=>'C:\wamp\www\PFE-Simulateur\uploads\lignes.csv'));
         */
 
         /*   $this->load->model('kml_model');

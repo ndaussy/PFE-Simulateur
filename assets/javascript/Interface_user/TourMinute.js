@@ -1,7 +1,7 @@
 
 $(function () {
 
-    $('#VitesseNav').highcharts({
+    $('#TourMinute').highcharts({
 
         chart: {
             type: 'gauge',
@@ -12,8 +12,7 @@ $(function () {
         },
 
 title: {
-
-    text: 'Km/h'
+    text: 'Tour/Minutes'
     },
 
 pane: {
@@ -52,7 +51,7 @@ outerRadius: '107%'
 // the value axis
 yAxis: {
     min: 0,
-    max: 150,
+    max: 4000,
 
     minorTickInterval: 'auto',
     minorTickWidth: 1,
@@ -70,19 +69,19 @@ yAxis: {
     rotation: 'auto'
     },
 title: {
-    text: 'Km/h'
+    text: 'T/M'
     },
 plotBands: [{
     from: 0,
-    to: 60,
+    to: 2000,
     color: '#55BF3B' // green
     }, {
-    from: 60,
-    to: 110,
+    from: 2000,
+    to: 2500,
     color: '#DDDF0D' // yellow
     }, {
-    from: 110,
-    to: 150,
+    from: 2500,
+    to: 4000,
     color: '#DF5353' // red
     }]
 },
@@ -99,28 +98,28 @@ series: [{
 // Linkage avec les valeurs récupéré
 function (chart) {
     setInterval(function () {
-    var point = chart.series[0].points[0];
-    var newVal;
+        var point = chart.series[0].points[0];
+        var newVal;
 
-    var bool = tabReturn || 0;
+        var bool = tabReturn || 0;
 
-    if(bool)
-    {
-    newVal = parseInt(tabReturn.VitesseNav);//tabReturn.TourMinute.valueOf();
-        //alert(tabReturn.TourMinute);
-    //document.getElementById('TourMinute').value
-    //alert(tabReturn.TourMinute);
+        if(bool)
+        {
+            newVal = parseInt(tabReturn.TourMinute);//tabReturn.TourMinute.valueOf();
+            //alert(tabReturn.TourMinute);
+            //document.getElementById('TourMinute').value
+            //alert(tabReturn.TourMinute);
 
 
-    }
-    else
-    {
-    newVal=0;
-    }
+        }
+        else
+        {
+            newVal=0;
+        }
 
-    point.update(newVal);
+point.update(newVal);
 
-}, 100);
+}, 100);//non acccessible depuis l'exterieure
 
 });
 });

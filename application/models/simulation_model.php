@@ -162,10 +162,10 @@ class Simulation_model extends CI_Model {
     //format $data 'name_simulation'=>Tata Scumul=>0.0 time=>0.0 ajout d'un delta du au temps de requête
     function findSmallestTimeBetweenTxtCsv($data)
     {
-       $q=' SELECT min( Scumul ) as Scumul, Longitude, Latitude, Altitude, `Navigation-Based Vehicule Speed` as VitesseNav, `Engine Speed` as TourMinute
+       $q=' SELECT min( Scumul ) as Scumul, Longitude, Latitude, Altitude, `Navigation-Based Vehicule Speed` as VitesseNav, `Engine Speed` as TourMinute, `Total Vehicle distance` as Kilometrage,`Position of doors` as EtatPorte
             FROM `csv`
-            WHERE Scumul > ('.$data['Scumul'].'+0.1)
-                AND name_simulation = "'.$data['name_simulation'].'";';
+            WHERE Scumul > ('.$data['Scumul'].'+'.$data['TempsRequete'].')
+                AND name_simulation = "'.$data['name_simulation'].'";';//,Total Vehicul Distance as Kilometrage
 
        // echo $q;
 

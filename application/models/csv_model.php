@@ -114,7 +114,7 @@ class Csv_model extends CI_Model {
 
         if($etat_simu)
         {
-            //unlink($file_name);
+            unlink($file_name);
             //erreur permission denied
         }
 

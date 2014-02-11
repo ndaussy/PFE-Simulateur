@@ -12,7 +12,7 @@ class Simulation extends CI_Controller {
 
             $layout= new layout;
 
-            $layout->set_titre("Simulation sauvegardé");
+            $layout->set_titre("Recorded Simulation");
 
             $layout->views('../themes/menu');
 
@@ -94,7 +94,7 @@ class Simulation extends CI_Controller {
 
                     $layout= new layout;
 
-                    $layout->set_titre("Gestion des simulations");
+                    $layout->set_titre("Management simulations");
 
                     $layout->views('../themes/menu');
 
@@ -115,6 +115,7 @@ class Simulation extends CI_Controller {
 
             $this->load->library('form_validation');
             $this->load->helper('form');
+            $this->load->helper('assets');
             $this->load->helper('cookie');
 
             $this->load->model('simulation_model');
@@ -140,7 +141,7 @@ class Simulation extends CI_Controller {
                     if($this->input->post('time')!='Simulation terminé')
                     {
                             //Prendre la prochaine itération du temps; réaliser la requête & renvoyé le résultat
-                            $arraydata=array('name_simulation'=>$_COOKIE['name_simulation'],'Scumul'=>$this->input->post('time'),'time'=>$this->input->post('time'));
+                            $arraydata=array('name_simulation'=>$_COOKIE['name_simulation'],'Scumul'=>$this->input->post('time'),'time'=>$this->input->post('time'),'TempsRequete'=>$this->input->post('tempsMoyenRequete'));
 
 
                             //play les simulations :
@@ -152,7 +153,7 @@ class Simulation extends CI_Controller {
                             {
 
                                 echo json_encode($receivedata[0]);
-                                //echo $receivedata[0]['min( Scumul )'];
+                                //echo test;
                             }
                             else
                             {
@@ -177,11 +178,22 @@ class Simulation extends CI_Controller {
             $this->output->set_header("Cache-Control: no-cache, must-revalidate");
             //header("Cache-Control: no-cache, must-revalidate" );//pour cookies
             $layout= new layout;
+
+            //Ajout des interfaces JS
+            $layout->ajouter_js_externe("https://maps.googleapis.com/maps/api/js?key=AIzaSyAQs5tR44NEMgFLzDihOwTycxEn-uFBibY&sensor=false");
+            $layout->ajouter_js("Interface_user/GoogleMap");
+            $layout->ajouter_js("Interface_user/gestionMap");
+           // $layout->ajouter_js("Interface_user/Ligne");
+            $layout->ajouter_js("Interface_user/TourMinute");
+            $layout->ajouter_js("Interface_user/Vitesse");
+
+
             $this->load->library('form_validation');
             $this->load->helper('cookie');
+            $this->load->helper('assets');
             $this->load->model('simulation_model');
             $this->load->helper('form');
-            $layout->set_titre("Map");
+
             $data['name_simulation']=$this->simulation_model->findSimulation('all');
 
             for($a=0;$a<count($data['name_simulation']);$a++)//mise en forme du tableau pour obtenir une verification + facile chez le client
@@ -193,11 +205,11 @@ class Simulation extends CI_Controller {
             if (isset($_COOKIE['name_simulation']))//Si existe
             {
             //ne rien faire & poursuivre l'affichage finale
-
+                $layout->set_titre("Play Simulation");
             }
             else//si les cookies n'existe pas
             {
-
+                $layout->set_titre("Selecting services");
 
                 $this->load->helper(array('form', 'url'));//deuxieme visites aprés validation du formulaire
 
@@ -233,35 +245,29 @@ class Simulation extends CI_Controller {
                         $this->input->set_cookie($cookie);
 
 
-                        $layout->set_titre("Map");
+                        $layout->set_titre("Selecting services");
 
                         $this->load->model('simulation_model');
 
                         $this->load->model('kml_model');
                         if(strstr($this->input->post('simulation'),"1"))
                         {
-                            $data['kml']=$this->kml_model->getArretByLine('TCAR_91');
+                           $this->load->model('lignes_model');
+
+                            //[name_simulation] path
+                          $data['kml']= $this->lignes_model->retournLines(array("name_simulation"=>"T1"));
+
                         }
                         elseif(strstr($this->input->post('simulation'),"2"))
                         {
-                            $data['kml']=$this->kml_model->getArretByLine('TCAR_92');
+                           // $data['kml']=$this->kml_model->getArretByLine('TCAR_92');
                         }
                         elseif((strstr($this->input->post('simulation'),"3")))
                         {
-                            $data['kml']=$this->kml_model->getArretByLine('TCAR_93');
+                           // $data['kml']=$this->kml_model->getArretByLine('TCAR_93');
                         }
 
-                        //suppression d'un elements sur deux
 
-                        $cpt=count($data['kml']);
-
-                        for($a=0;$a<$cpt;$a++)
-                        {
-                            if($a%2!=1)
-                            {
-                                unset($data['kml'][$a]);
-                            }
-                        }
 
                         //Relance pour cookies.
                         redirect('Simulation/map', 'refresh');
@@ -272,6 +278,16 @@ class Simulation extends CI_Controller {
                     }
                 }
             }
+            //if(strstr($this->input->post('simulation'),"1"))
+            {
+                $this->load->model('lignes_model');
+
+                //[name_simulation] path
+                $data['kml']= $this->lignes_model->retournLines(array("name_simulation"=>"T1"));
+
+            }
+
+
             $layout->views('../themes/menu',$data);
 
             $layout->views('map',$data);
@@ -286,7 +302,7 @@ class Simulation extends CI_Controller {
             $this->load->helper('cookie');
             $this->load->model('simulation_model');
             $this->load->helper('form');
-            $layout->set_titre("Map");
+            $layout->set_titre("Selecting services");
             $data['name_simulation']=$this->simulation_model->findSimulation('all');
 
             if(isset($_COOKIE['name_simulation']))

@@ -1,6 +1,6 @@
 <div class="span10">
 
-	<legend> Simulation en BDD </legend>
+	<legend> Recorded Simulation </legend>
 
 <?php echo form_open('simulation/gestion'); ?>
 <div class="row-fluid">
@@ -12,8 +12,8 @@
 
 				  <input  class="btn btn-success" type="submit" value="Ajouter" name="ajouter" class="ui-corner-all" /> 
 
-				  <input class="btn btn-warning" type="submit" value="Modifier"  name="modifier" class="ui-corner-all" />
-
+				  <!--<input class="btn btn-warning" type="submit" value="Modifier"  name="modifier" class="ui-corner-all" />
+                    Not implemented -->
 				  <input  class="btn btn-danger" type="submit" value="Supprimer" name="supprimer" class="ui-corner-all" />
 
 			</div>
@@ -36,7 +36,7 @@
 
             if($islogin)
             {
-                echo '<th> Selectionner </th> ';
+                echo '<th> Select </th> ';
             }
 
 			  	

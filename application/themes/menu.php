@@ -3,20 +3,21 @@
 
     <div class ="span12">
 
-        <Legend>Gestionnaire Des Simulateurs EBSF</legend>
+        <Legend> W.A.S.B.O : Web Application for Simulation of Bus Operation </legend>
 
             <nav class="navbar">
               <div class="navbar-inner">
                 <div class="container">
                   <ul class="nav">
-                    <li> <a class="brand" href="#">G.D.S</a> </li>
-                    
+                    <li>  <img src="<?php  echo img_url('logo.jpg'); ?>" height="50%" width="50%"  /></li>
+
                     <li >    
-                    <a href="<?php echo site_url('welcome');?>" > Acceuil </a>
+                    <a href="<?php echo site_url('welcome');?>" > Home </a>
                     </li>
 
                     <li >
-                    <a href="<?php echo site_url('simulation/map');?>" > Accéder au Simulateur </a>
+                    <a href="<?php echo site_url('simulation/map');?>" >
+                        Access simulator </a>
                     </li>
 
                       <?php if($this->user_model->isLoggedIn())
@@ -25,8 +26,8 @@
 
                     <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Simulation <b class="caret"></b> </a>
                       <ul class="dropdown-menu">
-                        <li><a href="<?php echo site_url('telecharger');?>">Télécharger Simulation</a></li>
-                        <li><a href="<?php echo site_url('simulation');?>" >Simulation enregistré</a></li>
+                        <li><a href="<?php echo site_url('telecharger');?>">New Simulation </a></li>
+                        <li><a href="<?php echo site_url('simulation');?>" >Recorded simulation</a></li>
                         
                       </ul>
                     </li>
