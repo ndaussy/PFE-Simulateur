@@ -3,8 +3,30 @@
 
     <div class ="span12">
 
-        <Legend> W.A.S.B.O : Web Application for Simulation of Bus Operation </legend>
+        <div class="test_css">
+            <div class="logo">
+                <div class="wasbo">
 
+                </div>
+
+            </div>
+            <div class="bbb">
+                <p class="Letter" style="margin-left:10px;">W</p>
+                <p style="margin-left:-5px;" class="Point">eb </p>
+                <p class="Letter"> A</p>
+                <p style="margin-left:-5px;"class="Point">pplication</p>
+                <p class="Letter">S</p>
+                <p style="margin-left:-5px;"class="Point">imulation of</p>
+                <p class="Letter">B</p>
+                <p style="margin-left:-5px;"class="Point">us</p>
+                <p class="Letter">O</p>
+                <p style="margin-left:-5px;"class="Point">perations</p>
+            </div>
+
+        </div>
+
+        <!--<Legend> W.A.S.B.O : Web Application for Simulation of Bus Operation </legend>
+        -->
             <nav class="navbar">
               <div class="navbar-inner">
                 <div class="container">

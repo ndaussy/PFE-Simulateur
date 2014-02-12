@@ -1,10 +1,11 @@
 
 			<div class="span12">
 
-				<legend >Présentation </legend>
+				 
 
-				<span> Bienvenue sur le Site de gestion des Simulateurs de L'EBSF. Ce site a pour but de gérer les Simulateurs. </span>
-				</br> </br>
+				<span style="color:#10A8F1;"><strong>WASBO Time To Move On</strong> </span>
+				<p class="para_welcom">Welcome in the WASBO project!</br>This website make you able to test your own data on the EBSF testbench</p>
+				 
 				
 
 
@@ -12,29 +13,20 @@
 					<!-- Carousel items -->
 					<div class="carousel-inner">
 						<div class="active item">
-						
-                            <?php  echo img_url('Carroussel/ebsf_partners','png'); ?>
+						<img src=<?php echo base_url()."assets/img/Carroussel/1618558_10151869683221345_1616661065_n.jpg";?> alt="">
 						<div class="carousel-caption">
-						<h4>Partenaire</h4>
-						<p>Le projet ebsf compte de nombreux partenaire europeen</p>
+						<h4><a href="http://ebsf.eu/"target="_blank">EBSF</a> - European Bus System of the Future</h4>
+						<p>Un projet au sein d'un consortium européen</p>
 						</div>
 						</div>
 						<div class="item">
-
-                            <?php  echo img_url('Carroussel/ebsf_futur','png'); ?>
+						<img src=<?php echo base_url()."assets/img/Carroussel/Equipe.jpg";?> alt="">
 						<div class="carousel-caption">
-						<h4>Bar</h4>
-						<p>Bar à coté de l'ece</p>
+						<h4><a href="#"target="_blank">ECE | Paris</a> - <a href="#"target="_blank">Digimobee</a></h4>
+						<p>Un projet innovation en partenariat</p>
 						</div>
 						</div>
-						<div class="item">
-                        <?php  echo img_url('Carroussel/logo_ebsf','png'); ?>
-
-						<div class="carousel-caption">
-						<h4>Blibli</h4>
-						<p>blabla_habituel</p>
-						</div>
-						</div>
+						 
 						</div>
 		<!-- Carousel nav -->
 		<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
