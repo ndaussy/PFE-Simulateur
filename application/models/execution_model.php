@@ -57,11 +57,11 @@ class Execution_model extends CI_Model {
             if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
                 if($type=="gga")
                 {
-                   $port=44200;
+                   $port=44001;
                 }
                 elseif($type=="rmc")
                 {
-                   $port=44100;
+                   $port=44000;
                 }
                 //lancement asynchrone.//3 ou 4 argument, 1er argument port d'envoi exemple 3 argument == gga //
                 //format data = Latitude Longitude Altitude
@@ -80,16 +80,15 @@ class Execution_model extends CI_Model {
         if($exe==true)
         {
             $port=450;
-            //echo  $this->config->item('config_path_prog')."Test_Projet.exe ".$data[$nb_line]['frame']." ".$data[$nb_line]['time']." ".$data[$nb_line]['id'];
-            //echo 'lancement process'; 1 argument nom du service, 2 eme argument nom du port ou le service sera consommé
-            //adresse par default == 239.255.42.21
+            
+             //adresse par default == 239.255.42.21
             if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
                 //definition des ports
                 if($name=='gga')
-                {$port=44200;
+                {$port=44001;
                  $port_message_fin=9999;}
                 if($name=='rmc')
-                {$port=44100;
+                {$port=44000;
                 $port_message_fin=9900;}
                 //lancement asynchrone.
                 pclose(popen($this->config->item('config_path_prog_register')." gps_".$name." ".$port." ".$port_message_fin, "r"));

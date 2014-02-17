@@ -53,6 +53,16 @@ $(document).ready(function() {
 //Fonction d'execution
 function Execution()
 {
+
+                     $('#pause').click(function() {
+
+                        DoSimu=false;//arret d'envoi des information dans une ancienne version, plus d'actualité vu
+                            //qu'on clear my var & arrête le compteur
+                        clearInterval(myVar);
+
+                        });
+
+
                     var dbt = new Date();
                     var dbt_requete=dbt.getTime();
 

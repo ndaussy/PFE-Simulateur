@@ -38,7 +38,7 @@ function addMarker() {
     if(bool)
     {
         parcoursBus.push(new google.maps.LatLng(tabReturn.Latitude,tabReturn.Longitude));//Ajout de la line
-
+    }
         traceParcoursBus = new google.maps.Polyline({
         path: parcoursBus,//chemin du tracé
         strokeColor: "#FF0000",//couleur du tracé
@@ -49,7 +49,7 @@ function addMarker() {
         if( marker || 0)
         {
         marker.setMap(null);
-        }
+        
 
         marker = new google.maps.Marker({
             position: new google.maps.LatLng(tabReturn.Latitude,tabReturn.Longitude),
@@ -68,8 +68,8 @@ function addMarker() {
         /*
 
          */
-
-    }
+        }
+    
 }
 
 
