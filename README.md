@@ -34,8 +34,8 @@ Configuration :
           Modifier les paramêtre du tableau $db[][].
         
     --Compte existant :
-      UserName : ndaussy@hotmail.com
-      Password : 243289
+      UserName : ndaussy@wanadoo.com
+      Password : ********
   
   
 
